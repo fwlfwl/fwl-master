@@ -1,0 +1,18 @@
+logs:
+    - name: root
+      level: DEBUG
+      formatter: "%d{%Y-%m-%d %H:%M:%s} %p %m%n"
+      appenders:
+         - type: FileLogAppender
+           level: error
+           formatter: "%d{%Y-%m-%d %H:%M:%s}[%p]%m%n"
+           file: "../log_file/root.txt"
+         - type: StdoutLogAppender
+           level: warn
+    - name: system
+      level: DEBUG
+      formatter: "[%p]%d{%Y-%m-%d %H:%M:%s}%m%n"
+      appenders:
+         - type: FileLogAppender
+           level: DEBUG
+           file: "../log_file/system.txt"
