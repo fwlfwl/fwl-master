@@ -1,0 +1,38 @@
+#include "sockStream.h"
+
+namespace fwl{
+
+/**
+ * @brief construcor
+ * @param[in] sock 
+ * @param[in] owner:the ownership of sock
+ * */
+SockStream(Socket::ptr sock, bool owner):
+	m_sock(sock),
+	m_owner(owner){}
+
+/**
+ * @brief destructor  
+ * */	
+~SockStream(){
+	//if m_owner is true,close sock in destruction
+	if(m_owner && m_sock){
+		m_sock -> close();
+	}
+}
+
+/**
+ * @brief read content(recv msg)
+ * @param[in] buf: the content of buffer
+ * @param[in] len: the length of buffer
+ * */
+virtual int read(void * buf, size_t len) = 0;
+
+/**
+ * @brief read content(recv msg)
+ * @param[in] ba: the content of ByteArray
+ * @param[in] len: the length of buffer
+ * */
+virtual int read(ByteArray::ptr ba, size_t len) = 0;
+
+}

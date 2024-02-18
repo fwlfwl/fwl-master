@@ -189,13 +189,12 @@ std::ostream& HttpRequest::dump(std::ostream& os) const {
 
 void HttpRequest::init() {
     std::string conn = getHeader("connection");
-    if(!conn.empty()) {
-        if(strcasecmp(conn.c_str(), "keep-alive") == 0) {
-            m_close = false;
-        } else {
-            m_close = true;
-        }
-    }
+    if(!conn.empty() && 0 == strcasecmp(conn.c_str(), "keep-alive")) {
+    	m_close = false; 
+    }else{
+		//others-connection state is close 
+		m_close = true;
+	}
 }
 HttpResponse::HttpResponse(uint8_t version, bool close)
     :m_status(HttpStatus::OK)

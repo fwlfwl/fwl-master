@@ -314,6 +314,32 @@ test_http_parser/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/build
 .PHONY : test_http_parser/fast
 
+#=============================================================================
+# Target rules for targets named test_networkserver
+
+# Build rule for target.
+test_networkserver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_networkserver
+.PHONY : test_networkserver
+
+# fast build rule for target.
+test_networkserver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_networkserver.dir/build.make CMakeFiles/test_networkserver.dir/build
+.PHONY : test_networkserver/fast
+
+#=============================================================================
+# Target rules for targets named test_server
+
+# Build rule for target.
+test_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_server
+.PHONY : test_server
+
+# fast build rule for target.
+test_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/build
+.PHONY : test_server/fast
+
 fwl/address.o: fwl/address.cc.o
 .PHONY : fwl/address.o
 
@@ -506,6 +532,78 @@ fwl/http/http_parser.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/http_parser.cc.s
 .PHONY : fwl/http/http_parser.cc.s
 
+fwl/http/http_server.o: fwl/http/http_server.cc.o
+.PHONY : fwl/http/http_server.o
+
+# target to build an object file
+fwl/http/http_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/http_server.cc.o
+.PHONY : fwl/http/http_server.cc.o
+
+fwl/http/http_server.i: fwl/http/http_server.cc.i
+.PHONY : fwl/http/http_server.i
+
+# target to preprocess a source file
+fwl/http/http_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/http_server.cc.i
+.PHONY : fwl/http/http_server.cc.i
+
+fwl/http/http_server.s: fwl/http/http_server.cc.s
+.PHONY : fwl/http/http_server.s
+
+# target to generate assembly for a file
+fwl/http/http_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/http_server.cc.s
+.PHONY : fwl/http/http_server.cc.s
+
+fwl/http/http_servlet.o: fwl/http/http_servlet.cc.o
+.PHONY : fwl/http/http_servlet.o
+
+# target to build an object file
+fwl/http/http_servlet.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/http_servlet.cc.o
+.PHONY : fwl/http/http_servlet.cc.o
+
+fwl/http/http_servlet.i: fwl/http/http_servlet.cc.i
+.PHONY : fwl/http/http_servlet.i
+
+# target to preprocess a source file
+fwl/http/http_servlet.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/http_servlet.cc.i
+.PHONY : fwl/http/http_servlet.cc.i
+
+fwl/http/http_servlet.s: fwl/http/http_servlet.cc.s
+.PHONY : fwl/http/http_servlet.s
+
+# target to generate assembly for a file
+fwl/http/http_servlet.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/http_servlet.cc.s
+.PHONY : fwl/http/http_servlet.cc.s
+
+fwl/http/http_session.o: fwl/http/http_session.cc.o
+.PHONY : fwl/http/http_session.o
+
+# target to build an object file
+fwl/http/http_session.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/http_session.cc.o
+.PHONY : fwl/http/http_session.cc.o
+
+fwl/http/http_session.i: fwl/http/http_session.cc.i
+.PHONY : fwl/http/http_session.i
+
+# target to preprocess a source file
+fwl/http/http_session.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/http_session.cc.i
+.PHONY : fwl/http/http_session.cc.i
+
+fwl/http/http_session.s: fwl/http/http_session.cc.s
+.PHONY : fwl/http/http_session.s
+
+# target to generate assembly for a file
+fwl/http/http_session.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/http_session.cc.s
+.PHONY : fwl/http/http_session.cc.s
+
 fwl/http/ragel/http11_parser.o: fwl/http/ragel/http11_parser.cc.o
 .PHONY : fwl/http/ragel/http11_parser.o
 
@@ -626,6 +724,30 @@ fwl/mutex.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/mutex.cc.s
 .PHONY : fwl/mutex.cc.s
 
+fwl/network_server.o: fwl/network_server.cc.o
+.PHONY : fwl/network_server.o
+
+# target to build an object file
+fwl/network_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/network_server.cc.o
+.PHONY : fwl/network_server.cc.o
+
+fwl/network_server.i: fwl/network_server.cc.i
+.PHONY : fwl/network_server.i
+
+# target to preprocess a source file
+fwl/network_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/network_server.cc.i
+.PHONY : fwl/network_server.cc.i
+
+fwl/network_server.s: fwl/network_server.cc.s
+.PHONY : fwl/network_server.s
+
+# target to generate assembly for a file
+fwl/network_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/network_server.cc.s
+.PHONY : fwl/network_server.cc.s
+
 fwl/scheduler.o: fwl/scheduler.cc.o
 .PHONY : fwl/scheduler.o
 
@@ -650,6 +772,30 @@ fwl/scheduler.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/scheduler.cc.s
 .PHONY : fwl/scheduler.cc.s
 
+fwl/sock_stream.o: fwl/sock_stream.cc.o
+.PHONY : fwl/sock_stream.o
+
+# target to build an object file
+fwl/sock_stream.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/sock_stream.cc.o
+.PHONY : fwl/sock_stream.cc.o
+
+fwl/sock_stream.i: fwl/sock_stream.cc.i
+.PHONY : fwl/sock_stream.i
+
+# target to preprocess a source file
+fwl/sock_stream.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/sock_stream.cc.i
+.PHONY : fwl/sock_stream.cc.i
+
+fwl/sock_stream.s: fwl/sock_stream.cc.s
+.PHONY : fwl/sock_stream.s
+
+# target to generate assembly for a file
+fwl/sock_stream.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/sock_stream.cc.s
+.PHONY : fwl/sock_stream.cc.s
+
 fwl/socket.o: fwl/socket.cc.o
 .PHONY : fwl/socket.o
 
@@ -673,6 +819,30 @@ fwl/socket.s: fwl/socket.cc.s
 fwl/socket.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/socket.cc.s
 .PHONY : fwl/socket.cc.s
+
+fwl/stream.o: fwl/stream.cc.o
+.PHONY : fwl/stream.o
+
+# target to build an object file
+fwl/stream.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/stream.cc.o
+.PHONY : fwl/stream.cc.o
+
+fwl/stream.i: fwl/stream.cc.i
+.PHONY : fwl/stream.i
+
+# target to preprocess a source file
+fwl/stream.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/stream.cc.i
+.PHONY : fwl/stream.cc.i
+
+fwl/stream.s: fwl/stream.cc.s
+.PHONY : fwl/stream.s
+
+# target to generate assembly for a file
+fwl/stream.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/stream.cc.s
+.PHONY : fwl/stream.cc.s
 
 fwl/thread.o: fwl/thread.cc.o
 .PHONY : fwl/thread.o
@@ -962,6 +1132,30 @@ tests/test_log.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_log.dir/build.make CMakeFiles/test_log.dir/tests/test_log.cc.s
 .PHONY : tests/test_log.cc.s
 
+tests/test_networkserver.o: tests/test_networkserver.cc.o
+.PHONY : tests/test_networkserver.o
+
+# target to build an object file
+tests/test_networkserver.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_networkserver.dir/build.make CMakeFiles/test_networkserver.dir/tests/test_networkserver.cc.o
+.PHONY : tests/test_networkserver.cc.o
+
+tests/test_networkserver.i: tests/test_networkserver.cc.i
+.PHONY : tests/test_networkserver.i
+
+# target to preprocess a source file
+tests/test_networkserver.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_networkserver.dir/build.make CMakeFiles/test_networkserver.dir/tests/test_networkserver.cc.i
+.PHONY : tests/test_networkserver.cc.i
+
+tests/test_networkserver.s: tests/test_networkserver.cc.s
+.PHONY : tests/test_networkserver.s
+
+# target to generate assembly for a file
+tests/test_networkserver.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_networkserver.dir/build.make CMakeFiles/test_networkserver.dir/tests/test_networkserver.cc.s
+.PHONY : tests/test_networkserver.cc.s
+
 tests/test_scheduler.o: tests/test_scheduler.cc.o
 .PHONY : tests/test_scheduler.o
 
@@ -985,6 +1179,30 @@ tests/test_scheduler.s: tests/test_scheduler.cc.s
 tests/test_scheduler.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.s
 .PHONY : tests/test_scheduler.cc.s
+
+tests/test_server.o: tests/test_server.cc.o
+.PHONY : tests/test_server.o
+
+# target to build an object file
+tests/test_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/tests/test_server.cc.o
+.PHONY : tests/test_server.cc.o
+
+tests/test_server.i: tests/test_server.cc.i
+.PHONY : tests/test_server.i
+
+# target to preprocess a source file
+tests/test_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/tests/test_server.cc.i
+.PHONY : tests/test_server.cc.i
+
+tests/test_server.s: tests/test_server.cc.s
+.PHONY : tests/test_server.s
+
+# target to generate assembly for a file
+tests/test_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/tests/test_server.cc.s
+.PHONY : tests/test_server.cc.s
 
 tests/test_socket.o: tests/test_socket.cc.o
 .PHONY : tests/test_socket.o
@@ -1100,7 +1318,9 @@ help:
 	@echo "... test_http_parser"
 	@echo "... test_iomanager"
 	@echo "... test_log"
+	@echo "... test_networkserver"
 	@echo "... test_scheduler"
+	@echo "... test_server"
 	@echo "... test_socket"
 	@echo "... test_thread"
 	@echo "... test_unit"
@@ -1129,6 +1349,15 @@ help:
 	@echo "... fwl/http/http_parser.o"
 	@echo "... fwl/http/http_parser.i"
 	@echo "... fwl/http/http_parser.s"
+	@echo "... fwl/http/http_server.o"
+	@echo "... fwl/http/http_server.i"
+	@echo "... fwl/http/http_server.s"
+	@echo "... fwl/http/http_servlet.o"
+	@echo "... fwl/http/http_servlet.i"
+	@echo "... fwl/http/http_servlet.s"
+	@echo "... fwl/http/http_session.o"
+	@echo "... fwl/http/http_session.i"
+	@echo "... fwl/http/http_session.s"
 	@echo "... fwl/http/ragel/http11_parser.o"
 	@echo "... fwl/http/ragel/http11_parser.i"
 	@echo "... fwl/http/ragel/http11_parser.s"
@@ -1144,12 +1373,21 @@ help:
 	@echo "... fwl/mutex.o"
 	@echo "... fwl/mutex.i"
 	@echo "... fwl/mutex.s"
+	@echo "... fwl/network_server.o"
+	@echo "... fwl/network_server.i"
+	@echo "... fwl/network_server.s"
 	@echo "... fwl/scheduler.o"
 	@echo "... fwl/scheduler.i"
 	@echo "... fwl/scheduler.s"
+	@echo "... fwl/sock_stream.o"
+	@echo "... fwl/sock_stream.i"
+	@echo "... fwl/sock_stream.s"
 	@echo "... fwl/socket.o"
 	@echo "... fwl/socket.i"
 	@echo "... fwl/socket.s"
+	@echo "... fwl/stream.o"
+	@echo "... fwl/stream.i"
+	@echo "... fwl/stream.s"
 	@echo "... fwl/thread.o"
 	@echo "... fwl/thread.i"
 	@echo "... fwl/thread.s"
@@ -1186,9 +1424,15 @@ help:
 	@echo "... tests/test_log.o"
 	@echo "... tests/test_log.i"
 	@echo "... tests/test_log.s"
+	@echo "... tests/test_networkserver.o"
+	@echo "... tests/test_networkserver.i"
+	@echo "... tests/test_networkserver.s"
 	@echo "... tests/test_scheduler.o"
 	@echo "... tests/test_scheduler.i"
 	@echo "... tests/test_scheduler.s"
+	@echo "... tests/test_server.o"
+	@echo "... tests/test_server.i"
+	@echo "... tests/test_server.s"
 	@echo "... tests/test_socket.o"
 	@echo "... tests/test_socket.i"
 	@echo "... tests/test_socket.s"

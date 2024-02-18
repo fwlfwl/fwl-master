@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "../cmake/unit.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
@@ -58,4 +59,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_socket.dir/DependInfo.cmake"
   "CMakeFiles/test_http.dir/DependInfo.cmake"
   "CMakeFiles/test_http_parser.dir/DependInfo.cmake"
+  "CMakeFiles/test_networkserver.dir/DependInfo.cmake"
+  "CMakeFiles/test_server.dir/DependInfo.cmake"
   )

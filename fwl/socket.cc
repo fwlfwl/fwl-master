@@ -242,8 +242,9 @@ bool Socket::close() {
     m_isConnected = false;
     if(m_sock != -1) {
         ::close(m_sock);
+    	//FWL_LOG_DEBUG(g_logger) << "close sock:" << m_sock;
         m_sock = -1;
-    }
+	}
     return false;
 }
 

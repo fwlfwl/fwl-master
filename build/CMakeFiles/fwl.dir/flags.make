@@ -6,5 +6,5 @@ CXX_DEFINES = -Dfwl_EXPORTS
 
 CXX_INCLUDES = -I/home/fwl/program/fwl-master/. -I/usr/local/yaml.cpp-0.8.0/include
 
-CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -fPIC
+CXX_FLAGS =  -rdynamic -O3 -ggdb -std=c++20 -Wall -Wno-deprecated -Werror -Wno-unused-function -fPIC
 
