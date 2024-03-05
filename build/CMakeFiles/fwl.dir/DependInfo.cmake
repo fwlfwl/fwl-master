@@ -32,6 +32,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/fwl/program/fwl-master/fwl/thread.cc" "CMakeFiles/fwl.dir/fwl/thread.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/thread.cc.o.d"
   "/home/fwl/program/fwl-master/fwl/timer.cc" "CMakeFiles/fwl.dir/fwl/timer.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/timer.cc.o.d"
   "/home/fwl/program/fwl-master/fwl/unit.cc" "CMakeFiles/fwl.dir/fwl/unit.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/unit.cc.o.d"
+  "/home/fwl/program/fwl-master/fwl/uri.cc" "CMakeFiles/fwl.dir/fwl/uri.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/uri.cc.o.d"
   )
 
 # Targets to which this target links.

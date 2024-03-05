@@ -12,6 +12,7 @@ include_directories(/usr/local/yaml.cpp-0.8.0/include)
 link_directories(/usr/local/yaml.cpp-0.8.0/lib)
 
 set(LIB_SRC
+	fwl/uri.cc
 	fwl/sock_stream.cc
 	fwl/stream.cc
 	fwl/network_server.cc
@@ -79,6 +80,8 @@ fwl_add_executable(test_http_parser "tests/test_http_parser.cc" fwl "${LIBS}")
 fwl_add_executable(test_networkserver "tests/test_networkserver.cc" fwl "${LIBS}")
 
 fwl_add_executable(test_server "tests/test_server.cc" fwl "${LIBS}")
+
+fwl_add_executable(test_uri "tests/test_uri.cc" fwl "${LIBS}")
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

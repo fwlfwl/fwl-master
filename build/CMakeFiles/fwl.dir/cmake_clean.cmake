@@ -49,6 +49,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/fwl.dir/fwl/timer.cc.o.d"
   "CMakeFiles/fwl.dir/fwl/unit.cc.o"
   "CMakeFiles/fwl.dir/fwl/unit.cc.o.d"
+  "CMakeFiles/fwl.dir/fwl/uri.cc.o"
+  "CMakeFiles/fwl.dir/fwl/uri.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

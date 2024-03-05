@@ -340,6 +340,19 @@ test_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/build
 .PHONY : test_server/fast
 
+#=============================================================================
+# Target rules for targets named test_uri
+
+# Build rule for target.
+test_uri: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_uri
+.PHONY : test_uri
+
+# fast build rule for target.
+test_uri/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/build
+.PHONY : test_uri/fast
+
 fwl/address.o: fwl/address.cc.o
 .PHONY : fwl/address.o
 
@@ -916,6 +929,30 @@ fwl/unit.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/unit.cc.s
 .PHONY : fwl/unit.cc.s
 
+fwl/uri.o: fwl/uri.cc.o
+.PHONY : fwl/uri.o
+
+# target to build an object file
+fwl/uri.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/uri.cc.o
+.PHONY : fwl/uri.cc.o
+
+fwl/uri.i: fwl/uri.cc.i
+.PHONY : fwl/uri.i
+
+# target to preprocess a source file
+fwl/uri.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/uri.cc.i
+.PHONY : fwl/uri.cc.i
+
+fwl/uri.s: fwl/uri.cc.s
+.PHONY : fwl/uri.s
+
+# target to generate assembly for a file
+fwl/uri.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/uri.cc.s
+.PHONY : fwl/uri.cc.s
+
 tests/test_address.o: tests/test_address.cc.o
 .PHONY : tests/test_address.o
 
@@ -1276,6 +1313,30 @@ tests/test_unit.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit.dir/build.make CMakeFiles/test_unit.dir/tests/test_unit.cc.s
 .PHONY : tests/test_unit.cc.s
 
+tests/test_uri.o: tests/test_uri.cc.o
+.PHONY : tests/test_uri.o
+
+# target to build an object file
+tests/test_uri.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/tests/test_uri.cc.o
+.PHONY : tests/test_uri.cc.o
+
+tests/test_uri.i: tests/test_uri.cc.i
+.PHONY : tests/test_uri.i
+
+# target to preprocess a source file
+tests/test_uri.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/tests/test_uri.cc.i
+.PHONY : tests/test_uri.cc.i
+
+tests/test_uri.s: tests/test_uri.cc.s
+.PHONY : tests/test_uri.s
+
+# target to generate assembly for a file
+tests/test_uri.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/tests/test_uri.cc.s
+.PHONY : tests/test_uri.cc.s
+
 tests/test_yaml.o: tests/test_yaml.cc.o
 .PHONY : tests/test_yaml.o
 
@@ -1324,6 +1385,7 @@ help:
 	@echo "... test_socket"
 	@echo "... test_thread"
 	@echo "... test_unit"
+	@echo "... test_uri"
 	@echo "... test_yaml"
 	@echo "... fwl/address.o"
 	@echo "... fwl/address.i"
@@ -1397,6 +1459,9 @@ help:
 	@echo "... fwl/unit.o"
 	@echo "... fwl/unit.i"
 	@echo "... fwl/unit.s"
+	@echo "... fwl/uri.o"
+	@echo "... fwl/uri.i"
+	@echo "... fwl/uri.s"
 	@echo "... tests/test_address.o"
 	@echo "... tests/test_address.i"
 	@echo "... tests/test_address.s"
@@ -1442,6 +1507,9 @@ help:
 	@echo "... tests/test_unit.o"
 	@echo "... tests/test_unit.i"
 	@echo "... tests/test_unit.s"
+	@echo "... tests/test_uri.o"
+	@echo "... tests/test_uri.i"
+	@echo "... tests/test_uri.s"
 	@echo "... tests/test_yaml.o"
 	@echo "... tests/test_yaml.i"
 	@echo "... tests/test_yaml.s"

@@ -1,0 +1,29 @@
+2024-03-03 21:31:46[DEBUG][32400 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 60]Fiber
+2024-03-03 21:31:46[DEBUG][32400 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 74]Fiber(X,X,X),FiberId is 1
+2024-03-03 21:31:46[INFO][32400 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-03-03 21:31:46[INFO][32401 thread0 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 158]Scheduler:run()
+2024-03-03 21:31:46[DEBUG][32401 thread0 0][/home/fwl/program/fwl-master/fwl/fiber.cc 60]Fiber
+2024-03-03 21:31:46[DEBUG][32401 thread0 2][/home/fwl/program/fwl-master/fwl/fiber.cc 74]Fiber(X,X,X),FiberId is 2
+2024-03-03 21:31:46[INFO][32402 thread1 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 158]Scheduler:run()
+2024-03-03 21:31:46[DEBUG][32402 thread1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 60]Fiber
+2024-03-03 21:31:46[DEBUG][32402 thread1 3][/home/fwl/program/fwl-master/fwl/fiber.cc 74]Fiber(X,X,X),FiberId is 3
+2024-03-03 21:31:46[INFO][32402 thread1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 350]idle..
+2024-03-03 21:31:46[INFO][32400 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 158]Scheduler:run()
+2024-03-03 21:31:46[DEBUG][32401 thread0 4][/home/fwl/program/fwl-master/fwl/fiber.cc 74]Fiber(X,X,X),FiberId is 4
+2024-03-03 21:31:46[DEBUG][32402 thread1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 367]epoll_wait,ret = 1
+2024-03-03 21:31:46[DEBUG][32400 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/fiber.cc 74]Fiber(X,X,X),FiberId is 5
+2024-03-03 21:31:46[INFO][32401 thread0 2][/home/fwl/program/fwl-master/fwl/iomanager.cc 350]idle..
+2024-03-03 21:31:46[INFO][32400 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 350]idle..
+2024-03-03 21:31:46[DEBUG][32401 thread0 2][/home/fwl/program/fwl-master/fwl/iomanager.cc 359]exit
+2024-03-03 21:31:46[DEBUG][32400 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 359]exit
+2024-03-03 21:31:46[DEBUG][32401 thread0 4][/home/fwl/program/fwl-master/fwl/fiber.cc 91]~Fiber(),FiberId:4
+2024-03-03 21:31:46[DEBUG][32401 thread0 2][/home/fwl/program/fwl-master/fwl/fiber.cc 91]~Fiber(),FiberId:2
+2024-03-03 21:31:46[DEBUG][32401 thread0 0][/home/fwl/program/fwl-master/fwl/fiber.cc 91]~Fiber(),FiberId:0
+2024-03-03 21:31:46[DEBUG][32400 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/fiber.cc 91]~Fiber(),FiberId:5
+2024-03-03 21:31:49[DEBUG][32402 thread1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 367]epoll_wait,ret = 0
+2024-03-03 21:31:49[DEBUG][32402 thread1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 359]exit
+2024-03-03 21:31:49[DEBUG][32402 thread1 3][/home/fwl/program/fwl-master/fwl/fiber.cc 91]~Fiber(),FiberId:3
+2024-03-03 21:31:49[DEBUG][32402 thread1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 91]~Fiber(),FiberId:0
+2024-03-03 21:31:49[DEBUG][32400 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 126]Scheduler::stop()
+2024-03-03 21:31:49[DEBUG][32400 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 91]~Fiber(),FiberId:0
+2024-03-03 21:31:49[DEBUG][32400 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 91]~Fiber(),FiberId:1

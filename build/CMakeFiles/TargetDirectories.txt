@@ -15,5 +15,6 @@
 /home/fwl/program/fwl-master/build/CMakeFiles/test_http_parser.dir
 /home/fwl/program/fwl-master/build/CMakeFiles/test_networkserver.dir
 /home/fwl/program/fwl-master/build/CMakeFiles/test_server.dir
+/home/fwl/program/fwl-master/build/CMakeFiles/test_uri.dir
 /home/fwl/program/fwl-master/build/CMakeFiles/edit_cache.dir
 /home/fwl/program/fwl-master/build/CMakeFiles/rebuild_cache.dir
