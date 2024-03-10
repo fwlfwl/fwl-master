@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/fwl/program/fwl-master/fwl/fiber.cc" "CMakeFiles/fwl.dir/fwl/fiber.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/fiber.cc.o.d"
   "/home/fwl/program/fwl-master/fwl/hook.cc" "CMakeFiles/fwl.dir/fwl/hook.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/hook.cc.o.d"
   "/home/fwl/program/fwl-master/fwl/http/http.cc" "CMakeFiles/fwl.dir/fwl/http/http.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/http/http.cc.o.d"
+  "/home/fwl/program/fwl-master/fwl/http/http_connection.cc" "CMakeFiles/fwl.dir/fwl/http/http_connection.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/http/http_connection.cc.o.d"
   "/home/fwl/program/fwl-master/fwl/http/http_parser.cc" "CMakeFiles/fwl.dir/fwl/http/http_parser.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/http/http_parser.cc.o.d"
   "/home/fwl/program/fwl-master/fwl/http/http_server.cc" "CMakeFiles/fwl.dir/fwl/http/http_server.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/http/http_server.cc.o.d"
   "/home/fwl/program/fwl-master/fwl/http/http_servlet.cc" "CMakeFiles/fwl.dir/fwl/http/http_servlet.cc.o" "gcc" "CMakeFiles/fwl.dir/fwl/http/http_servlet.cc.o.d"

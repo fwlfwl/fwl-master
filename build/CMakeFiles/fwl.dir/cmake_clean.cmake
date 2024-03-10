@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/fwl.dir/fwl/hook.cc.o.d"
   "CMakeFiles/fwl.dir/fwl/http/http.cc.o"
   "CMakeFiles/fwl.dir/fwl/http/http.cc.o.d"
+  "CMakeFiles/fwl.dir/fwl/http/http_connection.cc.o"
+  "CMakeFiles/fwl.dir/fwl/http/http_connection.cc.o.d"
   "CMakeFiles/fwl.dir/fwl/http/http_parser.cc.o"
   "CMakeFiles/fwl.dir/fwl/http/http_parser.cc.o.d"
   "CMakeFiles/fwl.dir/fwl/http/http_server.cc.o"

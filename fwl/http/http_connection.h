@@ -14,8 +14,15 @@
 namespace fwl{
 namespace http{
 
-enum Result{
-
+enum RESULT{
+	INVALID_INPUT = 1,	//invalid input 
+	INVALID_HOST,
+	CONNECT_ERROR,
+	INVALID_URI,
+	SEND_FAIL,
+	RECV_FAIL,
+	REMOTE_CLOSE,	//remote address close socket
+	SUCCEED
 };
 
 /**
@@ -25,10 +32,9 @@ class HttpResult{
 public:
 	typedef std::shared_ptr<HttpResult> ptr;
 	HttpResult(int result, HttpResponse::ptr res, const std::string & error):
-		m_result(result),
 		m_response(res),
+		m_result(result),
 		m_error(error){}
-private:
 	//response msg
 	HttpResponse::ptr m_response;
 	//recv server result 
@@ -44,11 +50,10 @@ private:
 class HttpConnection : public SockStream{
 public:
 	typedef std::shared_ptr<HttpConnection> ptr;
-
 	/**
 	 * @brief constructor
 	 * */
-	HttpConnection(Socket::ptr sock, bool owner)
+	HttpConnection(Socket::ptr sock, bool owner):
 		SockStream(sock, owner){}
 
 	/**
@@ -72,7 +77,7 @@ public:
 	 * @param[in] body: the body of request 
 	 * @param[in] timeout: timeout of http response
 	 * */
-	HttpResult::ptr doRequest(HttpMethod method, Uri::ptr uri, Uri::ptr uri, uint64_t timeout, const std::map<std::string, std::string> & headers, const std::string & body);
+	HttpResult::ptr doRequest(HttpMethod method, Uri::ptr uri, uint64_t timeout, const std::map<std::string, std::string> & headers, const std::string & body);
 
 	/**
 	 * @brief doGet 
@@ -81,7 +86,7 @@ public:
 	 * @param[in] body: the body of request 
 	 * @param[in] timeout: timeout of http response
 	 * */
-	HttpResult::ptr doGet(HttpMethod method, Uri::ptr uri, Uri::ptr uri, uint64_t timeout, const std::map<std::string, std::string> & headers ={}, const std::string & body = "");
+	HttpResult::ptr doGet(Uri::ptr uri, uint64_t timeout, const std::map<std::string, std::string> & headers ={}, const std::string & body = "");
 	
 	/**
 	 * @brief doGet 
@@ -90,7 +95,7 @@ public:
 	 * @param[in] body: the body of request 
 	 * @param[in] timeout: timeout of http response
 	 * */
-	HttpResult::ptr doGet(const std::string& uri, Uri::ptr uri,uint64_t timeout, const std::map<std::string, std::string> & headers = {}, const std::string & body = "");
+	HttpResult::ptr doGet(const std::string& uri, uint64_t timeout, const std::map<std::string, std::string> & headers = {}, const std::string & body = "");
 	
 	/**
 	 * @brief doPost
@@ -110,17 +115,8 @@ public:
 	 * */
 	HttpResult::ptr doPost(const std::string& uri, uint64_t timeout, const std::map<std::string, std::string> & headers, const std::string & body);
 
-	/**
-	 * @brief send request 
-	 * */
-	int sendReuqst(HttpRequest::ptr request);
-
-	/**
-	 * @brief recv response 
-	 * */
-	HttpResponse::ptr recvResponse();
-private:
+	/*doPut, doPost, ...*/
 };
 
 }
-
+}
