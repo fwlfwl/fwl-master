@@ -353,6 +353,19 @@ test_uri/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/build
 .PHONY : test_uri/fast
 
+#=============================================================================
+# Target rules for targets named test_session
+
+# Build rule for target.
+test_session: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_session
+.PHONY : test_session
+
+# fast build rule for target.
+test_session/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session.dir/build.make CMakeFiles/test_session.dir/build
+.PHONY : test_session/fast
+
 fwl/address.o: fwl/address.cc.o
 .PHONY : fwl/address.o
 
@@ -1241,6 +1254,30 @@ tests/test_server.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/tests/test_server.cc.s
 .PHONY : tests/test_server.cc.s
 
+tests/test_session.o: tests/test_session.cc.o
+.PHONY : tests/test_session.o
+
+# target to build an object file
+tests/test_session.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session.dir/build.make CMakeFiles/test_session.dir/tests/test_session.cc.o
+.PHONY : tests/test_session.cc.o
+
+tests/test_session.i: tests/test_session.cc.i
+.PHONY : tests/test_session.i
+
+# target to preprocess a source file
+tests/test_session.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session.dir/build.make CMakeFiles/test_session.dir/tests/test_session.cc.i
+.PHONY : tests/test_session.cc.i
+
+tests/test_session.s: tests/test_session.cc.s
+.PHONY : tests/test_session.s
+
+# target to generate assembly for a file
+tests/test_session.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session.dir/build.make CMakeFiles/test_session.dir/tests/test_session.cc.s
+.PHONY : tests/test_session.cc.s
+
 tests/test_socket.o: tests/test_socket.cc.o
 .PHONY : tests/test_socket.o
 
@@ -1382,6 +1419,7 @@ help:
 	@echo "... test_networkserver"
 	@echo "... test_scheduler"
 	@echo "... test_server"
+	@echo "... test_session"
 	@echo "... test_socket"
 	@echo "... test_thread"
 	@echo "... test_unit"
@@ -1498,6 +1536,9 @@ help:
 	@echo "... tests/test_server.o"
 	@echo "... tests/test_server.i"
 	@echo "... tests/test_server.s"
+	@echo "... tests/test_session.o"
+	@echo "... tests/test_session.i"
+	@echo "... tests/test_session.s"
 	@echo "... tests/test_socket.o"
 	@echo "... tests/test_socket.i"
 	@echo "... tests/test_socket.s"

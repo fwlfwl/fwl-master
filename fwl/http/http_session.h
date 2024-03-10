@@ -10,6 +10,7 @@
 
 #include <memory>
 #include "../sock_stream.h"
+#include "http_parser.h"
 #include "http.h"
 
 namespace fwl{
@@ -27,13 +28,27 @@ public:
 	
 	/**
 	 * @brief recvRequest
+	 * @details As server  
 	 * */	
 	HttpRequest::ptr recvRequest();
 
 	/**
-	 * @brief sendResponse
+	 * @brief sendResponse 
+	 * @details As server 
 	 * */
 	int sendResponse(HttpResponse::ptr res);
+
+	/**
+	 * @brief sendRequest 
+	 * @details As client 
+	 * */
+	int sendRequest(HttpRequest::ptr req);
+
+	/**
+	 * @brief recvResponse
+	 * @details As client 
+	 * */
+	HttpResponse::ptr recvResponse();
 };
 
 }

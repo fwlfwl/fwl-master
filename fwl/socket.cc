@@ -288,7 +288,7 @@ int Socket::sendTo(const iovec* buffers, size_t length, const Address::ptr to, i
 
 int Socket::recv(void* buffer, size_t length, int flags) {
     if(isConnected()) {
-        return ::recv(m_sock, buffer, length, flags);
+		return ::recv(m_sock, buffer, length, flags);
     }
     return -1;
 }

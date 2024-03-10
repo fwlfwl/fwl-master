@@ -85,7 +85,8 @@ static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name,
     if(!fwl::t_hook_enable) {
         return fun(fd, std::forward<Args>(args)...);
     }
-    fwl::FdCtx::ptr ctx = fwl::FdMgr::getInstance()->get(fd, true);
+	FWL_LOG_DEBUG(g_logger) << "use hook";
+	fwl::FdCtx::ptr ctx = fwl::FdMgr::getInstance()->get(fd, true);
 	if(!ctx) {
         return fun(fd, std::forward<Args>(args)...);
     }

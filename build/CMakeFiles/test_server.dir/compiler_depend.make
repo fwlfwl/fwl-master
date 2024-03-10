@@ -621,6 +621,10 @@ CMakeFiles/test_server.dir/tests/test_server.cc.o: ../tests/test_server.cc \
   /usr/include/x86_64-linux-gnu/bits/in.h \
   ../fwl/stream.h \
   ../fwl/bytearray.h \
+  ../fwl/http/http_parser.h \
+  ../fwl/http/ragel/http11_parser.h \
+  ../fwl/http/ragel/http11_common.h \
+  ../fwl/http/ragel/httpclient_parser.h \
   ../fwl/network_server.h \
   ../fwl/iomanager.h \
   ../fwl/scheduler.h \
@@ -721,6 +725,12 @@ CMakeFiles/test_server.dir/tests/test_server.cc.o: ../tests/test_server.cc \
 ../fwl/scheduler.h:
 
 ../fwl/iomanager.h:
+
+../fwl/http/ragel/http11_common.h:
+
+../fwl/http/ragel/http11_parser.h:
+
+../fwl/http/http_parser.h:
 
 ../fwl/bytearray.h:
 
@@ -1265,6 +1275,8 @@ CMakeFiles/test_server.dir/tests/test_server.cc.o: ../tests/test_server.cc \
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/c++/11/sstream:
+
+../fwl/http/ragel/httpclient_parser.h:
 
 /usr/local/include/boost/mpl/aux_/config/compiler.hpp:
 

@@ -62,4 +62,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_networkserver.dir/DependInfo.cmake"
   "CMakeFiles/test_server.dir/DependInfo.cmake"
   "CMakeFiles/test_uri.dir/DependInfo.cmake"
+  "CMakeFiles/test_session.dir/DependInfo.cmake"
   )
