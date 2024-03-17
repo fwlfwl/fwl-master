@@ -3797,7 +3797,7 @@ CMakeFiles/fwl.dir/fwl/http/http.cc.o: ../fwl/http/http.cc \
 CMakeFiles/fwl.dir/fwl/http/http_connection.cc.o: ../fwl/http/http_connection.cc \
   /usr/include/stdc-predef.h \
   ../fwl/http/http_connection.h \
-  /usr/include/c++/11/memory \
+  /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -3838,9 +3838,16 @@ CMakeFiles/fwl.dir/fwl/http/http_connection.cc.o: ../fwl/http/http_connection.cc
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/list.tcc \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
@@ -3858,10 +3865,8 @@ CMakeFiles/fwl.dir/fwl/http/http_connection.cc.o: ../fwl/http/http_connection.cc
   /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
@@ -4004,9 +4009,7 @@ CMakeFiles/fwl.dir/fwl/http/http_connection.cc.o: ../fwl/http/http_connection.cc
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/atomic_base.h \
@@ -4045,6 +4048,7 @@ CMakeFiles/fwl.dir/fwl/http/http_connection.cc.o: ../fwl/http/http_connection.cc
   /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/atomic \
   ../fwl/http/http.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
@@ -4410,11 +4414,55 @@ CMakeFiles/fwl.dir/fwl/http/http_connection.cc.o: ../fwl/http/http_connection.cc
   ../fwl/stream.h \
   ../fwl/bytearray.h \
   ../fwl/uri.h \
+  ../fwl/unit.h \
+  /usr/include/x86_64-linux-gnu/sys/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/x86_64-linux-gnu/bits/statx.h \
+  /usr/include/linux/stat.h \
+  /usr/include/linux/types.h \
+  /usr/include/x86_64-linux-gnu/asm/types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+  ../fwl/base_head.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/set \
+  /usr/include/c++/11/bits/stl_set.h \
+  /usr/include/c++/11/bits/stl_multiset.h \
+  /usr/include/c++/11/unordered_set \
+  /usr/include/c++/11/bits/unordered_set.h \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/include/malloc.h \
+  /usr/include/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
+  ../fwl/macro.h \
+  ../fwl/log.h \
+  ../fwl/unit.h \
+  ../fwl/singletion.h \
+  ../fwl/thread.h \
+  ../fwl/mutex.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+  /usr/include/assert.h \
   ../fwl/http/http_session.h \
   ../fwl/http/http_parser.h \
   ../fwl/http/ragel/http11_parser.h \
   ../fwl/http/ragel/http11_common.h \
-  ../fwl/http/ragel/httpclient_parser.h
+  ../fwl/http/ragel/httpclient_parser.h \
+  ../fwl/socket.h \
+  ../fwl/log.h
 
 CMakeFiles/fwl.dir/fwl/http/http_parser.cc.o: ../fwl/http/http_parser.cc \
   /usr/include/stdc-predef.h \

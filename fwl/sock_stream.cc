@@ -85,4 +85,13 @@ int SockStream::write(ByteArray::ptr ba, size_t len){
 	}
 	return rt;
 }
+/**
+ * @brief close sock
+ * */
+void SockStream::close(){
+	if(m_owner){
+		m_sock -> close();
+	}
+}
+
 }

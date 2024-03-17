@@ -84,8 +84,6 @@ fwl_add_executable(test_server "tests/test_server.cc" fwl "${LIBS}")
 
 fwl_add_executable(test_uri "tests/test_uri.cc" fwl "${LIBS}")
 
-fwl_add_executable(test_session "tests/test_session.cc" fwl "${LIBS}")
-
 fwl_add_executable(test_http_connection "tests/test_http_connection.cc" fwl "${LIBS}")
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

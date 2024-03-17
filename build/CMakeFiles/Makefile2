@@ -84,7 +84,6 @@ all: CMakeFiles/test_http_parser.dir/all
 all: CMakeFiles/test_networkserver.dir/all
 all: CMakeFiles/test_server.dir/all
 all: CMakeFiles/test_uri.dir/all
-all: CMakeFiles/test_session.dir/all
 all: CMakeFiles/test_http_connection.dir/all
 .PHONY : all
 
@@ -111,7 +110,6 @@ clean: CMakeFiles/test_http_parser.dir/clean
 clean: CMakeFiles/test_networkserver.dir/clean
 clean: CMakeFiles/test_server.dir/clean
 clean: CMakeFiles/test_uri.dir/clean
-clean: CMakeFiles/test_session.dir/clean
 clean: CMakeFiles/test_http_connection.dir/clean
 .PHONY : clean
 
@@ -200,7 +198,7 @@ CMakeFiles/test_config.dir/clean:
 CMakeFiles/test_yaml.dir/all: CMakeFiles/fwl.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_yaml.dir/build.make CMakeFiles/test_yaml.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_yaml.dir/build.make CMakeFiles/test_yaml.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=64,65 "Built target test_yaml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=62,63 "Built target test_yaml"
 .PHONY : CMakeFiles/test_yaml.dir/all
 
 # Build rule for subdir invocation for target.
@@ -226,7 +224,7 @@ CMakeFiles/test_yaml.dir/clean:
 CMakeFiles/test_thread.dir/all: CMakeFiles/fwl.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=58,59 "Built target test_thread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=56,57 "Built target test_thread"
 .PHONY : CMakeFiles/test_thread.dir/all
 
 # Build rule for subdir invocation for target.
@@ -252,7 +250,7 @@ CMakeFiles/test_thread.dir/clean:
 CMakeFiles/test_unit.dir/all: CMakeFiles/fwl.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit.dir/build.make CMakeFiles/test_unit.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit.dir/build.make CMakeFiles/test_unit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=60,61 "Built target test_unit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=58,59 "Built target test_unit"
 .PHONY : CMakeFiles/test_unit.dir/all
 
 # Build rule for subdir invocation for target.
@@ -434,7 +432,7 @@ CMakeFiles/test_address.dir/clean:
 CMakeFiles/test_socket.dir/all: CMakeFiles/fwl.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=56,57 "Built target test_socket"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=54,55 "Built target test_socket"
 .PHONY : CMakeFiles/test_socket.dir/all
 
 # Build rule for subdir invocation for target.
@@ -564,7 +562,7 @@ CMakeFiles/test_server.dir/clean:
 CMakeFiles/test_uri.dir/all: CMakeFiles/fwl.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=62,63 "Built target test_uri"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=60,61 "Built target test_uri"
 .PHONY : CMakeFiles/test_uri.dir/all
 
 # Build rule for subdir invocation for target.
@@ -582,32 +580,6 @@ test_uri: CMakeFiles/test_uri.dir/rule
 CMakeFiles/test_uri.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/clean
 .PHONY : CMakeFiles/test_uri.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_session.dir
-
-# All Build rule for target.
-CMakeFiles/test_session.dir/all: CMakeFiles/fwl.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session.dir/build.make CMakeFiles/test_session.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session.dir/build.make CMakeFiles/test_session.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=54,55 "Built target test_session"
-.PHONY : CMakeFiles/test_session.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_session.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fwl/program/fwl-master/build/CMakeFiles 29
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_session.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fwl/program/fwl-master/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_session.dir/rule
-
-# Convenience name for target.
-test_session: CMakeFiles/test_session.dir/rule
-.PHONY : test_session
-
-# clean rule for target.
-CMakeFiles/test_session.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session.dir/build.make CMakeFiles/test_session.dir/clean
-.PHONY : CMakeFiles/test_session.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/test_http_connection.dir

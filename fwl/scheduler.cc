@@ -56,10 +56,12 @@ Scheduler::Scheduler(size_t threadNum, bool usr_call, const std::string & name):
  * @brief 析构函数
  * */
 Scheduler::~Scheduler(){
-    if(stopping()){
+	Fiber::GetThis() -> SetState(TERM); 
+	if(stopping()){
         t_scheduler = nullptr;
         t_thread_fiber.reset();
     }
+
 }
 
 /**
@@ -109,7 +111,7 @@ void Scheduler::stop(){
      * @brief 未达到退出条件，且rootFiber非空，则继续执行rootFiber
      * */
     if(!stopping() && m_rootFiber){
-        m_rootFiber -> SwapIn();
+		m_rootFiber -> SwapIn();
     }
 
     std::vector<Thread::ptr> thr;
@@ -161,7 +163,8 @@ void Scheduler::run(){
 
     //FWL_LOG_INFO(g_logger) << &t_thread_fiber;
     if(fwl::getThreadId() != m_rootThread){
-        t_thread_fiber.reset(new Fiber);
+        //非调度协程，则生成新的主线程
+		t_thread_fiber.reset(new Fiber);
         t_scheduler_fiber = t_thread_fiber.get();
     }
     ASSERT(nullptr != t_thread_fiber);
@@ -181,7 +184,7 @@ void Scheduler::run(){
         //防止死锁,调用scheduler会加锁
         {
             MutexType::Lock lock(m_mutex);
-    
+  			//FWL_LOG_DEBUG(g_logger) << "Fiber num:" <<  m_fibers.size();  
             auto it = m_fibers.begin();
             while(it != m_fibers.end()){
                 //判断是否指定了线程执行

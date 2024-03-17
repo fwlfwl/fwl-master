@@ -37,18 +37,6 @@ public:
 	 * @details As server 
 	 * */
 	int sendResponse(HttpResponse::ptr res);
-
-	/**
-	 * @brief sendRequest 
-	 * @details As client 
-	 * */
-	int sendRequest(HttpRequest::ptr req);
-
-	/**
-	 * @brief recvResponse
-	 * @details As client 
-	 * */
-	HttpResponse::ptr recvResponse();
 };
 
 }

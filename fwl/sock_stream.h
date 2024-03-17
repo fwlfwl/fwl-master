@@ -36,6 +36,11 @@ public:
 	bool isConnected(){	return m_sock && m_sock -> isConnected();	}
 
 	/**
+	 * @breif
+	 * */
+	Socket::ptr getSocket() const {	return m_sock;	}	
+
+	/**
 	 * @brief read content(recv msg)
 	 * @param[in] buf: the content of buffer
 	 * @param[in] len: the length of buffer
@@ -62,6 +67,11 @@ public:
 	 * @param[in] len: the length of buffer
 	 * */
 	int write(ByteArray::ptr ba, size_t len) override;
+
+	/**
+	 * @brief close sock
+	 * */
+	void close();
 protected:
 	//connect sock
 	Socket::ptr m_sock;
