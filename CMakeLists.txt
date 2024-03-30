@@ -16,6 +16,9 @@ set(LIB_SRC
 	fwl/sock_stream.cc
 	fwl/stream.cc
 	fwl/network_server.cc
+	fwl/http/ws_session.cc
+	fwl/http/ws_servlet.cc
+	fwl/http/ws_server.cc
 	fwl/http/http_connection.cc
 	fwl/http/http_servlet.cc
 	fwl/http/http_server.cc
@@ -85,6 +88,8 @@ fwl_add_executable(test_server "tests/test_server.cc" fwl "${LIBS}")
 fwl_add_executable(test_uri "tests/test_uri.cc" fwl "${LIBS}")
 
 fwl_add_executable(test_http_connection "tests/test_http_connection.cc" fwl "${LIBS}")
+
+fwl_add_executable(test_wsServer "tests/test_wsServer.cc" fwl "${LIBS}")
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

@@ -677,7 +677,8 @@ CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o: ../tests/te
   ../fwl/timer.h \
   ../fwl/socket.h \
   ../fwl/http/http.h \
-  ../fwl/macro.h
+  ../fwl/macro.h \
+  ../fwl/unit.h
 
 
 /usr/include/ucontext.h:

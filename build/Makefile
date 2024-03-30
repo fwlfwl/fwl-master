@@ -366,6 +366,19 @@ test_http_connection/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/build
 .PHONY : test_http_connection/fast
 
+#=============================================================================
+# Target rules for targets named test_wsServer
+
+# Build rule for target.
+test_wsServer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_wsServer
+.PHONY : test_wsServer
+
+# fast build rule for target.
+test_wsServer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_wsServer.dir/build.make CMakeFiles/test_wsServer.dir/build
+.PHONY : test_wsServer/fast
+
 fwl/address.o: fwl/address.cc.o
 .PHONY : fwl/address.o
 
@@ -701,6 +714,78 @@ fwl/http/ragel/httpclient_parser.s: fwl/http/ragel/httpclient_parser.cc.s
 fwl/http/ragel/httpclient_parser.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/ragel/httpclient_parser.cc.s
 .PHONY : fwl/http/ragel/httpclient_parser.cc.s
+
+fwl/http/ws_server.o: fwl/http/ws_server.cc.o
+.PHONY : fwl/http/ws_server.o
+
+# target to build an object file
+fwl/http/ws_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/ws_server.cc.o
+.PHONY : fwl/http/ws_server.cc.o
+
+fwl/http/ws_server.i: fwl/http/ws_server.cc.i
+.PHONY : fwl/http/ws_server.i
+
+# target to preprocess a source file
+fwl/http/ws_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/ws_server.cc.i
+.PHONY : fwl/http/ws_server.cc.i
+
+fwl/http/ws_server.s: fwl/http/ws_server.cc.s
+.PHONY : fwl/http/ws_server.s
+
+# target to generate assembly for a file
+fwl/http/ws_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/ws_server.cc.s
+.PHONY : fwl/http/ws_server.cc.s
+
+fwl/http/ws_servlet.o: fwl/http/ws_servlet.cc.o
+.PHONY : fwl/http/ws_servlet.o
+
+# target to build an object file
+fwl/http/ws_servlet.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/ws_servlet.cc.o
+.PHONY : fwl/http/ws_servlet.cc.o
+
+fwl/http/ws_servlet.i: fwl/http/ws_servlet.cc.i
+.PHONY : fwl/http/ws_servlet.i
+
+# target to preprocess a source file
+fwl/http/ws_servlet.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/ws_servlet.cc.i
+.PHONY : fwl/http/ws_servlet.cc.i
+
+fwl/http/ws_servlet.s: fwl/http/ws_servlet.cc.s
+.PHONY : fwl/http/ws_servlet.s
+
+# target to generate assembly for a file
+fwl/http/ws_servlet.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/ws_servlet.cc.s
+.PHONY : fwl/http/ws_servlet.cc.s
+
+fwl/http/ws_session.o: fwl/http/ws_session.cc.o
+.PHONY : fwl/http/ws_session.o
+
+# target to build an object file
+fwl/http/ws_session.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/ws_session.cc.o
+.PHONY : fwl/http/ws_session.cc.o
+
+fwl/http/ws_session.i: fwl/http/ws_session.cc.i
+.PHONY : fwl/http/ws_session.i
+
+# target to preprocess a source file
+fwl/http/ws_session.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/ws_session.cc.i
+.PHONY : fwl/http/ws_session.cc.i
+
+fwl/http/ws_session.s: fwl/http/ws_session.cc.s
+.PHONY : fwl/http/ws_session.s
+
+# target to generate assembly for a file
+fwl/http/ws_session.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/http/ws_session.cc.s
+.PHONY : fwl/http/ws_session.cc.s
 
 fwl/iomanager.o: fwl/iomanager.cc.o
 .PHONY : fwl/iomanager.o
@@ -1398,6 +1483,30 @@ tests/test_uri.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_uri.dir/build.make CMakeFiles/test_uri.dir/tests/test_uri.cc.s
 .PHONY : tests/test_uri.cc.s
 
+tests/test_wsServer.o: tests/test_wsServer.cc.o
+.PHONY : tests/test_wsServer.o
+
+# target to build an object file
+tests/test_wsServer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_wsServer.dir/build.make CMakeFiles/test_wsServer.dir/tests/test_wsServer.cc.o
+.PHONY : tests/test_wsServer.cc.o
+
+tests/test_wsServer.i: tests/test_wsServer.cc.i
+.PHONY : tests/test_wsServer.i
+
+# target to preprocess a source file
+tests/test_wsServer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_wsServer.dir/build.make CMakeFiles/test_wsServer.dir/tests/test_wsServer.cc.i
+.PHONY : tests/test_wsServer.cc.i
+
+tests/test_wsServer.s: tests/test_wsServer.cc.s
+.PHONY : tests/test_wsServer.s
+
+# target to generate assembly for a file
+tests/test_wsServer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_wsServer.dir/build.make CMakeFiles/test_wsServer.dir/tests/test_wsServer.cc.s
+.PHONY : tests/test_wsServer.cc.s
+
 tests/test_yaml.o: tests/test_yaml.cc.o
 .PHONY : tests/test_yaml.o
 
@@ -1448,6 +1557,7 @@ help:
 	@echo "... test_thread"
 	@echo "... test_unit"
 	@echo "... test_uri"
+	@echo "... test_wsServer"
 	@echo "... test_yaml"
 	@echo "... fwl/address.o"
 	@echo "... fwl/address.i"
@@ -1491,6 +1601,15 @@ help:
 	@echo "... fwl/http/ragel/httpclient_parser.o"
 	@echo "... fwl/http/ragel/httpclient_parser.i"
 	@echo "... fwl/http/ragel/httpclient_parser.s"
+	@echo "... fwl/http/ws_server.o"
+	@echo "... fwl/http/ws_server.i"
+	@echo "... fwl/http/ws_server.s"
+	@echo "... fwl/http/ws_servlet.o"
+	@echo "... fwl/http/ws_servlet.i"
+	@echo "... fwl/http/ws_servlet.s"
+	@echo "... fwl/http/ws_session.o"
+	@echo "... fwl/http/ws_session.i"
+	@echo "... fwl/http/ws_session.s"
 	@echo "... fwl/iomanager.o"
 	@echo "... fwl/iomanager.i"
 	@echo "... fwl/iomanager.s"
@@ -1578,6 +1697,9 @@ help:
 	@echo "... tests/test_uri.o"
 	@echo "... tests/test_uri.i"
 	@echo "... tests/test_uri.s"
+	@echo "... tests/test_wsServer.o"
+	@echo "... tests/test_wsServer.i"
+	@echo "... tests/test_wsServer.s"
 	@echo "... tests/test_yaml.o"
 	@echo "... tests/test_yaml.i"
 	@echo "... tests/test_yaml.s"

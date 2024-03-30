@@ -215,6 +215,7 @@ HttpResponse::ptr HttpConnection::recvResponse(){
 				}
 				offset += nread;
 				data[offset] = '\0';
+				//FWL_LOG_DEBUG(g_logger) << data << std::endl << offset;
 				size_t nparse = parser -> execute(data, offset, true);
 				offset -= nparse;
 				if(parser -> hasError()){
@@ -236,12 +237,13 @@ HttpResponse::ptr HttpConnection::recvResponse(){
 				body.append(data, offset);
 				int left = chunkLen - offset;
 			   	while(0 < left){
-					int nread = read(data, response_max_size);
+					int nread = read(data, (int)response_max_size > left ? left : response_max_size);
 					do{
 						//can not read complete msg
 						RECV_CHECK(nread);
 					}while(0);
 					int writeLen = nread > left ? left : nread;
+					//FWL_LOG_DEBUG(g_logger) << strlen(data) << "," << writeLen;
 					body.append(data, writeLen);
 					//reset offset
 					memmove(data, data + writeLen, response_max_size - writeLen);
@@ -264,7 +266,7 @@ HttpResponse::ptr HttpConnection::recvResponse(){
 			memset(data, '\0', response_max_size);
 			int needMsg = contentLen - offset;
 			while(0 < needMsg){
-				int nread = read(data, response_max_size);	//read more msg
+				int nread = read(data, (uint64_t)needMsg < response_max_size ? needMsg : response_max_size);	//read more msg
 				do{
 					RECV_CHECK(nread);
 #undef RECV_CHECK

@@ -195,4 +195,18 @@ uint64_t GetTimeUs(){
     return tm.tv_sec * 1000 * 1000ul + tm.tv_usec;
 }
 
+/**
+ * @brief base64 encode
+ * */
+std::string base64En(const char * in){
+	return "";
+}
+
+
+/**
+ * @brief SHA1
+ * */
+std::string sha1(const char * in){
+	return "";
+}
 }

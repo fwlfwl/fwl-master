@@ -5,7 +5,9 @@
 #include "../fwl/socket.h"
 #include "../fwl/http/http.h"
 #include "../fwl/macro.h"
+#include "../fwl/unit.h"
 
+//#include <b64/encode.h>
 #include <vector>
 #include <memory>
 
@@ -57,6 +59,13 @@ void test_httpConnectionPool(const char * host, const char * uri, const char * m
 			res = pool -> doPost(uri, 5000, headers, "{test}");
 		}
 		if(res && res -> m_response){
+			std::ofstream ofs;
+			std::string file = std::string("response" + std::to_string(i) + ".html");
+			bool rt = fwl::FSUnit::OpenForWrite(ofs, file);
+			if(rt){
+				ofs << (res -> m_response -> getBody());
+				ofs.close();
+			}
 			FWL_LOG_INFO(g_logger) << "Response msg:" << (res -> m_error);
 		}else{
 			FWL_LOG_ERROR(g_logger) << "Response msg recv error, " << (res -> m_error);

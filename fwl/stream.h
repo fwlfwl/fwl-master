@@ -17,6 +17,7 @@ namespace fwl{
  * */	
 class Stream{
 public:
+	typedef std::shared_ptr<Stream> ptr;
 	/**
 	 * @brief destructor function
 	 * */

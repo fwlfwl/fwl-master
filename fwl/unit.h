@@ -136,5 +136,16 @@ uint64_t GetTimeMs();
  * */
 uint64_t GetTimeUs();
 
+/**
+ * @brief base64 encode
+ * */
+std::string base64En(const char * in);
+
+
+/**
+ * @brief SHA1
+ * */
+std::string sha1(const char * in);
+
 }
 #endif // !_H_UNIT_

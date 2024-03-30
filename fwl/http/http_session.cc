@@ -56,7 +56,7 @@ HttpRequest::ptr HttpSession::recvRequest(){
 		memset(data, '\0', bufferSize);
 		int needMsg = contentLen - offset;
 		while(0 < needMsg){
-			int nread = read(data, bufferSize);	//read more msg
+			int nread = read(data, (uint64_t)needMsg > bufferSize ? bufferSize : needMsg);	//read more msg
 			if(0 >= nread){
 				FWL_LOG_ERROR(g_logger) << "Can not read enough msg,body content is incomplete!";
 				return nullptr;
