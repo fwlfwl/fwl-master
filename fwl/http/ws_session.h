@@ -78,7 +78,7 @@ struct WsFrameHead{
 			<< ",mask:"
 			<< mask 
 			<<",payload_len:"
-			<< (unsigned char )payload_len	
+			<< (int)payload_len	
 			<<"]";
 		return ss.str();
 	}
