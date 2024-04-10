@@ -4,7 +4,7 @@
 #include "../endian.h"
 #include "../unit.h"
 
-#include <openssl/sha.h>
+#define BASE_SIZE 1024
 
 static fwl::Logger::ptr g_logger = FWL_LOG_NAME("system");
 static fwl::ConfigVar<uint32_t>::ptr g_websocket_message_max_size = fwl::Config::lookUp("websocket_message_max_size", "websocket message max size", (uint32_t)(1024 * 1024 * 32));
@@ -71,14 +71,16 @@ WsSession::Result WsSession::handleshake(){
 			return std::make_shared<SharkResult>(nullptr, (int)SHARK_STATE::KEY_ERROR);
 		}
 		key += "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
-		std::string out_key = fwl::sha1(&key[0]);
-		out_key = fwl::base64En(&out_key[0]);
+		unsigned char out[20];
+		fwl::sha1(key, out);
+		std::string out_key = fwl::base64En(out, 20);
 		
 		//create response  
 		HttpResponse::ptr res(new HttpResponse(0x11, false));
 		res -> setHeader("Connection", "Upgrade");
 		res -> setHeader("Upgrade", "websocket");
 		res -> setHeader("Sec-WebSocket-Accept",out_key);
+		res -> setWebsocket(true);
 		//Version is no Supported
 		if(0 != strcasecmp(&(req -> getHeader("Sec-WebSocket-Version"))[0], "13")){
 			res -> setStatus(HttpStatus::BAD_REQUEST);
@@ -89,8 +91,10 @@ WsSession::Result WsSession::handleshake(){
 			return std::make_shared<SharkResult>(nullptr, (int)PROTOCOL_ERROR);
 		}	
 		//success response 
+		
 		res -> setStatus(HttpStatus::SWITCHING_PROTOCOLS);
 		res -> setReason("Switching Protocols");
+		
 		sendResponse(res);
 	}while(0);
 	return std::make_shared<SharkResult>(req, (int)SHARK_STATE::NORMAL);
@@ -115,6 +119,7 @@ WsSession::Result WsSession::handleshake(){
 					if(errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR){	\
 						continue;	\
 					}	\
+					stream -> close();	\
 					return false;	\
 				}	\
 				left_v -=writen;	\
@@ -149,15 +154,19 @@ bool wsSendMessage(SockStream * stream, uint8_t opcode, bool fin, bool mask, con
 	}
 	
 	//write websocket frame head
-	WRITE(&head, sizeof(head));
+	ByteArray::ptr ba(new ByteArray(BASE_SIZE));
+	ba -> write((void *)&head, sizeof(head));	
+	//WRITE(&head, sizeof(head));
 	
 	//write extended payload length	
 	if(head.payload_len == 126){
-		uint16_t len = byteswapOnLittleEndian((uint16_t)payloadLen); 
-		WRITE((void*)&len, sizeof(len))
+		uint16_t len = byteswapOnLittleEndian((uint16_t)payloadLen);
+		ba -> write((void *)&len, sizeof(len));	
+		//WRITE((void*)&len, sizeof(len))
 	}else if(head.payload_len == 127){
 		uint64_t len = byteswapOnLittleEndian(payloadLen);
-		WRITE((void*)&len, sizeof(len))
+		ba -> write((void *)&len, sizeof(len));	
+		//WRITE((void*)&len, sizeof(len))
 	}
 
 	//write head mask
@@ -165,14 +174,20 @@ bool wsSendMessage(SockStream * stream, uint8_t opcode, bool fin, bool mask, con
 	if(head.mask){
 		uint32_t randValue = rand();
 		memcpy(mask_v, (void*)&randValue, 4);
-		WRITE((void *)&mask_v[0], 4)	
+		ba -> write((void *)mask_v, 4);
+		//WRITE((void *)&mask_v[0], 4)		
 	}
 	std::string msg = msg_in;
 	std::string extend_data = extend_data_in;
 	MASKING(head.mask, mask_v, extend_data, 0, extend_data.size());
+	ba -> write((void *)&extend_data[0], extend_data.size());
 	MASKING(head.mask, mask_v, msg, extend_data.size(), payloadLen);
-	WRITE((void *)&extend_data[0], sizeof(extend_data))
-	WRITE((void *)&msg[0], sizeof(msg))
+	ba -> write((void *)&msg[0], msg.size());
+	//WRITE((void *)&extend_data[0], extend_data.size())
+	//WRITE((void *)&msg[0], msg.size())
+	ba ->setPosition(0);
+	//FWL_LOG_DEBUG(g_logger) << "Msg length:" << ba -> getSize() << ",send msg:" << (ba -> toString());
+	WRITE(ba, ba -> getSize())
 	return true;
 }
 #undef WRITE
@@ -182,8 +197,10 @@ bool wsSendMessage(SockStream * stream, uint8_t opcode, bool fin, bool mask, con
 			if(errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR){	\
 				continue;	\
 			}	\
+			stream -> close();	\
 			return nullptr;	\
 		}else if(0 == len){	\
+			stream -> close();	\
 			return nullptr;	\
 		}	
 /**
@@ -200,15 +217,15 @@ WsFrameMessage::ptr wsRecvMessage(SockStream * stream){
 		int readn = 0, readHeader = 0;
 		int headSize = sizeof(WsFrameHead);
 		//recv WsFrameHead 
-		char headC[headSize];
+		unsigned char headC[headSize];
 		do{
 			readn = stream -> read(&headC[readHeader], headSize - readHeader);
 			RECV_CHECK(readn);
 			readHeader += readn;
 		}while(readHeader < headSize);
 		readSum += headSize;
-		memcpy(&head, headC, headSize);
-
+		memcpy((void * )&head, (void *)headC, sizeof(head));
+		FWL_LOG_DEBUG(g_logger) << (head.toString()) << std::hex << head.opcode;
 		//head check
 		//rsv1,rsv2,rsv3 must be 0 
 		if(head.rsv1 || head.rsv2 || head.rsv3){
@@ -224,9 +241,11 @@ WsFrameMessage::ptr wsRecvMessage(SockStream * stream){
 		}else if(head.opcode == PONG){
 		}else if(head.opcode == TEXT ||
 				head.opcode == BINARY ||
-				head.opcode == CONTINUE){
-			if(!head.opcode){
+				head.opcode == CONTINUE ||
+				head.opcode == CLOSE){
+			if(CONTINUE != head.opcode){
 				opcode = head.opcode;
+				//FWL_LOG_DEBUG(g_logger) << opcode;
 			}
 			//Get payload length(if has extended length)
 			uint64_t payloadLen;
@@ -253,7 +272,7 @@ WsFrameMessage::ptr wsRecvMessage(SockStream * stream){
 				readSum += sizeof(mask);
 			}
 			//计算已有的数据大小
-			uint64_t cur_len = sizeof(data.size());
+			uint64_t cur_len = data.size();
 			//payloadLen > g_websocket_message_max_size ??
 			if(g_websocket_message_max_size -> getValue() < readSum + payloadLen + cur_len){
 				FWL_LOG_WARN(g_logger) << "Websocket length > "

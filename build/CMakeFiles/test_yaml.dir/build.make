@@ -96,6 +96,8 @@ test_yaml_EXTERNAL_OBJECTS =
 ../bin/test_yaml: CMakeFiles/test_yaml.dir/tests/test_yaml.cc.o
 ../bin/test_yaml: CMakeFiles/test_yaml.dir/build.make
 ../bin/test_yaml: ../lib/libfwl.so
+../bin/test_yaml: /usr/lib/x86_64-linux-gnu/libssl.so
+../bin/test_yaml: /usr/lib/x86_64-linux-gnu/libcrypto.so
 ../bin/test_yaml: CMakeFiles/test_yaml.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/test_yaml"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_yaml.dir/link.txt --verbose=$(VERBOSE)

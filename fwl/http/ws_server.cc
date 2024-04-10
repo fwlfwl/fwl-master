@@ -1,6 +1,8 @@
 #include "ws_server.h"
 #include "../log.h"
 
+static fwl::Logger::ptr g_logger = FWL_LOG_NAME("system");
+
 namespace fwl{
 namespace http{
 	/**
@@ -8,14 +10,13 @@ namespace http{
 	 * */
 	void WsServer::handlerClient(Socket::ptr client){
 		WsSession::ptr session(new WsSession(client, true));		
-		do{
-			auto result = session -> handleshake();	
-			if(result -> m_state != (int)WsSession::SHARK_STATE::NORMAL || result -> m_request){
-				break;
-			}
-			auto req = result -> m_request;
-			m_matcher -> handle(req, session);
-		}while(!client -> close());
+		auto result = session -> handleshake();	
+		if(result -> m_state != (int)WsSession::SHARK_STATE::NORMAL || !result -> m_request){
+			return;
+		}
+		auto req = result -> m_request;
+		m_matcher -> handle(req, session);
+		FWL_LOG_DEBUG(g_logger) << "run here";
 	}
 }
 }

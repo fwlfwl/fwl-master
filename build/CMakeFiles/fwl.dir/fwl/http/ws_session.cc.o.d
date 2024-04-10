@@ -631,8 +631,4 @@ CMakeFiles/fwl.dir/fwl/http/ws_session.cc.o: \
  /usr/local/include/yaml-cpp/node/emit.h \
  /home/fwl/program/fwl-master/fwl/http/../log.h \
  /home/fwl/program/fwl-master/fwl/http/../endian.h \
- /usr/include/byteswap.h /home/fwl/program/fwl-master/fwl/http/../unit.h \
- /usr/include/openssl/sha.h /usr/include/openssl/macros.h \
- /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
- /usr/include/x86_64-linux-gnu/openssl/configuration.h \
- /usr/include/openssl/opensslv.h /usr/include/openssl/e_os2.h
+ /usr/include/byteswap.h /home/fwl/program/fwl-master/fwl/http/../unit.h

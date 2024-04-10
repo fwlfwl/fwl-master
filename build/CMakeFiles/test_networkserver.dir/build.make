@@ -96,6 +96,8 @@ test_networkserver_EXTERNAL_OBJECTS =
 ../bin/test_networkserver: CMakeFiles/test_networkserver.dir/tests/test_networkserver.cc.o
 ../bin/test_networkserver: CMakeFiles/test_networkserver.dir/build.make
 ../bin/test_networkserver: ../lib/libfwl.so
+../bin/test_networkserver: /usr/lib/x86_64-linux-gnu/libssl.so
+../bin/test_networkserver: /usr/lib/x86_64-linux-gnu/libcrypto.so
 ../bin/test_networkserver: CMakeFiles/test_networkserver.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fwl/program/fwl-master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/test_networkserver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_networkserver.dir/link.txt --verbose=$(VERBOSE)

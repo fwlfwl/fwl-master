@@ -79,8 +79,9 @@ int SockStream::write(ByteArray::ptr ba, size_t len){
 	}
 	std::vector<iovec> iovs;
 	ba -> getReadBuffers(iovs, len);
-	int rt = m_sock -> send(&iovs[0], len);
+	int rt = m_sock -> send(&iovs[0], iovs.size());
 	if(rt > 0){
+		//FWL_LOG_DEBUG(g_logger) << "ba size:" << len << ",send len:" << rt;
 		ba -> setPosition(ba -> getPosition() + rt); 	
 	}
 	return rt;

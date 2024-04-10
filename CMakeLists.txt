@@ -4,7 +4,7 @@ project(fwl)
 include(cmake/unit.cmake)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -ggdb -std=c++20 -Wall -Wno-deprecated -Werror -Wno-unused-function")
+set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -ggdb -std=c++20 -lcrypto -Wall -Wno-deprecated -Werror -Wno-unused-function")
 
 include_directories(.)
 
@@ -47,10 +47,13 @@ set(LIB_SRC
 
 add_library(fwl SHARED ${LIB_SRC})
 
+find_package(OpenSSL REQUIRED)
+
 set (LIBS 
 	fwl 
 	yaml-cpp
 	pthread
+	${OPENSSL_LIBRARIES}
 )
 
 fwl_add_executable(test_log "tests/test_log.cc" fwl "${LIBS}")

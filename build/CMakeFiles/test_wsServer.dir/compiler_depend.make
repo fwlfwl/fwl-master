@@ -678,7 +678,8 @@ CMakeFiles/test_wsServer.dir/tests/test_wsServer.cc.o: ../tests/test_wsServer.cc
   ../fwl/iomanager.h \
   ../fwl/log.h \
   ../fwl/address.h \
-  ../fwl/iomanager.h
+  ../fwl/iomanager.h \
+  ../fwl/unit.h
 
 
 /usr/include/ucontext.h:

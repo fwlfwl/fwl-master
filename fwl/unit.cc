@@ -1,11 +1,16 @@
 #include"unit.h"
-#include<fstream>
 #include<stdlib.h>
 #include<execinfo.h>
 #include<sys/time.h>
 #include"fiber.h"
 #include"thread.h"
 #include"log.h"
+
+#include<fstream>
+#include <openssl/sha.h>
+#include <openssl/bio.h>
+#include <openssl/pem.h>
+#include <openssl/crypto.h>
 
 namespace fwl{
 
@@ -198,15 +203,29 @@ uint64_t GetTimeUs(){
 /**
  * @brief base64 encode
  * */
-std::string base64En(const char * in){
-	return "";
+std::string base64En(const unsigned char * in, size_t len){
+	BIO *bio = NULL, *b64 = NULL;
+	BUF_MEM * bptr;
+	b64 = BIO_new(BIO_f_base64());
+	bio = BIO_new(BIO_s_mem());
+	b64 = BIO_push(b64, bio);
+	BIO_write(b64, in, len);
+	BIO_flush(b64);
+	BIO_get_mem_ptr(b64, &bptr);
+	
+	std::string out;
+	out.resize(bptr -> length);
+	memcpy(&out[0], bptr -> data, bptr -> length);
+	BIO_free_all(b64);
+	return out;
 }
 
 
 /**
  * @brief SHA1
  * */
-std::string sha1(const char * in){
-	return "";
+bool sha1(const std::string & in, unsigned char * out){
+	SHA1((const unsigned char *)&in[0], in.size(), out);
+	return true;
 }
 }

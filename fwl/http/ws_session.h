@@ -55,13 +55,33 @@ enum OPCODE{
  * @brief websocket data frame part
  * */
 struct WsFrameHead{
-	bool fin:1;
-	bool rsv1:1;
-	bool rsv2:1;
-	bool rsv3:1;
 	uint8_t opcode:4;
-	bool mask:1;
+	bool rsv3:1;
+	bool rsv2:1;
+	bool rsv1:1;
+	bool fin:1;
 	uint8_t payload_len:7;
+	bool mask:1;
+
+	std::string toString(){
+		std::stringstream ss;
+		ss << "[fin:"
+			<< fin 
+			<<",resv1:"
+			<< rsv1 
+			<<",resv2:"
+			<< rsv2
+			<<",rsv3:"
+			<< rsv3 
+			<<",opcode:"
+			<<(unsigned char)opcode 
+			<< ",mask:"
+			<< mask 
+			<<",payload_len:"
+			<< (unsigned char )payload_len	
+			<<"]";
+		return ss.str();
+	}
 };
 
 /**

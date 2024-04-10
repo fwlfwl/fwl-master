@@ -139,13 +139,13 @@ uint64_t GetTimeUs();
 /**
  * @brief base64 encode
  * */
-std::string base64En(const char * in);
+std::string base64En(const unsigned char * in, size_t len);
 
 
 /**
  * @brief SHA1
  * */
-std::string sha1(const char * in);
+bool sha1(const std::string & in, unsigned char * out);
 
 }
 #endif // !_H_UNIT_
