@@ -102,6 +102,7 @@ bool NetworkServer::accept(Socket::ptr sock){
 				<< ",strerror"	
 				<< strerror(errno);	
 		}else{
+			setnonblocking(client -> getSocket());	
 			client -> setRecvTimeout(m_timeout);
 			m_work -> scheduler(std::bind(&NetworkServer::handlerClient, shared_from_this(), client));
 		}		

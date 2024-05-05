@@ -214,8 +214,9 @@ std::string base64En(const unsigned char * in, size_t len){
 	BIO_get_mem_ptr(b64, &bptr);
 	
 	std::string out;
-	out.resize(bptr -> length);
-	memcpy(&out[0], bptr -> data, bptr -> length);
+	out.resize(bptr -> length - 1);
+	//delete last '\0'
+	memcpy(&out[0], bptr -> data, bptr -> length - 1);
 	BIO_free_all(b64);
 	return out;
 }

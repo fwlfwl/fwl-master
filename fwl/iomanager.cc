@@ -380,7 +380,8 @@ void IOManager::idle(){
         //处理epoll事件
         for(int i =  0; i < ret; ++i){
             epoll_event& event = events[i];
-            //处理ticket信号
+            //FWL_LOG_DEBUG(g_logger) << "Run fd:" << event.data.fd << ",pipefd:" << m_tickPipefd[0];
+			//处理ticket信号
             if(event.data.fd == m_tickPipefd[0]){
                 char msg[1024];
                 while(read(m_tickPipefd[0],&msg,sizeof(msg)) >  0){

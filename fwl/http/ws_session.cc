@@ -80,6 +80,7 @@ WsSession::Result WsSession::handleshake(){
 		res -> setHeader("Connection", "Upgrade");
 		res -> setHeader("Upgrade", "websocket");
 		res -> setHeader("Sec-WebSocket-Accept",out_key);
+		//FWL_LOG_DEBUG(g_logger) << out_key;
 		res -> setWebsocket(true);
 		//Version is no Supported
 		if(0 != strcasecmp(&(req -> getHeader("Sec-WebSocket-Version"))[0], "13")){
