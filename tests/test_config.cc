@@ -4,21 +4,21 @@
 
 #if 0
 
-fwl::ConfigVar<int>::ptr g_int_value_config = fwl::Config::lookUp("system.port","system port",8080);
+fwl::ConfigVar<int>::ptr g_int_value_config = fwl::Config::lookUp("system.port",8080, "system port");
 
-fwl::ConfigVar<float>::ptr g_float_value_config = fwl::Config::lookUp("system.port","system port_float",(float)8000);
+fwl::ConfigVar<float>::ptr g_float_value_config = fwl::Config::lookUp("system.port", (float)8080, "system port_float");
 
-fwl::ConfigVar<std::vector<int> >::ptr g_vector_value_config = fwl::Config::lookUp("system.vec_int","system vec_int",std::vector<int>({11,22}));
+fwl::ConfigVar<std::vector<int> >::ptr g_vector_value_config = fwl::Config::lookUp("system.vec_int", std::vector<int>({11,22}), "system vec_int");
 
-fwl::ConfigVar<std::list<int> >::ptr g_list_value_config = fwl::Config::lookUp("system.list_int","system list_int",std::list<int>({23,34,56}));
+fwl::ConfigVar<std::list<int> >::ptr g_list_value_config = fwl::Config::lookUp("system.list_int",std::list<int>({23,34,56}), "system list_int");
 
-fwl::ConfigVar<std::set<int> >::ptr g_set_value_config = fwl::Config::lookUp("system.set_int","system list",std::set<int>({100,200,700,500}));
+fwl::ConfigVar<std::set<int> >::ptr g_set_value_config = fwl::Config::lookUp("system.set_int", std::set<int>({100,200,700,500}), "system list");
 
-fwl::ConfigVar<std::map<std::string,std::vector<int>>>::ptr g_map_value_config = fwl::Config::lookUp("system.map_vec","system map",std::map<std::string,std::vector<int>>({ {"key1",{1,23}}, {"key2",{90,80}} }));
+fwl::ConfigVar<std::map<std::string,std::vector<int>>>::ptr g_map_value_config = fwl::Config::lookUp("system.map_vec", std::map<std::string,std::vector<int>>({ {"key1",{1,23}}, {"key2",{90,80}} }), "system map");
 
-fwl::ConfigVar<std::unordered_set<int> >::ptr g_unorderedset_value_config = fwl::Config::lookUp("system.unorderedSet_int","system unorderedSet",std::unordered_set<int>{33,232});
+fwl::ConfigVar<std::unordered_set<int> >::ptr g_unorderedset_value_config = fwl::Config::lookUp("system.unorderedSet_int", std::unordered_set<int>{33,232}, "system unorderedSet");
 
-fwl::ConfigVar<std::unordered_map<std::string,float> >::ptr g_unorderedmap_value_config = fwl::Config::lookUp("system.unorderedMap_float","system unorderedMap",std::unordered_map<std::string,float>({{"key_1",128.8}, {"key_2",2.7}}));
+fwl::ConfigVar<std::unordered_map<std::string,float> >::ptr g_unorderedmap_value_config = fwl::Config::lookUp("system.unorderedMap_float", std::unordered_map<std::string,float>({{"key_1",128.8}, {"key_2",2.7}}), "system unorderMap");
 
 #define XX(g_val,name,prefix) \
     {   \
@@ -144,8 +144,8 @@ public:
 };
 }
 
-fwl::ConfigVar<Person> ::ptr g_person_value_config = fwl::Config::lookUp("class.person","class person",Person());
-fwl::ConfigVar<std::map<std::string,std::vector<Person>>>::ptr g_mapVecPer_value_config = fwl:: Config::lookUp("class.person_map","class person map",std::map<std::string,std::vector<Person>>());
+fwl::ConfigVar<Person> ::ptr g_person_value_config = fwl::Config::lookUp("class.person", Person(), "class person");
+fwl::ConfigVar<std::map<std::string,std::vector<Person>>>::ptr g_mapVecPer_value_config = fwl:: Config::lookUp("class.person_map", std::map<std::string,std::vector<Person>>(), "class person map");
 
 #define XXMVP(g_val,name,prefix)  \
     {   \

@@ -10,14 +10,15 @@ void test_fiber(){
     FWL_LOG_INFO(g_logger) << "test_fiber(),count:"<< count;
     sleep(1);
     if(--count >  0){
-        fwl::Scheduler::GetThis() -> scheduler(&test_fiber);//,fwl::getThreadId());
+        //FWL_LOG_DEBUG(g_logger) << "run here";
+		fwl::Scheduler::GetThis() -> scheduler(&test_fiber);//,fwl::getThreadId());
     }
 }
 
 int main()
 {
-    FWL_LOG_INFO(g_logger) << EPOLLIN << " " << EPOLLOUT;
-    fwl::Scheduler sc(3,false,"main");
+    //FWL_LOG_INFO(g_logger) << EPOLLIN << " " << EPOLLOUT;
+    fwl::Scheduler sc(3,true,"main");
     sc.start();
     sc.scheduler(&test_fiber);
     sc.stop();

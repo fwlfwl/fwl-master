@@ -75,6 +75,7 @@ void Scheduler::start(){
     }
     m_threads.resize(m_threadNum,nullptr);
     //生成线程池
+//	FWL_LOG_DEBUG(g_logger) << m_threadNum;
 	for(size_t i =  0; i < m_threadNum; ++i){\
         m_threads[i].reset(new Thread(std::bind(&Scheduler::run,this),"thread" + std::to_string(i)));
     }
@@ -110,6 +111,7 @@ void Scheduler::stop(){
     /**
      * @brief 未达到退出条件，且rootFiber非空，则继续执行rootFiber
      * */
+	FWL_LOG_DEBUG(g_logger) << "stopping():"<< stopping() << ",m_rootFiber is NULL:" << (nullptr == m_rootFiber);
     if(!stopping() && m_rootFiber){
 		m_rootFiber -> SwapIn();
     }

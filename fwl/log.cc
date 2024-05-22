@@ -694,7 +694,7 @@ public:
 };
 
 //日志文件
-ConfigVar<std::set<LogDefine> >::ptr g_log_define = Config::lookUp<std::set<LogDefine>>("logs","logs config",std::set<LogDefine>());
+ConfigVar<std::set<LogDefine> >::ptr g_log_define = Config::lookUp<std::set<LogDefine>>("logs",std::set<LogDefine>(), "logs config");
 
 struct LogInit{
     LogInit(){

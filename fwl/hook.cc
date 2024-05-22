@@ -13,7 +13,7 @@ static fwl::Logger::ptr g_logger = FWL_LOG_NAME("system");
 namespace fwl {
 
 static fwl::ConfigVar<int>::ptr g_tcp_connect_timeout =
-    fwl::Config::lookUp("tcp.connect.timeout", "tcp connect timeout", 5000);
+    fwl::Config::lookUp("tcp.connect.timeout", 5000,"tcp connect timeout");
 
 static thread_local bool t_hook_enable = false;
 

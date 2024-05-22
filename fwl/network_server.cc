@@ -6,7 +6,7 @@
 #include <string.h>
 
 static fwl::Logger::ptr g_logger = FWL_LOG_NAME("system");
-static fwl::ConfigVar<uint64_t>::ptr g_recv_timeout =  fwl::Config::lookUp("g_recv_timeout", "getRecvTimeout", (uint64_t)60000);
+static fwl::ConfigVar<uint64_t>::ptr g_recv_timeout =  fwl::Config::lookUp("g_recv_timeout", (uint64_t)60000, "getRecvTimeout");
 
 namespace fwl{
 

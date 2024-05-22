@@ -314,7 +314,7 @@ public:
     /**
      * @brief 构造函数
      * */
-    ConfigVar(const std::string & name,const std::string & describe,const T & value):   \
+    ConfigVar(const std::string & name,const T & value, const std::string & describe):   \
         ConfigVarBase(name,describe),m_val(value){
     }
 
@@ -436,7 +436,7 @@ public:
      * @param[in] val 配置值
      * */
     template<typename T>
-        static typename ConfigVar<T>::ptr lookUp(const std::string & name,const std::string & describe,const T & val){
+        static typename ConfigVar<T>::ptr lookUp(const std::string & name, const T & val, const std::string & describe){
             //{}为了不需要手动释放锁，自动释放锁
             {
                 RWMutexType::ReadLock lock(getMutex());
@@ -459,7 +459,7 @@ public:
                 }
             }
             RWMutexType::WriteLock lock(getMutex());
-            typename ConfigVar<T>::ptr v(new ConfigVar<T>(name,describe,val));
+            typename ConfigVar<T>::ptr v(new ConfigVar<T>(name,val,describe));
             getData()[name] = v;
             return v;
         }

@@ -1,0 +1,35 @@
+2024-05-20 00:38:51[DEBUG][29644 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 60]Fiber(),FibferId is 1
+2024-05-20 00:38:51[DEBUG][29644 UNKNOWN 2][/home/fwl/program/fwl-master/fwl/fiber.cc 73]Fiber(X,X,X),FiberId is 2
+2024-05-20 00:38:51[INFO][29644 main 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 71]scheduler start()
+2024-05-20 00:38:51[INFO][29645 thread0 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 162]Scheduler:run()
+2024-05-20 00:38:51[DEBUG][29645 thread0 3][/home/fwl/program/fwl-master/fwl/fiber.cc 60]Fiber(),FibferId is 3
+2024-05-20 00:38:51[DEBUG][29645 thread0 4][/home/fwl/program/fwl-master/fwl/fiber.cc 73]Fiber(X,X,X),FiberId is 4
+2024-05-20 00:38:51[INFO][29646 thread1 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 162]Scheduler:run()
+2024-05-20 00:38:51[DEBUG][29646 thread1 5][/home/fwl/program/fwl-master/fwl/fiber.cc 60]Fiber(),FibferId is 5
+2024-05-20 00:38:51[DEBUG][29646 thread1 6][/home/fwl/program/fwl-master/fwl/fiber.cc 73]Fiber(X,X,X),FiberId is 6
+2024-05-20 00:38:51[INFO][29644 main 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 148]tick()
+2024-05-20 00:38:51[DEBUG][29644 main 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 114]stopping():0,m_rootFiber is NULL:0
+2024-05-20 00:38:51[INFO][29644 main 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 162]Scheduler:run()
+2024-05-20 00:38:51[INFO][29645 thread0 4][/home/fwl/program/fwl-master/fwl/scheduler.cc 137]idle
+2024-05-20 00:38:51[DEBUG][29644 main 8][/home/fwl/program/fwl-master/fwl/fiber.cc 73]Fiber(X,X,X),FiberId is 8
+2024-05-20 00:38:51[DEBUG][29646 thread1 7][/home/fwl/program/fwl-master/fwl/fiber.cc 73]Fiber(X,X,X),FiberId is 7
+2024-05-20 00:38:51[DEBUG][29645 thread0 4][/home/fwl/program/fwl-master/fwl/fiber.cc 90]~Fiber(),FiberId:4
+2024-05-20 00:38:51[DEBUG][29645 thread0 0][/home/fwl/program/fwl-master/fwl/fiber.cc 90]~Fiber(),FiberId:3
+2024-05-20 00:38:51[INFO][29644 main 8][/home/fwl/program/fwl-master/fwl/scheduler.cc 137]idle
+2024-05-20 00:38:51[DEBUG][29644 main 8][/home/fwl/program/fwl-master/fwl/fiber.cc 90]~Fiber(),FiberId:8
+2024-05-20 00:38:51[INFO][29646 thread1 7][/home/fwl/program/fwl-master/tests/test_scheduler.cc 10]test_fiber(),count:5
+2024-05-20 00:38:52[INFO][29646 thread1 7][/home/fwl/program/fwl-master/fwl/scheduler.cc 148]tick()
+2024-05-20 00:38:52[INFO][29646 thread1 7][/home/fwl/program/fwl-master/tests/test_scheduler.cc 10]test_fiber(),count:4
+2024-05-20 00:38:53[INFO][29646 thread1 7][/home/fwl/program/fwl-master/fwl/scheduler.cc 148]tick()
+2024-05-20 00:38:53[INFO][29646 thread1 7][/home/fwl/program/fwl-master/tests/test_scheduler.cc 10]test_fiber(),count:3
+2024-05-20 00:38:54[INFO][29646 thread1 7][/home/fwl/program/fwl-master/fwl/scheduler.cc 148]tick()
+2024-05-20 00:38:54[INFO][29646 thread1 7][/home/fwl/program/fwl-master/tests/test_scheduler.cc 10]test_fiber(),count:2
+2024-05-20 00:38:55[INFO][29646 thread1 7][/home/fwl/program/fwl-master/fwl/scheduler.cc 148]tick()
+2024-05-20 00:38:55[INFO][29646 thread1 7][/home/fwl/program/fwl-master/tests/test_scheduler.cc 10]test_fiber(),count:1
+2024-05-20 00:38:56[INFO][29646 thread1 6][/home/fwl/program/fwl-master/fwl/scheduler.cc 137]idle
+2024-05-20 00:38:56[DEBUG][29646 thread1 7][/home/fwl/program/fwl-master/fwl/fiber.cc 90]~Fiber(),FiberId:7
+2024-05-20 00:38:56[DEBUG][29646 thread1 6][/home/fwl/program/fwl-master/fwl/fiber.cc 90]~Fiber(),FiberId:6
+2024-05-20 00:38:56[DEBUG][29646 thread1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 90]~Fiber(),FiberId:5
+2024-05-20 00:38:56[DEBUG][29644 main 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 130]Scheduler::stop()
+2024-05-20 00:38:56[DEBUG][29644 main 0][/home/fwl/program/fwl-master/fwl/fiber.cc 90]~Fiber(),FiberId:1
+2024-05-20 00:38:56[DEBUG][29644 main 2][/home/fwl/program/fwl-master/fwl/fiber.cc 90]~Fiber(),FiberId:2

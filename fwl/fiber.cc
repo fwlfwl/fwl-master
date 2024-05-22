@@ -42,7 +42,7 @@ namespace fwl{
 static Logger::ptr g_logger = FWL_LOG_NAME("system");
 
 //读取配置文件Fiber堆大小
-ConfigVar<size_t>::ptr g_config_stack = Config::lookUp("system.statck_size","stack size",size_t(DEFAULT_STACK_SIZE));
+ConfigVar<size_t>::ptr g_config_stack = Config::lookUp("system.statck_size",size_t(DEFAULT_STACK_SIZE), "stack size");
 
 //当前协程
 static thread_local Fiber* t_Fiber = nullptr;
@@ -54,11 +54,10 @@ static std::atomic<uint64_t> t_Fiber_id =  {0};
 static std::atomic<uint64_t> t_Fiber_count =  {0};
 
 //Fiber实现
-Fiber::Fiber(const std::string & name):m_name(name){ 
+Fiber::Fiber(const std::string & name):m_id(++t_Fiber_id),m_name(name){ 
     m_state = RUNNING;
     SetThis(this);
-    FWL_LOG_DEBUG(g_logger) << "Fiber"; //FiberId is " <<  m_id << ",FiberName:" << 
-        //(m_name.empty() ? "null" : m_name);
+    FWL_LOG_DEBUG(g_logger) << "Fiber(),FibferId is " << m_id; 
 
     //获取当前CPU上下文
     GETCONTEXT(&m_ctx);
@@ -207,6 +206,7 @@ Fiber::ptr Fiber::GetThis(){
     if(t_Fiber){
         return t_Fiber -> shared_from_this();
     }
+
     return nullptr;
 }
 
@@ -233,9 +233,9 @@ void Fiber::SwitchToRUNNABLE(){
 void Fiber::MainRun(){
     //FWL_LOG_INFO(g_logger) << "run MainRun()";
     auto cur = GetThis().get();
-    cur -> m_state = RUNNING;
     try{
-        cur -> m_cb();
+        cur -> m_state = RUNNING;
+		cur -> m_cb();
         cur -> m_cb = nullptr;
         cur -> m_state = TERM;
     }catch(std::exception & e){

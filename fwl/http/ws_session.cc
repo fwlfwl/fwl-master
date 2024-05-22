@@ -7,7 +7,7 @@
 #define BASE_SIZE 1024
 
 static fwl::Logger::ptr g_logger = FWL_LOG_NAME("system");
-static fwl::ConfigVar<uint32_t>::ptr g_websocket_message_max_size = fwl::Config::lookUp("websocket_message_max_size", "websocket message max size", (uint32_t)(1024 * 1024 * 32));
+static fwl::ConfigVar<uint32_t>::ptr g_websocket_message_max_size = fwl::Config::lookUp("websocket_message_max_size", (uint32_t)(1024 * 1024 * 32), "websocket message max size");
 
 namespace fwl{
 namespace http{

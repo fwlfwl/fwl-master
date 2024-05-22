@@ -9,20 +9,16 @@ namespace http {
 static fwl::Logger::ptr g_logger = FWL_LOG_NAME("system");
 
 static fwl::ConfigVar<uint64_t>::ptr g_http_request_buffer_size =
-    fwl::Config::lookUp("http.request.buffer_size", "http request buff size"
-                ,(uint64_t)(4 * 1024));
+    fwl::Config::lookUp("http.request.buffer_size" ,(uint64_t)(4 * 1024), "http request buffer size");
 
 static fwl::ConfigVar<uint64_t>::ptr g_http_request_max_body_size =
-    fwl::Config::lookUp("http.request.max_body_size", "http request max body size"
-                ,(uint64_t)(64 * 1024 * 1024));
+    fwl::Config::lookUp("http.request.max_body_size", (uint64_t)(64 * 1024 * 1024), "http request max body size");
 
 static fwl::ConfigVar<uint64_t>::ptr g_http_response_buffer_size =
-    fwl::Config::lookUp("http.response.buffer_size", "http response buff size"
-                ,(uint64_t)(4 * 1024));
+    fwl::Config::lookUp("http.response.buffer_size", (uint64_t)(4 * 1024), "http respone buffer size");
 
 static fwl::ConfigVar<uint64_t>::ptr g_http_response_max_body_size =
-    fwl::Config::lookUp("http.response.max_body_size", "http response max body size"
-                ,(uint64_t)(64 * 1024 * 1024));
+    fwl::Config::lookUp("http.response.max_body_size", (uint64_t)(64 * 1024 * 1024), "http response max body size");
 
 static uint64_t s_http_request_buffer_size = 0;
 static uint64_t s_http_request_max_body_size = 0;
