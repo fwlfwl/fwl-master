@@ -379,6 +379,19 @@ test_wsServer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_wsServer.dir/build.make CMakeFiles/test_wsServer.dir/build
 .PHONY : test_wsServer/fast
 
+#=============================================================================
+# Target rules for targets named test_daemon
+
+# Build rule for target.
+test_daemon: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_daemon
+.PHONY : test_daemon
+
+# fast build rule for target.
+test_daemon/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/build
+.PHONY : test_daemon/fast
+
 fwl/address.o: fwl/address.cc.o
 .PHONY : fwl/address.o
 
@@ -979,6 +992,54 @@ fwl/stream.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/stream.cc.s
 .PHONY : fwl/stream.cc.s
 
+fwl/system/daemon.o: fwl/system/daemon.cc.o
+.PHONY : fwl/system/daemon.o
+
+# target to build an object file
+fwl/system/daemon.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/system/daemon.cc.o
+.PHONY : fwl/system/daemon.cc.o
+
+fwl/system/daemon.i: fwl/system/daemon.cc.i
+.PHONY : fwl/system/daemon.i
+
+# target to preprocess a source file
+fwl/system/daemon.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/system/daemon.cc.i
+.PHONY : fwl/system/daemon.cc.i
+
+fwl/system/daemon.s: fwl/system/daemon.cc.s
+.PHONY : fwl/system/daemon.s
+
+# target to generate assembly for a file
+fwl/system/daemon.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/system/daemon.cc.s
+.PHONY : fwl/system/daemon.cc.s
+
+fwl/system/env.o: fwl/system/env.cc.o
+.PHONY : fwl/system/env.o
+
+# target to build an object file
+fwl/system/env.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/system/env.cc.o
+.PHONY : fwl/system/env.cc.o
+
+fwl/system/env.i: fwl/system/env.cc.i
+.PHONY : fwl/system/env.i
+
+# target to preprocess a source file
+fwl/system/env.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/system/env.cc.i
+.PHONY : fwl/system/env.cc.i
+
+fwl/system/env.s: fwl/system/env.cc.s
+.PHONY : fwl/system/env.s
+
+# target to generate assembly for a file
+fwl/system/env.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/system/env.cc.s
+.PHONY : fwl/system/env.cc.s
+
 fwl/thread.o: fwl/thread.cc.o
 .PHONY : fwl/thread.o
 
@@ -1146,6 +1207,30 @@ tests/test_config.s: tests/test_config.cc.s
 tests/test_config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cc.s
 .PHONY : tests/test_config.cc.s
+
+tests/test_deamon.o: tests/test_deamon.cc.o
+.PHONY : tests/test_deamon.o
+
+# target to build an object file
+tests/test_deamon.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_deamon.cc.o
+.PHONY : tests/test_deamon.cc.o
+
+tests/test_deamon.i: tests/test_deamon.cc.i
+.PHONY : tests/test_deamon.i
+
+# target to preprocess a source file
+tests/test_deamon.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_deamon.cc.i
+.PHONY : tests/test_deamon.cc.i
+
+tests/test_deamon.s: tests/test_deamon.cc.s
+.PHONY : tests/test_deamon.s
+
+# target to generate assembly for a file
+tests/test_deamon.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_deamon.cc.s
+.PHONY : tests/test_deamon.cc.s
 
 tests/test_fiber.o: tests/test_fiber.cc.o
 .PHONY : tests/test_fiber.o
@@ -1543,6 +1628,7 @@ help:
 	@echo "... test_address"
 	@echo "... test_bytearray"
 	@echo "... test_config"
+	@echo "... test_daemon"
 	@echo "... test_fiber"
 	@echo "... test_hook"
 	@echo "... test_http"
@@ -1634,6 +1720,12 @@ help:
 	@echo "... fwl/stream.o"
 	@echo "... fwl/stream.i"
 	@echo "... fwl/stream.s"
+	@echo "... fwl/system/daemon.o"
+	@echo "... fwl/system/daemon.i"
+	@echo "... fwl/system/daemon.s"
+	@echo "... fwl/system/env.o"
+	@echo "... fwl/system/env.i"
+	@echo "... fwl/system/env.s"
 	@echo "... fwl/thread.o"
 	@echo "... fwl/thread.i"
 	@echo "... fwl/thread.s"
@@ -1655,6 +1747,9 @@ help:
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
+	@echo "... tests/test_deamon.o"
+	@echo "... tests/test_deamon.i"
+	@echo "... tests/test_deamon.s"
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"

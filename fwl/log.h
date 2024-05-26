@@ -3,7 +3,7 @@
 
 /**
 * @file log.h
-* @brief ÈÕÖ¾Ä£¿é·â×°
+* @brief ¿¿¿
 * @author fwl
 * @email 1822363660@qq.com
 * @data 2023-10-06
@@ -24,50 +24,50 @@
 #define DEFAULT_LOG_LEVEL LogLevel::DEBUG
 
 /**
-* @ brief ÒÔÁ÷·½Ê½Ð´ÈëÈÕÖ¾
+* @ brief ¿¿¿¿
 * */
 #define FWL_LOG_LEVEL(logger,level) \
     fwl::LogEventWarp(fwl::LogEvent::ptr(new fwl::LogEvent(logger,level,__FILE__,__LINE__,0,fwl::getThreadId(),fwl::getThreadName(),fwl::getFiberId(),fwl::getFiberName(),time(NULL)))).getSS()
 
 /**
- * @breif ÒÔÁ÷·½Ê½Ð´ÈëINFOÈÕÖ¾
+ * @breif ¿¿¿¿-info¿¿
  * */
 #define FWL_LOG_INFO(logger) \
     FWL_LOG_LEVEL(logger,fwl::LogLevel::INFO)
 
 /**
- * @breif ÒÔÁ÷·½Ê½Ð´ÈëDEBUGÈÕÖ¾
+ * @breif ¿¿¿¿-debug¿¿
  * */
 #define FWL_LOG_DEBUG(logger) \
     FWL_LOG_LEVEL(logger,fwl::LogLevel::DEBUG)
 
 /**
- * @breif ÒÔÁ÷·½Ê½Ð´ÈëWARNÈÕÖ¾
+ * @breif ¿¿¿¿-warn¿¿
  * */
 #define FWL_LOG_WARN(logger) \
     FWL_LOG_LEVEL(logger,fwl::LogLevel::WARN)
 
 
 /**
- * @breif ÒÔÁ÷·½Ê½Ð´ÈëERRORÈÕÖ¾
+ * @breif ¿¿¿¿-error¿¿
  * */
 #define FWL_LOG_ERROR(logger) \
     FWL_LOG_LEVEL(logger,fwl::LogLevel::ERROR)
 
 
 /**
- * @breif ÒÔÁ÷·½Ê½Ð´ÈëFATALÈÕÖ¾
+ * @breif ¿¿¿¿-fatal¿¿
  * */
 #define FWL_LOG_FATAL(logger) \
     FWL_LOG_LEVEL(logger,fwl::LogLevel::FATAL)
 
 /**
- * @brief Ä¬ÈÏ»ñÈ¡nameµÄÈÕÖ¾Æ÷
+ * @brief ¿¿¿¿¿-¿¿¿¿¿
  * */
 #define FWL_LOG_NAME(name) fwl::loggerMgr::getInstance()->getLogger(name)
 
 /**
- * @brief Ä¬ÈÏ»ñÈ¡nameµÄÈÕÖ¾Æ÷
+ * @brief ¿¿¿¿¿-root
  * */
 #define FWL_LOG_ROOT() fwl::loggerMgr::getInstance()->getRoot()
 

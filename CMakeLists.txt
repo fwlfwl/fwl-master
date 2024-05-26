@@ -12,6 +12,8 @@ include_directories(/usr/local/yaml.cpp-0.8.0/include)
 link_directories(/usr/local/yaml.cpp-0.8.0/lib)
 
 set(LIB_SRC
+	fwl/system/env.cc
+	fwl/system/daemon.cc
 	fwl/uri.cc
 	fwl/sock_stream.cc
 	fwl/stream.cc
@@ -43,7 +45,7 @@ set(LIB_SRC
     fwl/thread.cc
     fwl/mutex.cc
     fwl/unit.cc
-    )
+	)
 
 add_library(fwl SHARED ${LIB_SRC})
 
@@ -93,6 +95,8 @@ fwl_add_executable(test_uri "tests/test_uri.cc" fwl "${LIBS}")
 fwl_add_executable(test_http_connection "tests/test_http_connection.cc" fwl "${LIBS}")
 
 fwl_add_executable(test_wsServer "tests/test_wsServer.cc" fwl "${LIBS}")
+
+fwl_add_executable(test_daemon "tests/test_deamon.cc" fwl "${LIBS}")
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

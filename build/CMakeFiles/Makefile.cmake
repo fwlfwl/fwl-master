@@ -68,4 +68,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_uri.dir/DependInfo.cmake"
   "CMakeFiles/test_http_connection.dir/DependInfo.cmake"
   "CMakeFiles/test_wsServer.dir/DependInfo.cmake"
+  "CMakeFiles/test_daemon.dir/DependInfo.cmake"
   )
