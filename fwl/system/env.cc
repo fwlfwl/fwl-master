@@ -12,27 +12,26 @@ static Logger::ptr g_logger = FWL_LOG_NAME("system");
  * @param[in] argc 输入参数个数(包括开头程序名)
  * @param[in] argv 参数内容
  * */
-void Env::init(int argc, char * argv[]){
+bool Env::init(int argc, char * argv[]){
 	char path[1024];
 	char link[1024];
 	ssize_t path_len = 0;
 	sprintf(link, "/proc/%d/cwd",getpid());
 	path_len = readlink(link, path, sizeof(path));
 	if(0 >= path_len){
-		FWL_LOG_ERROR(g_logger) << "exe read fail";
+		FWL_LOG_ERROR(g_logger) << "cwd read fail";
+		return false;
 	}
 	m_cwd = path;
 	path_len = 0;
 
-	if(0 >= path_len){
-		FWL_LOG_ERROR(g_logger) << "exe read fail";
-	}
 	bzero(link, sizeof(link));
 	bzero(path, sizeof(path));
 	sprintf(link, "/proc/%d/exe", getpid());
-	path_len = readlink(link, path, sizeof(link));	
+	path_len = readlink(link, path, sizeof(path));	
 	if(0 >= path_len){
 		FWL_LOG_ERROR(g_logger) << "exe read fail";
+		return false;
 	}
 	m_exe = path;
 
@@ -43,14 +42,15 @@ void Env::init(int argc, char * argv[]){
 				key = &argv[i][1];
 			}else{
 				FWL_LOG_ERROR(g_logger) << "Invalid args index " << i;
+				return false;
 			}
 		}else{
 			if(nullptr == key){
 				FWL_LOG_ERROR(g_logger) << "Invalid args index " << i;
-				continue;
+				return false;
 			}
-			if('-' != argv[i + 1][0]){
-				add(key, argv[i + 1]);
+			if('-' != argv[i][0]){
+				add(key, argv[i]);
 				++i;
 			}else{
 				add(key, "");
@@ -58,6 +58,9 @@ void Env::init(int argc, char * argv[]){
 			key = nullptr;
 		}
 	}
+	assert(argv[0]);
+	m_program = argv[0];
+	return true;
 }
 
 /**
@@ -109,7 +112,7 @@ void Env::delHelp(const std::string & key){
 
 void Env::printHelps(){
 	MutexType::ReadLock lock(m_mutex);
-	std::cout << "Usage:" << "[option] " << "[describe]";
+	std::cout << "Usage:" << "[option] " << "[describe]"<< std::endl;
 	for(auto & help : m_helps){
 		std::cout << std::setw(5) << help.first << ":" << help.second << std::endl;
 	}	

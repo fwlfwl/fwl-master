@@ -1,12 +1,14 @@
 #ifndef __H_SCHEDULER__
 #define __H_SCHEDULER__
 
+#include <iostream>
 #include<atomic>
 #include<vector>
 #include<functional>
 #include"thread.h"
 #include"mutex.h"
-#include"fiber.h"
+#include "fiber.h"
+
 namespace fwl{
 
 class Scheduler {
@@ -50,7 +52,8 @@ public:
         MutexType::Lock lock(m_mutex);
         need_tick = schedulerNolock(f,thread);
         if(need_tick){
-            tick();
+			std::cout << "ticK()";
+			tick();
         }
     }
     /**
@@ -64,7 +67,8 @@ public:
             need_tick = schedlulerNolock(&*begin,-1) | need_tick;
         }
         if(need_tick){
-            tick();
+          	std::cout << "tick";
+			tick();
         }
     }
 
@@ -73,6 +77,8 @@ public:
      * */
     static Scheduler * GetThis();
 
+	//返回调度协程
+	static Fiber * GetSchedulerFiber();
 protected:
     //通知调度函数
     virtual void tick();

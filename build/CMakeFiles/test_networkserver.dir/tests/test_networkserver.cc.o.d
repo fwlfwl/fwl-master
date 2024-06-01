@@ -211,8 +211,9 @@ CMakeFiles/test_networkserver.dir/tests/test_networkserver.cc.o: \
  /usr/include/c++/11/bits/vector.tcc \
  /home/fwl/program/fwl-master/tests/../fwl/iomanager.h \
  /home/fwl/program/fwl-master/tests/../fwl/scheduler.h \
- /usr/include/c++/11/atomic /usr/include/c++/11/functional \
- /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/atomic \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
  /usr/include/c++/11/bits/enable_special_members.h \
@@ -221,10 +222,8 @@ CMakeFiles/test_networkserver.dir/tests/test_networkserver.cc.o: \
  /usr/include/c++/11/bits/erase_if.h \
  /home/fwl/program/fwl-master/tests/../fwl/thread.h \
  /home/fwl/program/fwl-master/tests/../fwl/base_head.h \
- /usr/include/c++/11/iostream /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/fstream \
- /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
+ /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/string.h \

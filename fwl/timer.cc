@@ -138,7 +138,8 @@ bool TimerManager::resetTimer(Timer::ptr timer, uint64_t ms, bool isRecurrent){
     bool at_front = (it == m_timers.begin()) & !m_ticked;
     //判断如果是首个元素，则需要执行函数通 知
     if(at_front){
-        onFrontEvent();
+        //FWL_LOG_DEBUG(g_logger) << "run here";
+		onFrontEvent();
     }
     return true;
 

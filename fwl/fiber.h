@@ -37,10 +37,11 @@ enum FIBER_STATE {
  * */
 class Fiber : public std::enable_shared_from_this<Fiber> {
 public:
+friend class Scheduler;
     typedef std::shared_ptr<Fiber> ptr;
     typedef FIBER_STATE State;
 
-    //主协程构造函数
+    //主协程构造函数;每个线程第一个协程
     Fiber(const std::string & name = "threadFiber");
 
     /**
@@ -50,7 +51,7 @@ public:
      * @param[in] main_fiber 上下文切换主线程
      * @param[in] name 协程名
      * */
-    Fiber(Fiber * main_fiber, std::function<void()> cb , size_t size = 0, const std::string & name = "");
+    Fiber(std::function<void()> cb , bool user_call = false, size_t size = 0, const std::string & name = "");
     
     //析构函数
     ~Fiber();
@@ -62,9 +63,6 @@ public:
     //重置，重复利用
     bool reset(std::function<void()>);
 
-    //重置主协程
-    bool resetMainFiber(Fiber * fiber);
-
     //切回到主线成程
     void SwapOut();
 
@@ -75,13 +73,13 @@ public:
      * @切换至目标协程
      * @param[in] target_fiber 目标协程序
      * */
-    bool call(Fiber * target_fiber);
+    bool call();
 
     /**
      * @从目标协程切换回来
      * @param[in] target_fiber 目标协程序
      * */
-    bool back(Fiber * target_fiber);
+    bool back();
 
     //设置协程状态
     void SetState(State in_state);
@@ -93,7 +91,7 @@ public:
     static void SwitchToRUNNABLE();
 
     //返回协程状态
-    State GetState();
+    State GetState() const ;
 public:
     //返回协程ID
     static uint32_t GetId(); 
@@ -110,9 +108,9 @@ public:
     //运行主函数
     static void MainRun();
     
+    //运行调度器主函数
+    static void SchedulerMainRun();
 private:
-    //主协程
-    Fiber *  m_main_fiber = nullptr;
     //协程ID
     uint64_t m_id = 0;
     //协程NAME

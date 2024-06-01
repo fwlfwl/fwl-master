@@ -40,10 +40,10 @@ void test_iomanager(){
 
 void test_iomanager_main(){
     
-    fwl::IOManager iom(3);
-    FWL_LOG_INFO(g_logger) << "EPOLL_CTL_ADD:" << EPOLL_CTL_ADD 
-        << ",EPOLL_CTL_MOD:" << EPOLL_CTL_MOD
-        << ",EPOLL_CTL_DEL:" << EPOLL_CTL_DEL;
+    fwl::IOManager iom(3,true);
+    //FWL_LOG_INFO(g_logger) << "EPOLL_CTL_ADD:" << EPOLL_CTL_ADD 
+//        << ",EPOLL_CTL_MOD:" << EPOLL_CTL_MOD
+//        << ",EPOLL_CTL_DEL:" << EPOLL_CTL_DEL;
     iom.scheduler(test_iomanager);
 }
 

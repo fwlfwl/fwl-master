@@ -1,6 +1,7 @@
 #include<atomic>
 #include<iostream>
 #include"fiber.h"
+#include "scheduler.h"
 #include"macro.h"
 #include"config.h"
 #include<functional>
@@ -45,65 +46,61 @@ static Logger::ptr g_logger = FWL_LOG_NAME("system");
 ConfigVar<size_t>::ptr g_config_stack = Config::lookUp("system.statck_size",size_t(DEFAULT_STACK_SIZE), "stack size");
 
 //当前协程
-static thread_local Fiber* t_Fiber = nullptr;
-
+static thread_local Fiber* t_fiber = nullptr;
+//线程主协程
+static thread_local Fiber::ptr t_thread_fiber = nullptr;
 //协程id
-static std::atomic<uint64_t> t_Fiber_id =  {0};
-
+static std::atomic<uint64_t> t_fiber_id =  {0};
 //协程数
-static std::atomic<uint64_t> t_Fiber_count =  {0};
+static std::atomic<uint64_t> t_fiber_count =  {0};
 
-//Fiber实现
-Fiber::Fiber(const std::string & name):m_id(++t_Fiber_id),m_name(name){ 
+//Fiber初始化，获取当前上下文
+Fiber::Fiber(const std::string & name):m_id(t_fiber_id++),m_name(name){ 
     m_state = RUNNING;
     SetThis(this);
-    FWL_LOG_DEBUG(g_logger) << "Fiber(),FibferId is " << m_id; 
+    FWL_LOG_DEBUG(g_logger) << "Fiber(),FibferId = " << m_id; //<< ",ptr = " << this; 
 
     //获取当前CPU上下文
     GETCONTEXT(&m_ctx);
 }
 
-Fiber::Fiber(Fiber * main_fiber, std::function<void()> cb, size_t stacksize,const std::string & name):
-    m_id(++t_Fiber_id),m_name(name),m_cb(cb){
-    ASSERT(nullptr != main_fiber);
-    m_main_fiber = main_fiber;
+//Fiber初始化，设置上下文
+Fiber::Fiber(std::function<void()> cb, bool user_call, size_t stacksize, const std::string & name):
+    m_id(t_fiber_id++),m_name(name),m_cb(cb){
     m_state = RUNNABLE;
-    SetThis(this);
-    ++t_Fiber_count;
-    FWL_LOG_DEBUG(g_logger) << "Fiber(X,X,X),FiberId is " <<  m_id ; //<< ",FiberName:" <<
+    ++t_fiber_count;
+    FWL_LOG_DEBUG(g_logger) << "Fiber(X,X,X),FiberId = " <<  m_id; //<< ",ptr = " << this; //<< ",FiberName:" <<
         //(m_name.empty() ? "null" : m_name);
     
     //分配栈空间
     m_stacksize = (0 != stacksize ? stacksize : g_config_stack -> getValue());
     m_stack = Allocater::allocate(m_stacksize);
-    UCONTEXT_INIT(m_ctx, m_stack, m_stacksize, nullptr, &Fiber::MainRun)
+	if(user_call){
+    	UCONTEXT_INIT(m_ctx, m_stack, m_stacksize, nullptr, &Fiber::SchedulerMainRun)
+	}else{
+    	UCONTEXT_INIT(m_ctx, m_stack, m_stacksize, nullptr, &Fiber::MainRun)
+	}
 }
 
 Fiber::~Fiber(){
-    SetThis(this);
-    if(INIT != m_state && TERM != m_state && EXPECT != m_state){
-        ASSERT_PRE(nullptr == m_cb,"~Fiber");
-        t_Fiber = nullptr;
-    }
-    Allocater::deallocate(m_stack);
-    --t_Fiber_count;
-    FWL_LOG_DEBUG(g_logger) << "~Fiber(),FiberId:" <<  m_id ;//<< ",FiberName:" << 
+    if(m_stack){
+		ASSERT_PRE(INIT == m_state || TERM == m_state || EXPECT == m_state, "deallocate statck");
+    	Allocater::deallocate(m_stack);
+	}else{
+		ASSERT(!m_cb);
+		Fiber * cur = t_fiber;
+		if(cur == this){
+			SetThis(nullptr);
+		}
+	}
+    --t_fiber_count;
+    FWL_LOG_DEBUG(g_logger) << "~Fiber(),FiberId:" <<  m_id  << " exit";//<< ",FiberName:" << 
         //(m_name.empty() ? "null" : m_name);
-}
-
-//重置主协程
-bool Fiber::resetMainFiber(Fiber * fiber){
-    if(fiber){
-        //重置主线程
-        m_main_fiber = fiber;
-        return true;
-    }
-    return false;
 }
 
 bool Fiber::reset(std::function<void()> new_cb){
     //运行状态无法重置
-    if(RUNNABLE == m_state || RUNNING == m_state || SUSPEND == m_state){
+    if(RUNNING == m_state || SUSPEND == m_state){
 //将state转化为字符串
 #undef STATE_TO_STRING
 #define STATE_TO_STRING(state,state_str)  \
@@ -136,59 +133,61 @@ bool Fiber::reset(std::function<void()> new_cb){
 }
 
 void Fiber::SwapOut(){
-    call(m_main_fiber);
+    SetThis(Scheduler::GetSchedulerFiber());  
+    //如果运行状态，则将状态切换为可运行状态
+    if(TERM != m_state && EXPECT != m_state){
+        m_state = RUNNABLE;
+    }
+    SWAPCONTEXT(&m_ctx,&Scheduler::GetSchedulerFiber() -> m_ctx);
 }
 
 void Fiber::SwapIn(){
-    back(m_main_fiber);
+    ASSERT(RUNNING !=  m_state);
+    SetThis(this);
+    m_state = RUNNING;
+	SWAPCONTEXT(&Scheduler::GetSchedulerFiber() -> m_ctx, &m_ctx);
 }
 
 /**
 * @切换至目标协程
-* @param[in] target_fiber 目标协程序
 * */
-bool Fiber::call(Fiber * target_fiber){
-    ASSERT(target_fiber);
-    ASSERT_PRE(target_fiber != this,"back oneself");
-    SetThis(this);  
+bool Fiber::back(){
+    SetThis(t_thread_fiber.get());  
     //如果运行状态，则将状态切换为挂起状态
     if(TERM != m_state && EXPECT != m_state){
-        m_state = SUSPEND;
+        m_state = RUNNABLE;
     }
-    SWAPCONTEXT(&m_ctx,&target_fiber -> m_ctx);
+    SWAPCONTEXT(&m_ctx,&t_thread_fiber.get() -> m_ctx);
     return true;
 }
 
 /**
 * @从目标协程切换回来
-* @param[in] target_fiber 目标协程序
 * */
-bool Fiber::back(Fiber * target_fiber){
-    ASSERT(target_fiber);
-    ASSERT_PRE(target_fiber != this,"back oneself");
+bool Fiber::call(){
     ASSERT(RUNNING !=  m_state);
     SetThis(this);
     m_state = RUNNING;
-    SWAPCONTEXT(&target_fiber -> m_ctx, &m_ctx);
+    SWAPCONTEXT(&t_thread_fiber.get() -> m_ctx, &m_ctx);
     return true;
 }
 
 uint32_t Fiber::GetId(){
-    if(t_Fiber){
-        return t_Fiber -> m_id;
+    if(t_fiber){
+        return t_fiber -> m_id;
     }
     return 0;
 }
 std::string Fiber::GetName(){
-    if(t_Fiber){
-        return t_Fiber -> m_name;
+    if(t_fiber){
+        return t_fiber -> m_name;
     }
     return "";
 }
 
 //设置当前Fiber
 void Fiber::SetThis(Fiber * f){
-    t_Fiber = f;
+    t_fiber = f;
 }
 
 //设置协程状态
@@ -197,17 +196,19 @@ void Fiber::SetState(Fiber::State in_state){
 }
 
 //返回协程状态
-Fiber::State Fiber::GetState(){
+Fiber::State Fiber::GetState() const{
     return m_state;
 }
 
 //获取当前Fiber
 Fiber::ptr Fiber::GetThis(){
-    if(t_Fiber){
-        return t_Fiber -> shared_from_this();
+    if(t_fiber){
+        return t_fiber -> shared_from_this();
     }
-
-    return nullptr;
+	Fiber::ptr main_fiber(new Fiber);
+	ASSERT(t_fiber == main_fiber.get());
+	t_thread_fiber = main_fiber;
+	return t_fiber -> shared_from_this();
 }
 
 //切换至挂起状态
@@ -231,7 +232,7 @@ void Fiber::SwitchToRUNNABLE(){
 
 //主运行函数
 void Fiber::MainRun(){
-    //FWL_LOG_INFO(g_logger) << "run MainRun()";
+//    FWL_LOG_DEBUG(g_logger) << "run MainRun()";
     auto cur = GetThis().get();
     try{
         cur -> m_state = RUNNING;
@@ -249,8 +250,31 @@ void Fiber::MainRun(){
             << "running error " << std::endl
             << BacktraceToString();
     } 
-    ASSERT(cur -> m_main_fiber);
     cur -> SwapOut();
+    FWL_LOG_DEBUG(g_logger) << "test can not reach here";
+}
+
+//调度线程主运行函数
+void Fiber::SchedulerMainRun(){
+//    FWL_LOG_DEBUG(g_logger) << "run SchedulerMainRun()";
+    auto cur = GetThis().get();
+    try{
+        cur -> m_state = RUNNING;
+		cur -> m_cb();
+        cur -> m_cb = nullptr;
+        cur -> m_state = TERM;
+    }catch(std::exception & e){
+        cur -> m_state = EXPECT;
+        FWL_LOG_ERROR(g_logger) << "Fiber which id is "<<  cur -> m_id
+            << " running error " << e.what() << std::endl
+            << BacktraceToString();
+    }catch(...){
+        cur -> m_state = EXPECT;
+        FWL_LOG_ERROR(g_logger) << "Fiber which id is "<<  cur -> m_id
+            << "running error " << std::endl
+            << BacktraceToString();
+    } 
+    cur -> back();
     FWL_LOG_DEBUG(g_logger) << "test can not reach here";
 }
 

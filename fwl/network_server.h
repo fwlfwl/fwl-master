@@ -32,7 +32,7 @@ public:
 	 * @brief constructor
 	 * @param[in] iom : IOManager
 	 * */
-	NetworkServer(const std::string &name = "", const std::string& type = "TCP", IOManager * iom = fwl::IOManager::GetThis(), IOManager * work = fwl::IOManager::GetThis());
+	NetworkServer(const std::string &name = "", const std::string& type = "TCP", IOManager * iom = fwl::IOManager::GetThis(), IOManager * work = fwl::IOManager::GetThis(), int resuse = 1);
 
 	/**
 	 * @brief destructor
@@ -103,15 +103,17 @@ private:
 	IOManager * m_iom;
 	//work Manager 
 	IOManager * m_work;
-	//vector of socket
+	//套接字数组
 	std::vector<Socket::ptr> m_socks;
-	//is stop 
+	//是否有效
 	bool m_isStop;
-	//recv timeout 
+	//接收超时时间
 	uint64_t m_timeout;
-	//network type(TCP,UDP,UNIX)
+	//地址复用
+	int m_reuse;
+	//网络协议(TCP,UDP,UNIX)
 	NetworkType m_type;
-	//server name
+	//名字
 	std::string m_name;	
 };
 

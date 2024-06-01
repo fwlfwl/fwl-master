@@ -428,6 +428,7 @@ private:
 class Config{
 public:
     typedef std::map<std::string,ConfigVarBase::ptr> ConfigVarMap;
+	typedef std::map<std::string, uint64_t> ConfigFileMap;	//配置文件(<文件名,最后更新时间)
     typedef RWMutex RWMutexType;  
     /**
      * @brief 查找ConfigVar
@@ -493,13 +494,25 @@ public:
      * */
     static void loadYamlConfig(const YAML::Node & node);
 
+	//从目录中读取所有配置文件
+	static void LoadFromDir(const std::string & path);
 private:
-    //避免调用静态变量函数先于静态变量前初始化出现异常
+	//加载所有节点信息
+	static void ListAllMembers(const std::vector<std::string> & path);
+    
+	//避免调用静态变量函数先于静态变量前初始化出现异常
     static ConfigVarMap& getData(){
         static ConfigVarMap m_datas;
         return m_datas;
     }
-    static RWMutexType& getMutex(){
+    
+	//所有配置文件 
+	static ConfigFileMap & getFiles(){
+		static ConfigFileMap m_files;
+		return m_files;
+	}
+
+	static RWMutexType& getMutex(){
         static RWMutexType m_mutex;
         return m_mutex;
     }

@@ -23,6 +23,7 @@ namespace http{
 			res -> setClose(close);
 			m_matcher -> handle(req, res, session);
 			session -> sendResponse(res);
+			//sleep(10);
 		}while(!close);
 	}
 }

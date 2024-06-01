@@ -24,10 +24,11 @@ namespace fwl{
  * @brief constructor
  * @param[in] iom : IOManager
  * */
-NetworkServer::NetworkServer(const std::string & name, const std::string& type, IOManager * iom, IOManager * work):
+NetworkServer::NetworkServer(const std::string & name, const std::string& type, IOManager * iom, IOManager * work, int reuse):
 	m_iom(iom),
 	m_work(work),
 	m_timeout(g_recv_timeout -> getValue()),
+	m_reuse(reuse),
 	m_name(name){
 	m_isStop = true;
 	STRING_TO_TYPE(type)
@@ -58,21 +59,21 @@ bool NetworkServer::bind(const Address::ptr addr){
  * */
 bool NetworkServer::bind(const std::vector<Address::ptr> & addrs, std::vector<Address::ptr> & fails){
 	if(TCP == m_type){
-		fails.clear();
+		//fails.clear();
 		for(auto & addr : addrs){
 			Socket::ptr sock = Socket::CreateTCP(addr);
 			if(!sock -> bind(addr)){
-				FWL_LOG_ERROR(g_logger) << "Bind address"
+				FWL_LOG_ERROR(g_logger) << "Bind address "
 					<< (addr -> toString())
-					<< "failed,errno=" << errno	
+					<< " failed,errno=" << errno	
 					<< ",strerror:" << strerror(errno);
 				fails.push_back(addr);
 				continue;	
 			}
 			if(!sock -> listen()){
-				FWL_LOG_ERROR(g_logger) << "Listen address"
+				FWL_LOG_ERROR(g_logger) << "Listen address "
 					<< (addr -> toString())
-					<< "failed,errno=" << errno	
+					<< " failed,errno=" << errno	
 					<< ",strerror:" << strerror(errno);
 				fails.push_back(addr);
 				continue;					
@@ -84,6 +85,9 @@ bool NetworkServer::bind(const std::vector<Address::ptr> & addrs, std::vector<Ad
 		return false;
 	}
 	for(auto & sock : m_socks){
+		//默认设置SO_REUSEADDR和SO_REUSEPORT
+		sock -> setOption(SOL_SOCKET, SO_REUSEADDR, &m_reuse);
+		sock -> setOption(SOL_SOCKET, SO_REUSEPORT, &m_reuse);
 		FWL_LOG_INFO(g_logger) << (sock -> toString());
 	}
 	return true;

@@ -156,7 +156,7 @@ CMakeFiles/fwl.dir/fwl/system/env.cc.o: \
  /home/fwl/program/fwl-master/fwl/system/../mutex.h \
  /home/fwl/program/fwl-master/fwl/system/../noncopy.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/fwl/program/fwl-master/fwl/system/../log.h \
+ /home/fwl/program/fwl-master/fwl/system/../singletion.h \
  /home/fwl/program/fwl-master/fwl/system/../base_head.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
@@ -243,6 +243,7 @@ CMakeFiles/fwl.dir/fwl/system/env.cc.o: \
  /usr/include/c++/11/bits/ranges_util.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
+ /home/fwl/program/fwl-master/fwl/system/../log.h \
  /home/fwl/program/fwl-master/fwl/system/../unit.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \

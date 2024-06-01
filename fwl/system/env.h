@@ -18,23 +18,11 @@ namespace fwl{
 class Env{
 public:
 	typedef RWMutex MutexType;
-	/**
-	 * @brief 构造函数
-	 * */
-	Env(int argc, char * argv[]):m_program(argv[0]){
-		init(argc, argv);
-	}
-
-	/**
-	 * @brief 析构函数
-	 * */
-	~Env(){
-	}
 
 	/**
 	 * @brief 初始化函数
 	 * */
-	void init(int argc, char * argv[]);
+	bool init(int argc, char * argv[]);
 
 	/**
 	 * @brief args操作函数
@@ -78,7 +66,7 @@ private:
 	RWMutex m_mutex;		
 };
 
-typedef singletion<Env> EnvMgr;
+typedef Singletion<Env> EnvMgr;
 
 }
 #endif

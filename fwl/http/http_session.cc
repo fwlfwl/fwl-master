@@ -15,6 +15,18 @@ namespace http{
 HttpSession::HttpSession(Socket::ptr sock, bool owner):
 	SockStream(sock, owner){}
 
+#define RECV_CHECK(len)	\
+		if(0 > len){	\
+			if(errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR){	\
+				continue;	\
+			}	\
+			close();	\
+			return nullptr;	\
+		}else if(0 == len){	\
+			close();	\
+			return nullptr;	\
+		}	
+
 /**
  * @brief recvRequest
  * */	
@@ -30,16 +42,16 @@ HttpRequest::ptr HttpSession::recvRequest(){
 		//FWL_LOG_DEBUG(g_logger) << m_sock -> toString(); 
 		int len = read(data + offset , bufferSize - offset);
 		//FWL_LOG_DEBUG(g_logger) << "len:" << len; 
-		if(len <= 0){
-			return nullptr;
-		}	
+		RECV_CHECK(len);
 		len += offset;
 		size_t nparser = parser -> execute(data, len);
 		if(parser -> hasError()){
+			FWL_LOG_DEBUG(g_logger) << "parser error";
 			return nullptr;
 		}		
 		offset = len - nparser;
 		if(offset == (size_t)bufferSize){
+			FWL_LOG_DEBUG(g_logger) << "buff size is too log";
 			return nullptr;
 		}
 		if(parser -> isFinished()){
@@ -57,10 +69,7 @@ HttpRequest::ptr HttpSession::recvRequest(){
 		int needMsg = contentLen - offset;
 		while(0 < needMsg){
 			int nread = read(data, (uint64_t)needMsg > bufferSize ? bufferSize : needMsg);	//read more msg
-			if(0 >= nread){
-				FWL_LOG_ERROR(g_logger) << "Can not read enough msg,body content is incomplete!";
-				return nullptr;
-			}
+			RECV_CHECK(nread);	
 			int writeLen = nread > needMsg ? needMsg : nread;
 			body.append(data, writeLen);
 			needMsg -= writeLen;
@@ -81,6 +90,6 @@ int HttpSession::sendResponse(HttpResponse::ptr res){
 	std::string resStr = res -> toString();
 	return writeFix(resStr.c_str(), resStr.size());
 }
-
+#undef RECV_CHECK
 }
 }

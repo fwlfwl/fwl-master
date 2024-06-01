@@ -7,21 +7,22 @@ void f_fiber1(){
     FWL_LOG_INFO(g_logger) << "fiber1 begin";
     std::shared_ptr<fwl::Fiber> m_fiber = fwl::Fiber::GetThis();
     
-    //FWL_LOG_INFO(g_logger) << "fiber1 SwapOut";
-    // m_fiber -> SwapOut();
-    
+    FWL_LOG_INFO(g_logger) << "fiber1 back";
+    m_fiber -> back();
+    FWL_LOG_INFO(g_logger) << "fiber1 call";
     FWL_LOG_INFO(g_logger) << "fiber1 end";
 }
 
-static fwl::Fiber::ptr main_fiber(new fwl::Fiber);
 
 void test_fiber(){
-    FWL_LOG_INFO(g_logger) << "main fiber begin";
-    std::shared_ptr<fwl::Fiber> fiber1(new fwl::Fiber(main_fiber.get(),std::function<void()>(f_fiber1)));
+	fwl::Fiber::GetThis();
+	FWL_LOG_INFO(g_logger) << "main fiber begin";
+    std::shared_ptr<fwl::Fiber> fiber1(new fwl::Fiber(std::function<void()>(f_fiber1)));
     
-    FWL_LOG_INFO(g_logger) << "fiber1 SwapIn";
-    fiber1 -> SwapIn();
-
+    FWL_LOG_INFO(g_logger) << "fiber1 call()";
+    fiber1 -> call();
+	FWL_LOG_INFO(g_logger) << "main fiber call";
+	fiber1 -> call();
     FWL_LOG_INFO(g_logger) << "main fiber end";
 }
 

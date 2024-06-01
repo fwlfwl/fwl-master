@@ -315,7 +315,7 @@ IOManager * IOManager::GetThis(){
 void IOManager::tick(){
     int ret = write(m_tickPipefd[1], TICK_MSG, sizeof(TICK_MSG));
     ASSERT(ret == sizeof(TICK_MSG));
-    //FWL_LOG_DEBUG(g_logger) <<  sizeof(TICK_MSG) << ",write msg is " << TICK_MSG;
+    FWL_LOG_DEBUG(g_logger) <<  sizeof(TICK_MSG) << ",write msg is " << TICK_MSG;
 }
 
 /**

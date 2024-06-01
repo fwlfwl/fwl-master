@@ -392,6 +392,19 @@ test_daemon/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/build
 .PHONY : test_daemon/fast
 
+#=============================================================================
+# Target rules for targets named test_application
+
+# Build rule for target.
+test_application: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_application
+.PHONY : test_application
+
+# fast build rule for target.
+test_application/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/build
+.PHONY : test_application/fast
+
 fwl/address.o: fwl/address.cc.o
 .PHONY : fwl/address.o
 
@@ -992,6 +1005,30 @@ fwl/stream.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/stream.cc.s
 .PHONY : fwl/stream.cc.s
 
+fwl/system/application.o: fwl/system/application.cc.o
+.PHONY : fwl/system/application.o
+
+# target to build an object file
+fwl/system/application.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/system/application.cc.o
+.PHONY : fwl/system/application.cc.o
+
+fwl/system/application.i: fwl/system/application.cc.i
+.PHONY : fwl/system/application.i
+
+# target to preprocess a source file
+fwl/system/application.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/system/application.cc.i
+.PHONY : fwl/system/application.cc.i
+
+fwl/system/application.s: fwl/system/application.cc.s
+.PHONY : fwl/system/application.s
+
+# target to generate assembly for a file
+fwl/system/application.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fwl.dir/build.make CMakeFiles/fwl.dir/fwl/system/application.cc.s
+.PHONY : fwl/system/application.cc.s
+
 fwl/system/daemon.o: fwl/system/daemon.cc.o
 .PHONY : fwl/system/daemon.o
 
@@ -1159,6 +1196,30 @@ tests/test_address.s: tests/test_address.cc.s
 tests/test_address.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.s
 .PHONY : tests/test_address.cc.s
+
+tests/test_application.o: tests/test_application.cc.o
+.PHONY : tests/test_application.o
+
+# target to build an object file
+tests/test_application.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.o
+.PHONY : tests/test_application.cc.o
+
+tests/test_application.i: tests/test_application.cc.i
+.PHONY : tests/test_application.i
+
+# target to preprocess a source file
+tests/test_application.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.i
+.PHONY : tests/test_application.cc.i
+
+tests/test_application.s: tests/test_application.cc.s
+.PHONY : tests/test_application.s
+
+# target to generate assembly for a file
+tests/test_application.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.s
+.PHONY : tests/test_application.cc.s
 
 tests/test_bytearray.o: tests/test_bytearray.cc.o
 .PHONY : tests/test_bytearray.o
@@ -1626,6 +1687,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... fwl"
 	@echo "... test_address"
+	@echo "... test_application"
 	@echo "... test_bytearray"
 	@echo "... test_config"
 	@echo "... test_daemon"
@@ -1720,6 +1782,9 @@ help:
 	@echo "... fwl/stream.o"
 	@echo "... fwl/stream.i"
 	@echo "... fwl/stream.s"
+	@echo "... fwl/system/application.o"
+	@echo "... fwl/system/application.i"
+	@echo "... fwl/system/application.s"
 	@echo "... fwl/system/daemon.o"
 	@echo "... fwl/system/daemon.i"
 	@echo "... fwl/system/daemon.s"
@@ -1741,6 +1806,9 @@ help:
 	@echo "... tests/test_address.o"
 	@echo "... tests/test_address.i"
 	@echo "... tests/test_address.s"
+	@echo "... tests/test_application.o"
+	@echo "... tests/test_application.i"
+	@echo "... tests/test_application.s"
 	@echo "... tests/test_bytearray.o"
 	@echo "... tests/test_bytearray.i"
 	@echo "... tests/test_bytearray.s"

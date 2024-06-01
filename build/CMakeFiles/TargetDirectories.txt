@@ -19,5 +19,6 @@
 /home/fwl/program/fwl-master/build/CMakeFiles/test_http_connection.dir
 /home/fwl/program/fwl-master/build/CMakeFiles/test_wsServer.dir
 /home/fwl/program/fwl-master/build/CMakeFiles/test_daemon.dir
+/home/fwl/program/fwl-master/build/CMakeFiles/test_application.dir
 /home/fwl/program/fwl-master/build/CMakeFiles/edit_cache.dir
 /home/fwl/program/fwl-master/build/CMakeFiles/rebuild_cache.dir

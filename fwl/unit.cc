@@ -6,6 +6,7 @@
 #include"thread.h"
 #include"log.h"
 
+#include <dirent.h>
 #include<fstream>
 #include <openssl/sha.h>
 #include <openssl/bio.h>
@@ -153,6 +154,27 @@ int FSUnit::_mkdir(const char * path,mode_t mode) {
         return 0;
     return mkdir(path,mode);
 
+}
+
+void FSUnit::ListAllFiles(const std::string & path, std::vector<std::string> &files, const std::string & prefix){
+	DIR * dirName = nullptr;
+	if(nullptr != (dirName = opendir(path.c_str()))){
+		struct dirent * dirp;
+		while(nullptr != (dirp = readdir(dirName))){
+			if(0 == strcasecmp(".", dirp -> d_name) || 0 == strcasecmp("..", dirp -> d_name)){
+				continue;	//当前目录以及父目录不显示
+			}else if(dirp -> d_type == DT_DIR){	//目录文件读取新目录文件
+				ListAllFiles(path + "/" + dirp -> d_name, files, prefix);
+			}else{	//将文件名写入数组
+				if(prefix.empty()){
+					files.push_back(path + "/" + std::string(dirp -> d_name));
+				}else if(std::string(dirp -> d_name).ends_with(prefix.c_str())){
+					files.push_back(path + "/" + std::string(dirp -> d_name));
+				}
+			}
+		}
+		closedir(dirName);
+	}
 }
 
 //Allocater实现

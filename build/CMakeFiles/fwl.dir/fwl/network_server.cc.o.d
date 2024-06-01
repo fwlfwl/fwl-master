@@ -210,7 +210,9 @@ CMakeFiles/fwl.dir/fwl/network_server.cc.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /home/fwl/program/fwl-master/fwl/iomanager.h \
- /home/fwl/program/fwl-master/fwl/scheduler.h /usr/include/c++/11/atomic \
+ /home/fwl/program/fwl-master/fwl/scheduler.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/atomic \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
@@ -219,9 +221,7 @@ CMakeFiles/fwl.dir/fwl/network_server.cc.o: \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
  /home/fwl/program/fwl-master/fwl/thread.h \
- /home/fwl/program/fwl-master/fwl/base_head.h \
- /usr/include/c++/11/iostream /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/sstream \
+ /home/fwl/program/fwl-master/fwl/base_head.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/fstream \
  /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \

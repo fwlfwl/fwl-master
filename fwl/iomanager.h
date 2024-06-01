@@ -74,7 +74,8 @@ private:
     };
 
 public:
-    typedef RWMutex RWMutexType;
+	typedef std::shared_ptr<IOManager> ptr;
+	typedef RWMutex RWMutexType;
 
     //构造函数
     IOManager(size_t threadNum =  1, bool use_call = true, const std::string & name = "");

@@ -188,8 +188,14 @@ void testLogConfig(){
     std::cout << "--------------------------" << std::endl;
     std::cout << fwl::loggerMgr::getInstance() -> toYAMLString() << std::endl;
     std::cout << "--------------------------" << std::endl;
-    
-    YAML::Node root = YAML::LoadFile("../log.yml");
+	YAML::Node root;
+    try{
+		root = YAML::LoadFile("../log.yml");
+	}catch(...){
+		std::cout << "YAML load file failed,errno="
+			<< errno << ",errorstr=" << strerror(errno) << std::endl;
+		return;
+	}
     fwl::Config::loadYamlConfig(root);
    
     std::cout << "--------------------------" << std::endl;

@@ -51,6 +51,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/fwl.dir/fwl/socket.cc.o.d"
   "CMakeFiles/fwl.dir/fwl/stream.cc.o"
   "CMakeFiles/fwl.dir/fwl/stream.cc.o.d"
+  "CMakeFiles/fwl.dir/fwl/system/application.cc.o"
+  "CMakeFiles/fwl.dir/fwl/system/application.cc.o.d"
   "CMakeFiles/fwl.dir/fwl/system/daemon.cc.o"
   "CMakeFiles/fwl.dir/fwl/system/daemon.cc.o.d"
   "CMakeFiles/fwl.dir/fwl/system/env.cc.o"
