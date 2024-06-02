@@ -51,6 +51,9 @@ public:
 	const std::string & getCwd() const{
 		return m_cwd;
 	}
+	
+	//获取完整的运行路径(即exe路径，config文件存在此目录，作为config默认目录)
+	void getExePath(std::string & out) const;
 private:
 	//参数
 	std::map<std::string, std::string> m_args;

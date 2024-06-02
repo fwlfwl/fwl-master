@@ -11,9 +11,11 @@ int main(int argc, char * argv[]){
 	if(fwl::EnvMgr::getInstance() -> has("d") && 0 != fwl::create_background()){
 		goto exitPos;
 	}
-	app -> init(argc, argv);
-	app -> run();
+	if(app -> init(argc, argv)){
+		app -> run();
+	}
+	goto exitPos;
 exitPos:
-	FWL_LOG_INFO(g_logger) << "Thread " << getpid() << " exited!";
+	//FWL_LOG_INFO(g_logger) << "Thread " << getpid() << " exited!";
 	return 0;
 }

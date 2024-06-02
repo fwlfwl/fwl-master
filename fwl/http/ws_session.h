@@ -159,7 +159,8 @@ public:
 		METHOD_ERROR,
 		HEADER_ERROR,
 		URI_ERROR,
-		KEY_ERROR
+		KEY_ERROR,
+		SERVER_ERROR
 	};
 
 	typedef std::shared_ptr<WsSession> ptr;

@@ -11,7 +11,7 @@
 namespace fwl{
 
 static Logger::ptr g_logger = FWL_LOG_NAME("system");
-static const std::string DEFAULT_CONFIG_DIR("./config/");
+static const std::string DEFAULT_CONFIG_DIR("config/");
 
 static ConfigVar<std::vector<TcpConfig> >::ptr g_server_config = Config::lookUp("servers",
 		std::vector<TcpConfig>{},"display all servers");
@@ -35,8 +35,11 @@ bool Application::init(int argc, char * argv[]){
 		EnvMgr::getInstance() -> printHelps();
 		return false;
 	}
+	std::string default_path;
+	EnvMgr::getInstance() -> getExePath(default_path);	//获取默认config路径
+	default_path.append(DEFAULT_CONFIG_DIR);
 	//配置文件加载
-	Config::LoadFromDir(EnvMgr::getInstance() -> get("c", DEFAULT_CONFIG_DIR));	
+	Config::LoadFromDir(EnvMgr::getInstance() -> get("c", default_path));	
 	return true;
 }
 

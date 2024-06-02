@@ -28,6 +28,12 @@ WsFrameMessage::ptr WsSession::recvMessage(){
 	return wsRecvMessage(this);	
 }
 
+#define RESPONSE_CLIENT_ERROR(res, code, reason)	\
+	do{	\
+		res -> setStatus(code);	\
+		res -> setReason(reason);	\
+	}while(0);	\
+
 /**
  * @brief handlerServer
  * */
@@ -35,39 +41,50 @@ WsSession::Result WsSession::handleshake(){
 	auto req = recvRequest();
 	//rfc6455 4.1
 	do{
+		//create response  
+		HttpResponse::ptr res(new HttpResponse(0x11, false));
+		res -> setHeader("Connection", "Upgrade");
+		res -> setHeader("Upgrade", "websocket");
 		if(!req){
-			wsClose(this, PROTOCOL_ERROR);
-			return std::make_shared<SharkResult>(nullptr, (int)SHARK_STATE::FMT_ERROR);
+			FWL_LOG_ERROR(g_logger) << "Class Response create failed";
+			RESPONSE_CLIENT_ERROR(res, HttpStatus::INTERNAL_SERVER_ERROR, "Internal Server Error")
+			sendResponse(res);
+			return std::make_shared<SharkResult>(nullptr, (int)SHARK_STATE::SERVER_ERROR);
 		}
 		//version check 
 		if(0x10 == req -> getVersion() )	{
-			FWL_LOG_ERROR(g_logger) << "Http version lower than 1.1";
-			wsClose(this, PROTOCOL_ERROR);
+			FWL_LOG_DEBUG(g_logger) << (m_sock -> getRemoteAddress() -> toString()) << " http version is less than HTTP/1.1"; 
+			RESPONSE_CLIENT_ERROR(res, HttpStatus::BAD_REQUEST, "BAD_REQUEST")
+			sendResponse(res);
 			return std::make_shared<SharkResult>(nullptr, (int)SHARK_STATE::HTTP_VERSION_ERROR);
 		}
 		//method check
 		if(HttpMethod::GET != req -> getMethod()){
-			FWL_LOG_ERROR(g_logger) << "Request not be Get";
-			wsClose(this, PROTOCOL_ERROR);
+			FWL_LOG_DEBUG(g_logger) << (m_sock -> getRemoteAddress() -> toString()) << " request method not is GET"; 
+			RESPONSE_CLIENT_ERROR(res, HttpStatus::BAD_REQUEST, "BAD_REQUEST")
+			sendResponse(res);
 			return std::make_shared<SharkResult>(nullptr, (int)SHARK_STATE::METHOD_ERROR);
 		}
 		//Connection check
 		if(0 != strcasecmp(&(req -> getHeader("connection"))[0], "Upgrade")){
-			FWL_LOG_ERROR(g_logger) << "Connection is not Upgrade";
-			wsClose(this, PROTOCOL_ERROR);
+			FWL_LOG_DEBUG(g_logger) << (m_sock -> getRemoteAddress() -> toString()) << " Connection field not is Upgrade"; 
+			RESPONSE_CLIENT_ERROR(res, HttpStatus::BAD_REQUEST, "BAD_REQUEST")
+			sendResponse(res);
 			return std::make_shared<SharkResult>(nullptr, (int)SHARK_STATE::HEADER_ERROR);
 		}		
 		//upgrad check 
 		if(0 != strcasecmp(&(req -> getHeader("Upgrade"))[0], "websocket")){
-			FWL_LOG_ERROR(g_logger) << "Upgrade is not websocket";
-			wsClose(this, PROTOCOL_ERROR);
+			FWL_LOG_DEBUG(g_logger) << (m_sock -> getRemoteAddress() -> toString()) << " Upgrade field not is websocket"; 
+			RESPONSE_CLIENT_ERROR(res, HttpStatus::BAD_REQUEST, "BAD_REQUEST")
+			sendResponse(res);
 			return std::make_shared<SharkResult>(nullptr, (int)SHARK_STATE::HEADER_ERROR);
 		}
 		//sec-websocket-key check
 		std::string key = req -> getHeader("Sec-WebSocket-Key");
 		if(key.empty()){
-			FWL_LOG_ERROR(g_logger) << "Sec-WebSocket-Key is empty";
-			wsClose(this, PROTOCOL_ERROR);
+			FWL_LOG_DEBUG(g_logger) << (m_sock -> getRemoteAddress() -> toString()) << " Sec-WebSocket_Key is empty"; 
+			RESPONSE_CLIENT_ERROR(res, HttpStatus::BAD_REQUEST, "BAD_REQUEST")
+			sendResponse(res);
 			return std::make_shared<SharkResult>(nullptr, (int)SHARK_STATE::KEY_ERROR);
 		}
 		key += "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
@@ -76,26 +93,21 @@ WsSession::Result WsSession::handleshake(){
 		std::string out_key = fwl::base64En(out, 20);
 		
 		//create response  
-		HttpResponse::ptr res(new HttpResponse(0x11, false));
-		res -> setHeader("Connection", "Upgrade");
-		res -> setHeader("Upgrade", "websocket");
 		res -> setHeader("Sec-WebSocket-Accept",out_key);
 		//FWL_LOG_DEBUG(g_logger) << out_key;
 		res -> setWebsocket(true);
 		//Version is no Supported
 		if(0 != strcasecmp(&(req -> getHeader("Sec-WebSocket-Version"))[0], "13")){
-			res -> setStatus(HttpStatus::BAD_REQUEST);
-			res -> setReason("Version is invalid");
+			FWL_LOG_DEBUG(g_logger) << (m_sock -> getRemoteAddress() -> toString()) << " Sec-WebSocket_Key-Version error"; 
+			RESPONSE_CLIENT_ERROR(res, HttpStatus::BAD_REQUEST, "BAD_REQUEST")
 			res -> setHeader("Sec-WebSocket_Key", "13");
 			sendResponse(res);
-			wsClose(this, PROTOCOL_ERROR);
 			return std::make_shared<SharkResult>(nullptr, (int)PROTOCOL_ERROR);
 		}	
 		//success response 
 		
 		res -> setStatus(HttpStatus::SWITCHING_PROTOCOLS);
 		res -> setReason("Switching Protocols");
-		
 		sendResponse(res);
 	}while(0);
 	return std::make_shared<SharkResult>(req, (int)SHARK_STATE::NORMAL);

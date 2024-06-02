@@ -85,6 +85,16 @@ void Env::del(const std::string & key){
 	m_args.erase(key);
 }
 
+//获取完整的运行路径(即exe路径，config文件存在此目录，作为config默认目录)
+void Env::getExePath(std::string & out) const{
+	auto pos = m_exe.find_last_of('/');		
+	if(pos == std::string::npos){
+		out = "./";
+	}else{
+		out = m_exe.substr(0, pos + 1);
+	}
+}
+
 /**
  * @brief helps操作函数
  * */
