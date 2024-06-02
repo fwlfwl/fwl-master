@@ -67,7 +67,6 @@ public:
             need_tick = schedlulerNolock(&*begin,-1) | need_tick;
         }
         if(need_tick){
-          	std::cout << "tick";
 			tick();
         }
     }

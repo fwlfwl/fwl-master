@@ -42,7 +42,6 @@ bool Application::init(int argc, char * argv[]){
 
 //run函数
 bool Application::run(){
-	
 	bool is_daemon = EnvMgr::getInstance() -> has("d");
 	return 0 == start_daemon(m_argc, m_argv,std::bind(&Application::main, this, std::placeholders::_1, std::placeholders::_2), is_daemon);	
 }

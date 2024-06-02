@@ -44,19 +44,18 @@ bool Env::init(int argc, char * argv[]){
 				FWL_LOG_ERROR(g_logger) << "Invalid args index " << i;
 				return false;
 			}
-		}else{
-			if(nullptr == key){
-				FWL_LOG_ERROR(g_logger) << "Invalid args index " << i;
-				return false;
-			}
-			if('-' != argv[i][0]){
-				add(key, argv[i]);
-				++i;
-			}else{
-				add(key, "");
-			}
-			key = nullptr;
 		}
+		if(nullptr == key){
+			FWL_LOG_ERROR(g_logger) << "Invalid args index " << i;
+			return false;
+		}
+		if(i + 1 < argc && '-' != argv[i + 1][0]){
+			add(key, argv[i + 1]);
+			++i;
+		}else{
+			add(key, "");
+		}
+		key = nullptr;
 	}
 	assert(argv[0]);
 	m_program = argv[0];

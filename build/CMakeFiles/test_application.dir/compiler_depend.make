@@ -357,8 +357,13 @@ CMakeFiles/test_application.dir/tests/test_application.cc.o: ../tests/test_appli
   /usr/include/arpa/inet.h \
   /usr/include/netinet/in.h \
   /usr/include/x86_64-linux-gnu/bits/in.h \
-  ../fwl/iomanager.h
+  ../fwl/iomanager.h \
+  ../fwl/system/env.h \
+  ../fwl/mutex.h \
+  ../fwl/system/daemon.h
 
+
+../fwl/system/daemon.h:
 
 /usr/include/netinet/in.h:
 
@@ -499,6 +504,8 @@ CMakeFiles/test_application.dir/tests/test_application.cc.o: ../tests/test_appli
 /usr/include/c++/11/bits/std_function.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
+
+../fwl/system/env.h:
 
 /usr/include/alloca.h:
 
