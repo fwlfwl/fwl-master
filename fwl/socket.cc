@@ -117,11 +117,13 @@ bool Socket::setOption(int level, int option, const void* result, socklen_t len)
 
 Socket::ptr Socket::accept() {
     Socket::ptr sock(new Socket(m_family, m_type, m_protocol));
-    int newsock = ::accept(m_sock, nullptr, nullptr);
+	int newsock = ::accept(m_sock, nullptr, nullptr);
     if(newsock == -1) {
-        FWL_LOG_ERROR(g_logger) << "accept(" << m_sock << ") errno="
+		if(EAGAIN != errno && ECONNABORTED != errno && errno != EPROTO && EINTR != errno){
+			FWL_LOG_ERROR(g_logger) << "accept(" << m_sock << ") errno="
             << errno << " errstr=" << strerror(errno);
-        return nullptr;
+		}	
+		return nullptr;
     }
     if(sock->init(newsock)) {
         return sock;
@@ -447,7 +449,8 @@ bool Socket::cancelAll() {
 void Socket::initSock() {
     int val = 1;
     setOption(SOL_SOCKET, SO_REUSEADDR, val);
-    if(m_type == SOCK_STREAM) {
+    setOption(SOL_SOCKET, SO_REUSEPORT, val);
+	if(m_type == SOCK_STREAM) {
         setOption(IPPROTO_TCP, TCP_NODELAY, val);
     }
 }

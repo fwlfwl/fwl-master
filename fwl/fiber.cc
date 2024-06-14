@@ -99,50 +99,27 @@ Fiber::~Fiber(){
 }
 
 bool Fiber::reset(std::function<void()> new_cb){
-    //运行状态无法重置
-    if(RUNNING == m_state || SUSPEND == m_state){
-//将state转化为字符串
-#undef STATE_TO_STRING
-#define STATE_TO_STRING(state,state_str)  \
-        if(state == RUNNABLE){  \
-                state_str = "RUNNABLE";  \
-        }else if(state == RUNNING){  \
-                state_str =  "RUNNING";   \
-        }else if(state == SUSPEND){ \
-                state_str = "SUSPEND";   \
-        }else{  \
-                state_str = "";   \
-        }
-        std::string state_str;
-        STATE_TO_STRING(m_state,state_str);
-        FWL_LOG_INFO(g_logger) << "Fiber "<< m_id << " which state is "<< state_str << " can not to reset";
-#undef STATE_TO_STRING
-        return false;
-    }
+	m_state = RUNNABLE;
     if(!new_cb){
         m_cb = nullptr;
         m_state = TERM;
         return false;
     }
-    //重置m_state状态
-    m_state = RUNNABLE;
     //新运行函数
     m_cb = new_cb;
     UCONTEXT_INIT(m_ctx,m_stack,m_stacksize,nullptr,MainRun)
+    m_state = RUNNABLE;
     return true;
 }
 
 void Fiber::SwapOut(){
     SetThis(Scheduler::GetSchedulerFiber());  
     //如果运行状态，则将状态切换为可运行状态
-    if(TERM != m_state && EXPECT != m_state){
-        m_state = RUNNABLE;
-    }
     SWAPCONTEXT(&m_ctx,&Scheduler::GetSchedulerFiber() -> m_ctx);
 }
 
 void Fiber::SwapIn(){
-    ASSERT(RUNNING !=  m_state);
+    //ASSERT(RUNNING !=  m_state);
     SetThis(this);
     m_state = RUNNING;
 	SWAPCONTEXT(&Scheduler::GetSchedulerFiber() -> m_ctx, &m_ctx);

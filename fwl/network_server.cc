@@ -99,14 +99,8 @@ bool NetworkServer::bind(const std::vector<Address::ptr> & addrs, std::vector<Ad
 bool NetworkServer::accept(Socket::ptr sock){
 	while(!m_isStop){
 		Socket::ptr client = sock -> accept();
-		FWL_LOG_DEBUG(g_logger) << client -> toString();
-		if(!client){	
-			FWL_LOG_ERROR(g_logger) << "Accept failed, errno = "
-				<< errno 
-				<< ",strerror"	
-				<< strerror(errno);	
-		}else{
-			setnonblocking(client -> getSocket());	
+		if(client){
+			//setnonblocking(client -> getSocket());	
 			client -> setRecvTimeout(m_timeout);
 			m_work -> scheduler(std::bind(&NetworkServer::handlerClient, shared_from_this(), client));
 		}		

@@ -238,7 +238,7 @@ WsFrameMessage::ptr wsRecvMessage(SockStream * stream){
 		}while(readHeader < headSize);
 		readSum += headSize;
 		memcpy((void * )&head, (void *)headC, sizeof(head));
-		FWL_LOG_DEBUG(g_logger) << (head.toString()) << std::hex << head.opcode;
+		//FWL_LOG_DEBUG(g_logger) << (head.toString()) << std::hex << head.opcode;
 		//head check
 		//rsv1,rsv2,rsv3 must be 0 
 		if(head.rsv1 || head.rsv2 || head.rsv3){

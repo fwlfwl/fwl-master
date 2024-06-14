@@ -15,7 +15,7 @@ namespace fwl {
 static fwl::ConfigVar<int>::ptr g_tcp_connect_timeout =
     fwl::Config::lookUp("tcp.connect.timeout", 5000,"tcp connect timeout");
 
-static thread_local bool t_hook_enable = false;
+static thread_local bool t_hook_enable = true;	//默认就要使能hook
 
 #define HOOK_FUN(XX) \
     XX(sleep) \
@@ -85,8 +85,7 @@ static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name,
     if(!fwl::t_hook_enable) {
         return fun(fd, std::forward<Args>(args)...);
     }
-	FWL_LOG_DEBUG(g_logger) << "use hook";
-	fwl::FdCtx::ptr ctx = fwl::FdMgr::getInstance()->get(fd, true);
+	fwl::FdCtx::ptr ctx = fwl::FdMgr::getInstance()->get(fd,true);
 	if(!ctx) {
         return fun(fd, std::forward<Args>(args)...);
     }
@@ -94,6 +93,8 @@ static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name,
         errno = EBADF;
         return -1;
     }
+	
+	//std::cout << "Hook_fun_name=" << hook_fun_name << ",fd = " << fd << ",isSocket=" << (ctx -> isSocket()) << ",isUserNonblock=" << (ctx-> getUserNonblock())<< std::endl;	
 
     if(!ctx->isSocket() || ctx->getUserNonblock()) {
         return fun(fd, std::forward<Args>(args)...);
@@ -107,35 +108,29 @@ retry:
     while(n == -1 && errno == EINTR) {
         n = fun(fd, std::forward<Args>(args)...);
     }
-	if(n == -1 && errno == EAGAIN) {
-        FWL_LOG_DEBUG(g_logger) << "do_io, run here";
+	if(n == -1 && errno == EAGAIN) {	//无数据可读,则需要切出fiber
 		fwl::IOManager* iom = fwl::IOManager::GetThis();
         fwl::Timer::ptr timer;
         std::weak_ptr<timer_info> winfo(tinfo);
-
         if(to != (uint64_t)-1) {
-            timer = iom -> addConditionTimer(to, [winfo, fd, iom, event]() {
-                auto t = winfo.lock();
+			timer = iom -> addConditionTimer(to, [winfo, fd, iom, event]() {
+				auto t = winfo.lock();
                 if(!t || t->cancelled) {
                     return;
                 }
                 t->cancelled = ETIMEDOUT;
-				FWL_LOG_DEBUG(g_logger) << "11";
-				iom->cancelEvent(fd, (fwl::IOManager::Event)(event));
-            }, winfo);
-        }
-
-        int rt = iom->addEvent(fd, (fwl::IOManager::Event)(event));
-        if(rt) {
-            FWL_LOG_ERROR(g_logger) << hook_fun_name << " addEvent("
-                << fd << ", " << event << ")";
+				iom -> cancelEvent(fd, (fwl::IOManager::Event)event);
+			},winfo);
+		}
+		int rt = iom->addEvent(fd, (fwl::IOManager::Event)(event));
+		if(rt) {
             if(timer) {
                 iom -> delTimer(timer);
             }
             return -1;
         } else {
-            fwl::Fiber::SwitchToSUSPEND();
-            if(timer) {
+			fwl::Fiber::SwitchToSUSPEND();
+			if(timer) {
                 iom->delTimer(timer);
             }
             if(tinfo->cancelled) {
@@ -264,7 +259,6 @@ int connect_with_timeout(int fd, const struct sockaddr* addr, socklen_t addrlen,
         if(timer) {
             iom->delTimer(timer);
         }
-        FWL_LOG_ERROR(g_logger) << "connect addEvent(" << fd << ", WRITE) error";
     }
 
     int error = 0;
@@ -286,7 +280,8 @@ int connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen) {
 
 int accept(int s, struct sockaddr *addr, socklen_t *addrlen) {
     int fd = do_io(s, accept_f, "accept", fwl::IOManager::READ, SO_RCVTIMEO, addr, addrlen);
-    if(fd >= 0) {
+	//std::cout << "accept fd = " << fd << std::endl;
+	if(fd >= 0) {
         fwl::FdMgr::getInstance()->get(fd, true);
     }
     return fd;

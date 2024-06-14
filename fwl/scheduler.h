@@ -51,8 +51,7 @@ public:
         bool need_tick = false;
         MutexType::Lock lock(m_mutex);
         need_tick = schedulerNolock(f,thread);
-        if(need_tick){
-			std::cout << "ticK()";
+		if(need_tick){
 			tick();
         }
     }

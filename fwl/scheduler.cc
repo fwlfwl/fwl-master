@@ -221,11 +221,13 @@ void Scheduler::run(){
                              && EXPECT != fat.fiber -> GetState())){    //fiber存在，执行
                 fat.fiber -> SwapIn();
                 //调度器返回，待运行状态，则执行调度器
-                if(fat.fiber -> GetState() == RUNNABLE){
-                    scheduler(fat.fiber);
+				//std::cout << "fiber m_state " << fat.fiber -> GetState(); 
+				if(fat.fiber -> GetState() == RUNNING){
+					scheduler(fat.fiber);
                 }else if(EXPECT != fat.fiber -> GetState() && TERM != fat.fiber -> GetState()){
                     fat.fiber -> SetState(RUNNABLE); 
                 }
+				fat.reset();
             }else if(fat.fc){   //function存在，执行
                 if(fiber){
                     fiber -> reset(fat.fc);
@@ -234,13 +236,17 @@ void Scheduler::run(){
                 }
                 fiber -> SwapIn();
                 //运行后结果，待运行状态，则执行调度器
-                if(RUNNABLE == fiber -> GetState() || RUNNING == fiber -> GetState()){
-                    scheduler(fiber);
-                    fiber.reset();
-                }else if(EXPECT == fiber -> GetState() || TERM == fiber -> GetState()){ //终止Fiber
-                    fiber -> reset(nullptr);
-                }
-            }
+                if(RUNNING == fiber -> GetState()){
+					scheduler(fiber);
+                	fiber.reset();
+				}else if(EXPECT != fiber -> GetState() && TERM != fiber -> GetState()){ //终止Fiber
+            		fiber -> SetState(RUNNABLE);
+					fiber.reset();
+                }else{
+                    FWL_LOG_DEBUG(g_logger) << "Fiber reset nullptr";
+					fiber -> reset(nullptr);
+				}
+			}
             --m_active_threadNum; //运行进程数减1
         }else{  //执行空闲函数
             if(TERM == IdleFiber -> GetState()){

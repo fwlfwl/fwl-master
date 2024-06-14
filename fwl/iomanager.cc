@@ -88,8 +88,9 @@ IOManager::IOManager(size_t threadNum,bool use_call, const::std::string & name)
     ASSERT(0 == ret);
 
     //添加事件
-    opfd(m_epollfd, m_tickPipefd[0], EPOLL_CTL_ADD, EPOLLIN);
-    
+    setnonblocking(m_tickPipefd[0]);
+	opfd(m_epollfd, m_tickPipefd[0], EPOLL_CTL_ADD, EPOLLIN);
+   	 
     //重新分配大小
     resize(DEFAULT_FD_SIZE);
 
@@ -123,7 +124,7 @@ void IOManager::opfd(int epollfd, int fd, int op, int eType, bool enable_et){
     }
     
     int ret = epoll_ctl(epollfd, op, fd, &event);
-    setnonblocking(fd);
+    //setnonblocking(fd);
     if(ret){
         FWL_LOG_ERROR(g_logger) << "epoll_ctl(" << epollfd << "," << fd << ","<< op
             << "," << eType << "),error:"<< errno << ",strerror(errno):" << strerror(errno)
@@ -203,11 +204,10 @@ int IOManager::addEvent(int fd, Event event, std::function<void()> cb){
     if(cb){
         ectx.m_cb.swap(cb);
     }else{
-		FWL_LOG_DEBUG(g_logger) << "save fiber";
         ectx.m_fiber = Fiber::GetThis();
     }
-    FWL_LOG_DEBUG(g_logger) << "fd " << new_fd_ctx -> m_fd << 
-        " add event " << event << ",current event " << new_fd_ctx -> m_event;
+	//FWL_LOG_DEBUG(g_logger) << "fd " << new_fd_ctx -> m_fd << 
+     //   " add event " << event << ",current event " << new_fd_ctx -> m_event;
 	return 0;
 }
     
@@ -269,7 +269,6 @@ bool IOManager::cancelEvent(int fd,Event event){
     --m_ready_eventNum;
     //执行事件任务
     fd_ctx -> TriggerContext(event);
-    
     //删除事件
     IOManager::FdContext::EventContext& ectx = fd_ctx -> GetContext(event);
     fd_ctx -> ResetContext(ectx);
@@ -313,9 +312,9 @@ IOManager * IOManager::GetThis(){
 * @brief通知调度函数
 */
 void IOManager::tick(){
-    int ret = write(m_tickPipefd[1], TICK_MSG, sizeof(TICK_MSG));
+	int ret = write(m_tickPipefd[1], TICK_MSG, sizeof(TICK_MSG));
     ASSERT(ret == sizeof(TICK_MSG));
-    FWL_LOG_DEBUG(g_logger) <<  sizeof(TICK_MSG) << ",write msg is " << TICK_MSG;
+    //FWL_LOG_DEBUG(g_logger) <<  sizeof(TICK_MSG) << ",write msg is " << TICK_MSG;
 }
 
 /**
@@ -339,7 +338,7 @@ bool IOManager::stopping(uint64_t & timeout){
 * @param[in] timeout 超时时间
 * */
 void IOManager::onFrontEvent(){
-    tick();
+	tick();
 }
 
 /**
@@ -374,7 +373,7 @@ void IOManager::idle(){
 		std::vector<std::function<void()> > cbs;
         handleExpireTimer(cbs);
         for(auto it : cbs){
-            scheduler(it);
+			scheduler(it);
         }
 
         //处理epoll事件
@@ -405,7 +404,7 @@ void IOManager::idle(){
             if(real_event & WRITE){
                 cancelEvent(event.data.fd, WRITE);
             }
-        }
+		}
         Fiber::ptr cur_fiber = Fiber::GetThis();
         auto cur_ptr = cur_fiber.get();
         cur_fiber.reset();

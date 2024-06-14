@@ -15,7 +15,7 @@ static const std::string DEFAULT_CONFIG_DIR("config/");
 
 static ConfigVar<std::vector<TcpConfig> >::ptr g_server_config = Config::lookUp("servers",
 		std::vector<TcpConfig>{},"display all servers");
-static ConfigVar<uint32_t>::ptr g_thread_num = Config::lookUp("system.threadNum", (uint32_t)10, "thread nums");
+static ConfigVar<uint32_t>::ptr g_thread_num = Config::lookUp("system.threadNum", (uint32_t)5, "thread nums");
 //初始化函数
 bool Application::init(int argc, char * argv[]){
 	m_argc = argc;
@@ -38,8 +38,8 @@ bool Application::init(int argc, char * argv[]){
 	std::string default_path;
 	EnvMgr::getInstance() -> getExePath(default_path);	//获取默认config路径
 	default_path.append(DEFAULT_CONFIG_DIR);
-	//配置文件加载
-	Config::LoadFromDir(EnvMgr::getInstance() -> get("c", default_path));	
+	//加载文件
+	Config::LoadFromDir(EnvMgr::getInstance() -> get("c", default_path));
 	return true;
 }
 
@@ -51,8 +51,6 @@ bool Application::run(){
 
 //主运行函数 
 int Application::main(int argc, char * argv[]){
-	//再次加载文件
-	Config::LoadFromDir(EnvMgr::getInstance() -> get("c", DEFAULT_CONFIG_DIR));
 	//运行函数
 	m_main_iom.reset(new IOManager(g_thread_num -> getValue(), true, "main"));
 	m_main_iom -> scheduler(std::bind(&Application::runFiber,this));	//运行函数 
@@ -67,9 +65,9 @@ void Application::runFiber(){
 	//获取所有服务信息 
 	auto g_servers = g_server_config -> getValue();
 	FWL_LOG_DEBUG(g_logger) << "g_servers size:" << g_servers.size();
+	std::vector<Address::ptr> fails;	//记录监听失败地址信息
 	for(auto & g_server : g_servers){
 		std::vector<Address::ptr> g_addrs;	//记录所有解析地址信息
-		std::vector<Address::ptr> fails;	//记录监听失败地址信息
 		for(auto & addr_str : g_server.m_addrs){
 			//解析字符串
 			auto pos = addr_str.find(':');
