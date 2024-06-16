@@ -78,7 +78,7 @@ void IOManager::FdContext::TriggerContext(Event event){
 
 //构造函数
 IOManager::IOManager(size_t threadNum,bool use_call, const::std::string & name)
-    :Scheduler(threadNum, use_call, name){
+    :Scheduler(threadNum, use_call, name),TimerManager(){
     //创建内核事件表
     m_epollfd = epoll_create(MAX_EVENT_SIZE);
     ASSERT(0 <=  m_epollfd);
@@ -363,10 +363,11 @@ void IOManager::idle(){
             static uint64_t DEFAULT_WAIT_TIME = 3000;
             uint64_t wait_time = timeout < DEFAULT_WAIT_TIME ? timeout : DEFAULT_WAIT_TIME;
             ret = epoll_wait(m_epollfd, events, MAX_EVENT_SIZE, (int)wait_time);
-            FWL_LOG_DEBUG(g_logger) << "epoll_wait,ret = " << ret;
+            //FWL_LOG_DEBUG(g_logger) << "epoll_wait,ret = " << ret;
 			if(0 > ret && errno == EINTR){
             }else{
-                break;
+            	//FWL_LOG_DEBUG(g_logger) << "epoll_wait,ret = " << ret << ",errno=" << errno << ",strerror(errno)=" << strerror(errno);
+				break;
             }
         }while(1);
         //处理定时器

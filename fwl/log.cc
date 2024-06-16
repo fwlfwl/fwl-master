@@ -206,7 +206,7 @@ void FileLogAppender::log(std::shared_ptr<Logger> logger, LogLevel::Level level,
         }
 		MutexType::Lock lock(m_mutex);
         if(!m_formatter -> format(m_filestream,logger,level,event)){
-            std::cout << "error in write log!" << std::endl;           
+            std::cout << "error in write log" << std::endl;           
         }
     }
 };
@@ -551,8 +551,8 @@ void LogFormatter::init() {
 //LoggerManagerÀà
 LoggerManager::LoggerManager(){
     m_root.reset(new Logger);
-    m_root->addLogAppender(LogAppender::ptr(new StdoutLogAppender));
-    //m_root->addLogAppender(LogAppender::ptr(new FileLogAppender("../log_file/root.txt")));
+    //m_root->addLogAppender(LogAppender::ptr(new StdoutLogAppender));
+    m_root->addLogAppender(LogAppender::ptr(new FileLogAppender("../log_file/root.txt")));
     m_loggers[m_root -> m_name] = m_root; 
 }
 

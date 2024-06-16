@@ -15,7 +15,7 @@ namespace fwl {
 static fwl::ConfigVar<int>::ptr g_tcp_connect_timeout =
     fwl::Config::lookUp("tcp.connect.timeout", 5000,"tcp connect timeout");
 
-static thread_local bool t_hook_enable = true;	//默认就要使能hook
+static thread_local bool t_hook_enable = false;	//默认就要使能hook
 
 #define HOOK_FUN(XX) \
     XX(sleep) \

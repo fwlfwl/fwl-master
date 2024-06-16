@@ -190,12 +190,16 @@ bool wsSendMessage(SockStream * stream, uint8_t opcode, bool fin, bool mask, con
 		ba -> write((void *)mask_v, 4);
 		//WRITE((void *)&mask_v[0], 4)		
 	}
-	std::string msg = msg_in;
-	std::string extend_data = extend_data_in;
-	MASKING(head.mask, mask_v, extend_data, 0, extend_data.size());
-	ba -> write((void *)&extend_data[0], extend_data.size());
-	MASKING(head.mask, mask_v, msg, extend_data.size(), payloadLen);
-	ba -> write((void *)&msg[0], msg.size());
+	std::string msg = msg_in;	//数据需要加密，执行拷贝构造
+	std::string extend_data = extend_data_in;	//数据需要加密，执行拷贝构造
+	if(0 < extend_data.size()){
+		MASKING(head.mask, mask_v, extend_data, 0, extend_data.size());
+		ba -> write((void *)&extend_data[0], extend_data.size());
+	}
+	if(0 < msg.size()){
+		MASKING(head.mask, mask_v, msg, 0, msg.size());
+		ba -> write((void *)&msg[0], msg.size());
+	}
 	//WRITE((void *)&extend_data[0], extend_data.size())
 	//WRITE((void *)&msg[0], msg.size())
 	ba ->setPosition(0);
@@ -210,10 +214,8 @@ bool wsSendMessage(SockStream * stream, uint8_t opcode, bool fin, bool mask, con
 			if(errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR){	\
 				continue;	\
 			}	\
-			stream -> close();	\
 			return nullptr;	\
 		}else if(0 == len){	\
-			stream -> close();	\
 			return nullptr;	\
 		}	
 /**
@@ -231,11 +233,11 @@ WsFrameMessage::ptr wsRecvMessage(SockStream * stream){
 		int headSize = sizeof(WsFrameHead);
 		//recv WsFrameHead 
 		unsigned char headC[headSize];
-		do{
+		while(readHeader < headSize){
 			readn = stream -> read(&headC[readHeader], headSize - readHeader);
 			RECV_CHECK(readn);
 			readHeader += readn;
-		}while(readHeader < headSize);
+		}
 		readSum += headSize;
 		memcpy((void * )&head, (void *)headC, sizeof(head));
 		//FWL_LOG_DEBUG(g_logger) << (head.toString()) << std::hex << head.opcode;
@@ -296,12 +298,12 @@ WsFrameMessage::ptr wsRecvMessage(SockStream * stream){
 			//Get payload data 
 			uint64_t readS = 0;
 			data.resize(cur_len + payloadLen);
-			do{
+			while(readS < payloadLen){
 				readn = stream -> read(&data[cur_len + readS], payloadLen - readS);
 				RECV_CHECK(readn);
 				readSum += readn;
 				readS += readn;
-			}while(readS < payloadLen);
+			}
 			//mask data(if mask)
 			MASKING(head.mask, mask, data, cur_len, data.size());
 			if(head.fin){

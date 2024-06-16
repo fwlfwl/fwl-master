@@ -1,5 +1,6 @@
 #include "fwl/address.h"
 #include "fwl/log.h"
+#include "fwl/mutex.h"
 
 fwl::Logger::ptr g_logger = FWL_LOG_ROOT();
 

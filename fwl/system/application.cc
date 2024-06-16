@@ -5,6 +5,7 @@
 #include "serverConf.h"
 #include "../log.h"
 #include "../config.h"
+#include "../hook.h"
 #include "../http/http_server.h"
 #include "../http/ws_server.h"
 
@@ -39,6 +40,7 @@ bool Application::init(int argc, char * argv[]){
 	EnvMgr::getInstance() -> getExePath(default_path);	//获取默认config路径
 	default_path.append(DEFAULT_CONFIG_DIR);
 	//加载文件
+	FWL_LOG_DEBUG(FWL_LOG_ROOT()) << "Config path:" << default_path;
 	Config::LoadFromDir(EnvMgr::getInstance() -> get("c", default_path));
 	return true;
 }
@@ -51,6 +53,7 @@ bool Application::run(){
 
 //主运行函数 
 int Application::main(int argc, char * argv[]){
+	set_hook_enable(true);	//默认使能hook
 	//运行函数
 	m_main_iom.reset(new IOManager(g_thread_num -> getValue(), true, "main"));
 	m_main_iom -> scheduler(std::bind(&Application::runFiber,this));	//运行函数 

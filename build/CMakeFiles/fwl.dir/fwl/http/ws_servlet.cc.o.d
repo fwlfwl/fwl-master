@@ -560,4 +560,35 @@ CMakeFiles/fwl.dir/fwl/http/ws_servlet.cc.o: \
  /home/fwl/program/fwl-master/fwl/http/ragel/http11_parser.h \
  /home/fwl/program/fwl-master/fwl/http/ragel/http11_common.h \
  /home/fwl/program/fwl-master/fwl/http/ragel/httpclient_parser.h \
- /usr/include/fnmatch.h
+ /usr/include/fnmatch.h /home/fwl/program/fwl-master/fwl/http/../log.h \
+ /home/fwl/program/fwl-master/fwl/http/../base_head.h \
+ /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/set \
+ /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/bits/unordered_set.h /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/bits/ranges_algo.h \
+ /usr/include/c++/11/bits/ranges_util.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /home/fwl/program/fwl-master/fwl/http/../unit.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+ /usr/include/malloc.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
+ /home/fwl/program/fwl-master/fwl/http/../macro.h \
+ /home/fwl/program/fwl-master/fwl/http/../log.h /usr/include/assert.h \
+ /home/fwl/program/fwl-master/fwl/http/../singletion.h \
+ /home/fwl/program/fwl-master/fwl/http/../thread.h \
+ /home/fwl/program/fwl-master/fwl/http/../mutex.h

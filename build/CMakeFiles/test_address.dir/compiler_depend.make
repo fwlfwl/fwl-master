@@ -343,7 +343,8 @@ CMakeFiles/test_address.dir/tests/test_address.cc.o: ../tests/test_address.cc \
   ../fwl/noncopy.h \
   ../fwl/mutex.h \
   /usr/include/semaphore.h \
-  /usr/include/x86_64-linux-gnu/bits/semaphore.h
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+  ../fwl/mutex.h
 
 
 ../fwl/singletion.h:

@@ -218,9 +218,6 @@ OPENSSL_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 
-//The directory containing a CMake configuration file for OpenSSl.
-OpenSSl_DIR:PATH=OpenSSl_DIR-NOTFOUND
-
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 

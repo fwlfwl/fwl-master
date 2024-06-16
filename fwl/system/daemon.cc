@@ -40,7 +40,7 @@ static int real_daemon(int argc, char * argv[], std::function<int(int argc, char
 				break;
 			}else{	//异常退出
 				++ProcessInfoType::getInstance() -> resetart_num;	
-				sleep(g_restart_config -> getValue());
+				sleep(g_restart_config -> getValue());	//不能使用hook的函数，此处还没有IOManageer建立
 			}
 		}
 	}
@@ -71,16 +71,20 @@ int create_background(){
 	if(0 > pid){
 		FWL_LOG_ERROR(g_logger) << "Create backgroun daemon error, error=" << errno << ", errorstr="<<strerror(errno);
 ;
-		exit(-1);
+		return -1;
 	}else if(0 < pid){	
 		//主进程直接退出
-		exit(1);
+		return 1;
 	}
 	if(setsid() < 0){
 		FWL_LOG_ERROR(g_logger) << "Create session failed, error=" << errno << ", errorstr="<<strerror(errno);
 		exit(-1);
 	}	
 	umask(0);
+	if(0 > chdir("/")){
+		FWL_LOG_ERROR(g_logger) << "Chdir failed, error="<< errno <<  ", errorstr=" << strerror(errno);
+		exit(-1);
+	}
 	int fd = open("/dev/null",O_RDWR);
 	if(0 > fd){
 		FWL_LOG_ERROR(g_logger) << "Open /dev/null failed, error="<< errno <<  ", errorstr=" << strerror(errno);

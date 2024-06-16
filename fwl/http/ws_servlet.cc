@@ -36,8 +36,16 @@ WsServletMatcher::WsServletMatcher(const std::string & name, WsServlet::ptr defa
 							sess -> close();
 							break;
 						}
-						sleep(3);
+						//sleep(3);
 						sess -> sendMessage(fwl::http::OPCODE::TEXT, true, false,"Back:" + msg -> getData());
+					}else if(ETIMEDOUT == errno){
+						FWL_LOG_DEBUG(g_logger) << (sess -> getSocket() -> toString()) << " recv timeout,after 3s retry";
+						sleep(3);
+						continue;
+					}else{
+						FWL_LOG_DEBUG(g_logger) << "Is error,need close, errno=" << errno << ",strerror=" << strerror(errno);
+						sess -> close();
+						break;
 					}	
 				}	
 					//default close websocket

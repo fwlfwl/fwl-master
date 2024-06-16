@@ -66,7 +66,7 @@ public:
     /**
      * @brief 析构函数
      * */
-    ~TimerManager();
+    virtual ~TimerManager();
 
     /**
      * @brief 获取下一个定时期时间
