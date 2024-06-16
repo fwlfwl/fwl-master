@@ -1,0 +1,1 @@
+/usr/bin/c++  -rdynamic -O3 -ggdb -std=c++20 -lcrypto -Wall -Wno-deprecated -Werror -Wno-unused-function -rdynamic CMakeFiles/test_daemon.dir/tests/test_deamon.cc.o -o ../bin/test_daemon   -L/usr/local/yaml.cpp-0.8.0/lib  -Wl,-rpath,/usr/local/yaml.cpp-0.8.0/lib:/home/fwl/program/fwl-master-main/lib ../lib/libfwl.so -lyaml-cpp -lpthread -lssl -lcrypto 

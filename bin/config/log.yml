@@ -1,0 +1,20 @@
+logs:
+    - name: root
+      level: DEBUG
+      formatter: "%d{%Y-%m-%d %H:%M:%s} %p %m%n"
+      appenders:
+         - type: FileLogAppender
+           level: DEBUG
+           formatter: "%d{%Y-%m-%d %H:%M:%S}[%p]%m%n:"
+           file: "../log_file/root.txt"
+             #         - type: StdoutLogAppender
+             #level: DEBUG
+    - name: system
+      level: DEBUG
+      formatter: "[%d{%Y-%m-%d %H:%M:%S}[%p][%t %N %F][%c %l]%m%n"
+      appenders:
+         - type: FileLogAppender
+           level: DEBUG
+           file: "/home/fwl/program/fwl-master-main/log_file/system.txt"
+         - type: StdoutLogAppender
+           level: DEBUG

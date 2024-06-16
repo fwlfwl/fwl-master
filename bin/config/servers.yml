@@ -1,0 +1,17 @@
+servers:
+    - name: HTTP-VERSION1.1
+      address: ["0.0.0.0:8090", "127.0.0.1:8091", "/tmp/testHttp.sock"]
+      keepalive: "true"
+      timeout: 50000
+      type: "HTTP"
+      accept_worker: "accept_worker"
+      io_worker: "io_worker"
+      process_worker: "process_worker"
+    - name: WS-VERSION1.1
+      address: ["0.0.0.0:8080", "127.0.0.1:8081", "/tmp/testWs.sock"]
+      keepalive: "true"
+      timeout: 30000
+      type: "WebSocket"
+      accept_worker: "accept_worker"
+      io_worker: "io_worker"
+      process_worker: "process_worker"
