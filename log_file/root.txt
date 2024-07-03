@@ -1,0 +1,22 @@
+2024-07-01 00:19:05[DEBUG][26391 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 00:19:05[INFO][26391 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-01 00:22:11[DEBUG][26795 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 00:22:11[INFO][26795 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-01 00:33:24[DEBUG][27619 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 00:33:24[INFO][27619 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-01 00:35:30[DEBUG][28024 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 00:35:30[INFO][28024 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-01 00:38:34[DEBUG][28549 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 00:38:34[INFO][28549 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-01 00:48:49[DEBUG][29821 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 00:48:49[INFO][29821 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-01 00:52:38[DEBUG][30318 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 00:52:38[INFO][30318 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-01 00:56:14[DEBUG][30744 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 00:56:14[INFO][30744 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-01 01:00:19[DEBUG][31311 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 01:00:19[INFO][31311 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-01 01:02:03[DEBUG][31669 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 01:02:03[INFO][31669 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-01 01:04:07[DEBUG][32162 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
+2024-07-01 01:04:07[INFO][32162 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!

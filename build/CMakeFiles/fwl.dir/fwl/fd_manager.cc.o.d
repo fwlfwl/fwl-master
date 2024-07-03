@@ -1,7 +1,6 @@
 CMakeFiles/fwl.dir/fwl/fd_manager.cc.o: \
- /home/fwl/program/fwl-master-main/fwl/fd_manager.cc \
- /usr/include/stdc-predef.h \
- /home/fwl/program/fwl-master-main/fwl/fd_manager.h \
+ /home/fwl/program/fwl-master/fwl/fd_manager.cc \
+ /usr/include/stdc-predef.h /home/fwl/program/fwl-master/fwl/fd_manager.h \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -209,8 +208,8 @@ CMakeFiles/fwl.dir/fwl/fd_manager.cc.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/fwl/program/fwl-master-main/fwl/thread.h \
- /home/fwl/program/fwl-master-main/fwl/base_head.h \
+ /home/fwl/program/fwl-master/fwl/thread.h \
+ /home/fwl/program/fwl-master/fwl/base_head.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/fstream \
@@ -238,7 +237,7 @@ CMakeFiles/fwl.dir/fwl/fd_manager.cc.o: \
  /usr/include/c++/11/bits/ranges_util.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
- /home/fwl/program/fwl-master-main/fwl/unit.h \
+ /home/fwl/program/fwl-master/fwl/unit.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -259,13 +258,13 @@ CMakeFiles/fwl.dir/fwl/fd_manager.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
- /home/fwl/program/fwl-master-main/fwl/macro.h \
- /home/fwl/program/fwl-master-main/fwl/log.h \
- /home/fwl/program/fwl-master-main/fwl/singletion.h \
- /home/fwl/program/fwl-master-main/fwl/mutex.h \
- /home/fwl/program/fwl-master-main/fwl/noncopy.h /usr/include/semaphore.h \
+ /home/fwl/program/fwl-master/fwl/macro.h \
+ /home/fwl/program/fwl-master/fwl/log.h \
+ /home/fwl/program/fwl-master/fwl/singletion.h \
+ /home/fwl/program/fwl-master/fwl/mutex.h \
+ /home/fwl/program/fwl-master/fwl/noncopy.h /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/assert.h \
- /home/fwl/program/fwl-master-main/fwl/hook.h \
+ /home/fwl/program/fwl-master/fwl/hook.h \
  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
  /usr/include/x86_64-linux-gnu/asm/ioctls.h \

@@ -210,12 +210,7 @@ bool wsSendMessage(SockStream * stream, uint8_t opcode, bool fin, bool mask, con
 #undef WRITE
 
 #define RECV_CHECK(len)	\
-		if(0 > len){	\
-			if(errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR){	\
-				continue;	\
-			}	\
-			return nullptr;	\
-		}else if(0 == len){	\
+		if(0 >= len){	\
 			return nullptr;	\
 		}	
 /**
@@ -244,6 +239,7 @@ WsFrameMessage::ptr wsRecvMessage(SockStream * stream){
 		//head check
 		//rsv1,rsv2,rsv3 must be 0 
 		if(head.rsv1 || head.rsv2 || head.rsv3){
+			FWL_LOG_ERROR(g_logger) << "rsv error";
 			wsClose(stream, int(PROTOCOL_ERROR));
 			return nullptr;
 		}

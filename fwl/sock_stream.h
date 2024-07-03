@@ -24,7 +24,7 @@ public:
 	 * @param[in] sock 
 	 * @param[in] owner:the ownership of sock
 	 * */
-	SockStream(Socket::ptr sock, bool owner);
+	SockStream(Socket::ptr sock, bool owner, int64_t timeout = 0);
 
 	/**
 	 * @brief destructor 
@@ -73,6 +73,8 @@ public:
 	 * */
 	void close();
 protected:
+	//default recv timeout 
+	int64_t m_recvTimeout;
 	//connect sock
 	Socket::ptr m_sock;
 	//ownership of sock 

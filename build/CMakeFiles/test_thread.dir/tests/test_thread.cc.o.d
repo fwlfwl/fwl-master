@@ -1,7 +1,7 @@
 CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
- /home/fwl/program/fwl-master-main/tests/test_thread.cc \
+ /home/fwl/program/fwl-master/tests/test_thread.cc \
  /usr/include/stdc-predef.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/unit.h \
+ /home/fwl/program/fwl-master/tests/../fwl/unit.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -31,7 +31,7 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/base_head.h \
+ /home/fwl/program/fwl-master/tests/../fwl/base_head.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -258,17 +258,16 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/macro.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/log.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/unit.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/singletion.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/thread.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/noncopy.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/mutex.h \
+ /home/fwl/program/fwl-master/tests/../fwl/macro.h \
+ /home/fwl/program/fwl-master/tests/../fwl/log.h \
+ /home/fwl/program/fwl-master/tests/../fwl/unit.h \
+ /home/fwl/program/fwl-master/tests/../fwl/singletion.h \
+ /home/fwl/program/fwl-master/tests/../fwl/thread.h \
+ /home/fwl/program/fwl-master/tests/../fwl/noncopy.h \
+ /home/fwl/program/fwl-master/tests/../fwl/mutex.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/assert.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/log.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/config.h \
+ /usr/include/assert.h /home/fwl/program/fwl-master/tests/../fwl/log.h \
+ /home/fwl/program/fwl-master/tests/../fwl/config.h \
  /usr/local/include/yaml-cpp/yaml.h /usr/local/include/yaml-cpp/parser.h \
  /usr/local/include/yaml-cpp/dll.h /usr/local/include/yaml-cpp/emitter.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
@@ -608,5 +607,5 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/local/include/boost/integer_fwd.hpp \
  /usr/local/include/boost/detail/basic_pointerbuf.hpp \
  /usr/local/include/boost/core/enable_if.hpp \
- /home/fwl/program/fwl-master-main/tests/../fwl/thread.h \
- /home/fwl/program/fwl-master-main/tests/../fwl/mutex.h
+ /home/fwl/program/fwl-master/tests/../fwl/thread.h \
+ /home/fwl/program/fwl-master/tests/../fwl/mutex.h

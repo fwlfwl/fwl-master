@@ -61,8 +61,7 @@ void IOManager::FdContext::TriggerContext(Event event){
             ectx.m_sc -> scheduler(ectx.m_cb);
             return;
         }else if(ectx.m_fiber){
-			//FWL_LOG_DEBUG(g_logger) << "current fiber" << fwl::Fiber::GetThis();
-			FWL_LOG_DEBUG(g_logger) << "switch fiber id:" << ectx.m_fiber -> getFiberId();
+			//FWL_LOG_DEBUG(g_logger) << "switch fiber id:" << ectx.m_fiber -> getFiberId();
             ectx.m_sc -> scheduler(ectx.m_fiber);
             return;
         }else{
@@ -263,8 +262,7 @@ bool IOManager::cancelEvent(int fd,Event event){
     int op = new_event ? EPOLL_CTL_MOD : EPOLL_CTL_DEL;
     opfd(m_epollfd, fd, op, new_event);
 
-    FWL_LOG_DEBUG(g_logger) << "fd " << fd << " del event " << event
-        << ",new event is " << new_event; 
+    //FWL_LOG_DEBUG(g_logger) << "fd " << fd << " del event " << event << ",new event is " << new_event; 
 
     --m_ready_eventNum;
     //执行事件任务

@@ -6,7 +6,7 @@
 #include <string.h>
 
 static fwl::Logger::ptr g_logger = FWL_LOG_NAME("system");
-static fwl::ConfigVar<uint64_t>::ptr g_recv_timeout =  fwl::Config::lookUp("g_recv_timeout", (uint64_t)60000, "getRecvTimeout");
+static fwl::ConfigVar<uint64_t>::ptr g_recv_timeout =  fwl::Config::lookUp("g_recv_timeout", (uint64_t)10000, "getRecvTimeout");
 
 namespace fwl{
 
@@ -100,7 +100,7 @@ bool NetworkServer::accept(Socket::ptr sock){
 	while(!m_isStop){
 		Socket::ptr client = sock -> accept();
 		if(client){
-			//setnonblocking(client -> getSocket());	
+			FWL_LOG_DEBUG(g_logger) << "Accpet socket success, info:" << (client -> toString());	
 			client -> setRecvTimeout(m_timeout);
 			m_work -> scheduler(std::bind(&NetworkServer::handlerClient, shared_from_this(), client));
 		}		

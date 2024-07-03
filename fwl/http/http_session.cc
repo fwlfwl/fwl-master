@@ -19,7 +19,7 @@ HttpSession::HttpSession(Socket::ptr sock, bool owner):
 		if(0 > len){	\
 			if(errno == EAGAIN || errno == EWOULDBLOCK || errno == EINTR){	\
 				continue;	\
-			}	\
+			}\
 			close();	\
 			return nullptr;	\
 		}else if(0 == len){	\

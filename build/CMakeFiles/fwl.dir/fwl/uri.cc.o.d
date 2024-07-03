@@ -1,6 +1,5 @@
-CMakeFiles/fwl.dir/fwl/uri.cc.o: \
- /home/fwl/program/fwl-master-main/fwl/uri.cc /usr/include/stdc-predef.h \
- /usr/include/string.h \
+CMakeFiles/fwl.dir/fwl/uri.cc.o: /home/fwl/program/fwl-master/fwl/uri.cc \
+ /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -166,7 +165,7 @@ CMakeFiles/fwl.dir/fwl/uri.cc.o: \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/fwl/program/fwl-master-main/fwl/uri.h /usr/include/c++/11/memory \
+ /home/fwl/program/fwl-master/fwl/uri.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
@@ -215,7 +214,7 @@ CMakeFiles/fwl.dir/fwl/uri.cc.o: \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/fwl/program/fwl-master-main/fwl/address.h \
+ /home/fwl/program/fwl-master/fwl/address.h \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \

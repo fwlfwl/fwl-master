@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/fwl/program/fwl-master-main/tests/test_hook.cc" "CMakeFiles/test_hook.dir/tests/test_hook.cc.o" "gcc" "CMakeFiles/test_hook.dir/tests/test_hook.cc.o.d"
+  "/home/fwl/program/fwl-master/tests/test_hook.cc" "CMakeFiles/test_hook.dir/tests/test_hook.cc.o" "gcc" "CMakeFiles/test_hook.dir/tests/test_hook.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/fwl/program/fwl-master-main/build/CMakeFiles/fwl.dir/DependInfo.cmake"
+  "/home/fwl/program/fwl-master/build/CMakeFiles/fwl.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

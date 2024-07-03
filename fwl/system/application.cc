@@ -16,7 +16,11 @@ static const std::string DEFAULT_CONFIG_DIR("config/");
 
 static ConfigVar<std::vector<TcpConfig> >::ptr g_server_config = Config::lookUp("servers",
 		std::vector<TcpConfig>{},"display all servers");
+//主函数线程数
+static ConfigVar<uint32_t>::ptr g_main_thread_num = Config::lookUp("system.mainThreadNum",(uint32_t)1, "main thread num");
+//工作线程数
 static ConfigVar<uint32_t>::ptr g_thread_num = Config::lookUp("system.threadNum", (uint32_t)5, "thread nums");
+
 //初始化函数
 bool Application::init(int argc, char * argv[]){
 	m_argc = argc;
@@ -53,9 +57,8 @@ bool Application::run(){
 
 //主运行函数 
 int Application::main(int argc, char * argv[]){
-	set_hook_enable(true);	//默认使能hook
 	//运行函数
-	m_main_iom.reset(new IOManager(g_thread_num -> getValue(), true, "main"));
+	m_main_iom.reset(new IOManager(g_main_thread_num -> getValue(), true, "main_iom"));
 	m_main_iom -> scheduler(std::bind(&Application::runFiber,this));	//运行函数 
 	m_main_iom -> stop();
 	return 0;
@@ -63,8 +66,8 @@ int Application::main(int argc, char * argv[]){
 
 //运行主函数
 void Application::runFiber(){
-	//信号初始化
-	//signal_init();
+	//工作线程初始化
+	m_work_iom.reset(new IOManager(g_thread_num -> getValue(), false, "work_iom"));
 	//获取所有服务信息 
 	auto g_servers = g_server_config -> getValue();
 	FWL_LOG_DEBUG(g_logger) << "g_servers size:" << g_servers.size();
@@ -103,10 +106,10 @@ void Application::runFiber(){
 		NetworkServer::ptr server;
 		auto typeName = g_server.m_service_type;
 		if(0 == strcasecmp(typeName.c_str(),"http")){
-			server.reset(new http::HttpServer(g_server.m_keepalive));
+			server.reset(new http::HttpServer(g_server.m_keepalive, "http server", "TCP", m_main_iom.get(), m_work_iom.get()));
 			m_servs["http"].push_back(server);
 		}else if(0 == strcasecmp(typeName.c_str(), "websocket")){
-			server.reset(new http::WsServer);
+			server.reset(new http::WsServer("ws server", m_main_iom.get(), m_work_iom.get()));
 			m_servs["websocket"].push_back(server);
 		}else{
 				FWL_LOG_ERROR(g_logger) << "Create server error!";

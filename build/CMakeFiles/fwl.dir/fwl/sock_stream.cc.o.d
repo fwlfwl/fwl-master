@@ -1,5 +1,5 @@
 CMakeFiles/fwl.dir/fwl/sock_stream.cc.o: \
- /home/fwl/program/fwl-master-main/fwl/sock_stream.cc \
+ /home/fwl/program/fwl-master/fwl/sock_stream.cc \
  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -51,7 +51,7 @@ CMakeFiles/fwl.dir/fwl/sock_stream.cc.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/socket2.h \
- /home/fwl/program/fwl-master-main/fwl/sock_stream.h \
+ /home/fwl/program/fwl-master/fwl/sock_stream.h \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -223,9 +223,8 @@ CMakeFiles/fwl.dir/fwl/sock_stream.cc.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/fwl/program/fwl-master-main/fwl/socket.h \
- /usr/include/netinet/tcp.h \
- /home/fwl/program/fwl-master-main/fwl/address.h \
+ /home/fwl/program/fwl-master/fwl/socket.h /usr/include/netinet/tcp.h \
+ /home/fwl/program/fwl-master/fwl/address.h \
  /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/string.h \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
@@ -241,13 +240,13 @@ CMakeFiles/fwl.dir/fwl/sock_stream.cc.o: \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/fwl/program/fwl-master-main/fwl/noncopy.h \
- /home/fwl/program/fwl-master-main/fwl/stream.h \
- /home/fwl/program/fwl-master-main/fwl/bytearray.h \
- /home/fwl/program/fwl-master-main/fwl/log.h \
- /home/fwl/program/fwl-master-main/fwl/base_head.h \
- /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
- /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
+ /home/fwl/program/fwl-master/fwl/noncopy.h \
+ /home/fwl/program/fwl-master/fwl/stream.h \
+ /home/fwl/program/fwl-master/fwl/bytearray.h \
+ /home/fwl/program/fwl-master/fwl/log.h \
+ /home/fwl/program/fwl-master/fwl/base_head.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/fstream \
+ /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/set \
@@ -263,7 +262,7 @@ CMakeFiles/fwl.dir/fwl/sock_stream.cc.o: \
  /usr/include/c++/11/bits/ranges_util.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
- /home/fwl/program/fwl-master-main/fwl/unit.h \
+ /home/fwl/program/fwl-master/fwl/unit.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -277,8 +276,8 @@ CMakeFiles/fwl.dir/fwl/sock_stream.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
- /home/fwl/program/fwl-master-main/fwl/macro.h /usr/include/assert.h \
- /home/fwl/program/fwl-master-main/fwl/singletion.h \
- /home/fwl/program/fwl-master-main/fwl/thread.h \
- /home/fwl/program/fwl-master-main/fwl/mutex.h /usr/include/semaphore.h \
+ /home/fwl/program/fwl-master/fwl/macro.h /usr/include/assert.h \
+ /home/fwl/program/fwl-master/fwl/singletion.h \
+ /home/fwl/program/fwl-master/fwl/thread.h \
+ /home/fwl/program/fwl-master/fwl/mutex.h /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h

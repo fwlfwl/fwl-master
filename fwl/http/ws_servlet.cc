@@ -1,5 +1,6 @@
 #include "ws_servlet.h"
 #include <fnmatch.h>
+#include "../hook.h"
 #include "../log.h"
 
 namespace fwl{
@@ -36,11 +37,9 @@ WsServletMatcher::WsServletMatcher(const std::string & name, WsServlet::ptr defa
 							sess -> close();
 							break;
 						}
-						//sleep(3);
 						sess -> sendMessage(fwl::http::OPCODE::TEXT, true, false,"Back:" + msg -> getData());
-					}else if(ETIMEDOUT == errno){
-						FWL_LOG_DEBUG(g_logger) << (sess -> getSocket() -> toString()) << " recv timeout,after 3s retry";
-						sleep(3);
+					}else if(ETIMEDOUT == errno || EINTR == errno || EAGAIN == errno || EWOULDBLOCK == errno){
+						FWL_LOG_DEBUG(g_logger) << (sess -> getSocket() -> toString()) << " recv timeout";
 						continue;
 					}else{
 						FWL_LOG_DEBUG(g_logger) << "Is error,need close, errno=" << errno << ",strerror=" << strerror(errno);

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/fwl/program/fwl-master-main/. -I/usr/local/yaml.cpp-0.8.0/include
+CXX_INCLUDES = -I/home/fwl/program/fwl-master/. -I/usr/local/yaml.cpp-0.8.0/include
 
 CXX_FLAGS =  -rdynamic -O3 -ggdb -std=c++20 -lcrypto -Wall -Wno-deprecated -Werror -Wno-unused-function
 

@@ -1,6 +1,5 @@
-CMakeFiles/fwl.dir/fwl/log.cc.o: \
- /home/fwl/program/fwl-master-main/fwl/log.cc /usr/include/stdc-predef.h \
- /home/fwl/program/fwl-master-main/fwl/base_head.h \
+CMakeFiles/fwl.dir/fwl/log.cc.o: /home/fwl/program/fwl-master/fwl/log.cc \
+ /usr/include/stdc-predef.h /home/fwl/program/fwl-master/fwl/base_head.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -235,8 +234,8 @@ CMakeFiles/fwl.dir/fwl/log.cc.o: \
  /usr/include/c++/11/bits/ranges_util.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
- /home/fwl/program/fwl-master-main/fwl/log.h \
- /home/fwl/program/fwl-master-main/fwl/unit.h \
+ /home/fwl/program/fwl-master/fwl/log.h \
+ /home/fwl/program/fwl-master/fwl/unit.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -257,13 +256,13 @@ CMakeFiles/fwl.dir/fwl/log.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
- /home/fwl/program/fwl-master-main/fwl/macro.h /usr/include/assert.h \
- /home/fwl/program/fwl-master-main/fwl/singletion.h \
- /home/fwl/program/fwl-master-main/fwl/thread.h \
- /home/fwl/program/fwl-master-main/fwl/noncopy.h \
- /home/fwl/program/fwl-master-main/fwl/mutex.h /usr/include/semaphore.h \
+ /home/fwl/program/fwl-master/fwl/macro.h /usr/include/assert.h \
+ /home/fwl/program/fwl-master/fwl/singletion.h \
+ /home/fwl/program/fwl-master/fwl/thread.h \
+ /home/fwl/program/fwl-master/fwl/noncopy.h \
+ /home/fwl/program/fwl-master/fwl/mutex.h /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/fwl/program/fwl-master-main/fwl/config.h \
+ /home/fwl/program/fwl-master/fwl/config.h \
  /usr/local/include/yaml-cpp/yaml.h /usr/local/include/yaml-cpp/parser.h \
  /usr/local/include/yaml-cpp/dll.h /usr/local/include/yaml-cpp/emitter.h \
  /usr/include/c++/11/cmath /usr/include/math.h \

@@ -168,13 +168,20 @@ bool TimerManager::delTimer(Timer::ptr timer){
 * @brief 超时定时处理
 * */
 void TimerManager::handleExpireTimer(std::vector<std::function<void()> > & cbs){ 
-    //加读锁
-    RWMutexType::ReadLock rLock(m_mutex);
-    //没有定时器任务则跳出
-    if(m_timers.empty()){
-        return;
-    }
+	{
+		//加读锁
+    	RWMutexType::ReadLock rLock(m_mutex);
+    	//没有定时器任务则跳出
+    	if(m_timers.empty()){
+        	return;
+    	}
+	}
 
+	//加写锁
+	RWMutexType::WriteLock wLock(m_mutex);
+	if(m_timers.empty()){
+		return;
+	}
     uint64_t next_ms = (*m_timers.begin()) -> m_next; 
     uint64_t now_ms = GetTimeMs();
     //若下次定时器事件大于当前时间，则跳出
@@ -185,11 +192,7 @@ void TimerManager::handleExpireTimer(std::vector<std::function<void()> > & cbs){
     Timer::ptr now_timer(new Timer(now_ms));
     //返回超过当前时间的首个Timer
     auto it = m_timers.upper_bound(now_timer);
-    //解读锁
-    rLock.unlock();
 
-    //加写锁
-    RWMutexType::WriteLock wLock(m_mutex);
     std::vector<Timer::ptr> expired;
     //保存过期定时器
     expired.insert(expired.begin(), m_timers.begin(), it);

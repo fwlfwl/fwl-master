@@ -5,6 +5,7 @@
 #include"fiber.h"
 #include"unit.h"
 #include"macro.h"
+#include "hook.h"
 
 #define MAIN_THREAD_NAME "mainthread"
 
@@ -41,11 +42,13 @@ Scheduler::Scheduler(size_t threadNum, bool usr_call, const std::string & name):
 		t_scheduler_fiber = m_rootFiber.get();
 		m_rootThread = fwl::getThreadId();
         m_threadIds.push_back(m_rootThread);
+    	Thread::SetName(m_name);
     }else{
         m_rootThread =  -1;
     }
-    Thread::SetName(m_name);
+    //Thread::SetName(m_name);
     m_threadNum = threadNum;
+	set_hook_enable(true);	
 }
 
 /**
@@ -72,7 +75,7 @@ void Scheduler::start(){
     //生成线程池
 //	FWL_LOG_DEBUG(g_logger) << m_threadNum;
 	for(size_t i =  0; i < m_threadNum; ++i){\
-        m_threads[i].reset(new Thread(std::bind(&Scheduler::run,this),"thread" + std::to_string(i)));
+        m_threads[i].reset(new Thread(std::bind(&Scheduler::run,this), m_name + "_" + std::to_string(i+1)));
     }
     //停止标志设置为false
     m_stop = false;
@@ -154,7 +157,9 @@ bool Scheduler::stopping(){
  * @brief 主运行函数
  * */
 void Scheduler::run(){
-    //设置当前调度器
+    //设置hook
+	set_hook_enable(true); 
+	//设置当前调度器
     SetThis();
     //FWL_LOG_INFO(g_logger) << &t_thread_fiber;
     if(fwl::getThreadId() != m_rootThread){
@@ -243,7 +248,6 @@ void Scheduler::run(){
             		fiber -> SetState(RUNNABLE);
 					fiber.reset();
                 }else{
-                    FWL_LOG_DEBUG(g_logger) << "Fiber reset nullptr";
 					fiber -> reset(nullptr);
 				}
 			}

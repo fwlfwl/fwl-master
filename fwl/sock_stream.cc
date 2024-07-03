@@ -3,7 +3,6 @@
 #include "log.h"
 
 static fwl::Logger::ptr g_logger = FWL_LOG_NAME("system");
-
 namespace fwl{
 
 /**
@@ -11,9 +10,14 @@ namespace fwl{
  * @param[in] sock 
  * @param[in] owner:the ownership of sock
  * */
-SockStream::SockStream(Socket::ptr sock, bool owner):
+SockStream::SockStream(Socket::ptr sock, bool owner, int64_t timeout):
 	m_sock(sock),
-	m_owner(owner){}
+	m_owner(owner){
+		//满足条件设置超时
+		if(m_sock && 0 != timeout){
+			m_sock -> setRecvTimeout(timeout);
+		}
+	}
 
 /**
  * @brief destructor  

@@ -34,6 +34,8 @@ private:
 	std::map<std::string, std::vector<NetworkServer::ptr> > m_servs;
 	//主函数IoManager
 	IOManager::ptr m_main_iom;
+	//工作函数IoManager
+	IOManager::ptr m_work_iom;
 	int m_argc;
 	char ** m_argv;
 };
