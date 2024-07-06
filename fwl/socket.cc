@@ -4,6 +4,7 @@
 #include "log.h"
 #include "macro.h"
 #include "hook.h"
+#include "macro.h"
 #include <limits.h>
 
 namespace fwl {
@@ -65,7 +66,7 @@ Socket::Socket(int family, int type, int protocol)
 }
 
 Socket::~Socket() {
-    close();
+	close();
 }
 
 int64_t Socket::getSendTimeout() {
@@ -119,10 +120,7 @@ Socket::ptr Socket::accept() {
     Socket::ptr sock(new Socket(m_family, m_type, m_protocol));
 	int newsock = ::accept(m_sock, nullptr, nullptr);
     if(newsock == -1) {
-		if(EAGAIN != errno && ECONNABORTED != errno && errno != EPROTO && EINTR != errno){
-			FWL_LOG_ERROR(g_logger) << "accept(" << m_sock << ") errno="
-            << errno << " errstr=" << strerror(errno);
-		}	
+		FWL_LOG_ERROR(g_logger) << "accept(" << m_sock << ") errno=" << errno << " errstr=" << strerror(errno);
 		return nullptr;
     }
     if(sock->init(newsock)) {
@@ -269,10 +267,10 @@ int Socket::send(const iovec* buffers, size_t length, int flags) {
 }
 
 int Socket::sendTo(const void* buffer, size_t length, const Address::ptr to, int flags) {
-    if(isConnected()) {
-        return ::sendto(m_sock, buffer, length, flags, to->getAddr(), to->getAddrLen());
-    }
-    return -1;
+if(isConnected()) {
+	return ::sendto(m_sock, buffer, length, flags, to->getAddr(), to->getAddrLen());
+}
+return -1;
 }
 
 int Socket::sendTo(const iovec* buffers, size_t length, const Address::ptr to, int flags) {
@@ -464,6 +462,177 @@ void Socket::newSock() {
             << ", " << m_type << ", " << m_protocol << ") errno="
             << errno << " errstr=" << strerror(errno);
     }
+}
+
+/**
+ * @brief 创建TCP Socket(满足地址类型)
+ * @param[in] address 地址
+ */
+SSLSocket::ptr SSLSocket::CreateTCP(fwl::Address::ptr address){
+    SSLSocket::ptr sock(new SSLSocket(address -> getFamily(), TCP, 0));
+    return sock;
+}
+
+SSLSocket::ptr SSLSocket::CreateTCPSocket6() {
+    SSLSocket::ptr sock(new SSLSocket(IPv6, TCP, 0));
+    return sock;
+}
+
+SSLSocket::ptr SSLSocket::CreateTCPSocket() {
+    SSLSocket::ptr sock(new SSLSocket(IPv4, TCP, 0));
+    return sock;
+}
+/**
+ * @brief Socket构造函数
+ * @param[in] family 协议簇
+ * @param[in] type 类型
+ * @param[in] protocol 协议
+ */
+SSLSocket::SSLSocket(int family, int type, int protocol):
+	Socket(family, type, protocol){}
+
+SSLSocket::~SSLSocket(){
+	SSLClose();
+}
+
+Socket::ptr SSLSocket::accept(){
+	int newsock = ::accept(m_sock, nullptr, nullptr);
+    if(newsock == -1 || !m_ctx) {
+		FWL_LOG_ERROR(g_logger) << "accept(" << m_sock << ") errno=" << errno << " errstr=" << strerror(errno);
+		return nullptr;
+    }
+	SSLSocket::ptr sock(new SSLSocket(m_family, m_type, m_protocol));
+	sock -> m_ctx = m_ctx;
+	if(!sock -> init(newsock)){
+		FWL_LOG_ERROR(g_logger) << "Init socket failed";
+		return nullptr;
+	}
+	if(1 != SSL_accept(m_ssl.get())){
+		FWL_LOG_ERROR(g_logger) << "SSL accept failed";
+		return nullptr;
+	}
+	return sock;
+}
+
+bool SSLSocket::bind(const Address::ptr addr){
+	return Socket::bind(addr);
+}
+
+bool SSLSocket::connect(const Address::ptr addr, uint64_t timeout_ms){
+	bool ret = Socket::connect(addr, timeout_ms);
+	if(ret){
+		auto ctx = SSL_CTX_new(TLS_client_method());
+		if(!ctx){
+			return false;
+		}
+		m_ctx.reset(ctx, SSL_CTX_free);
+		m_ssl.reset(SSL_new(m_ctx.get()), SSL_free);
+		SSL_set_fd(m_ssl.get(), m_sock);
+		ret = SSL_connect(m_ssl.get());
+		//FWL_LOG_DEBUG(g_logger) << "ssl connect ret = " << ret;
+	}
+	return ret;
+}
+
+bool SSLSocket::reconnect(uint64_t timeout_ms){
+	if(!m_remoteAddress){
+        FWL_LOG_ERROR(g_logger) << "reconnect m_remoteAddress is null";
+		return false;
+	}
+	return SSLSocket::connect(m_remoteAddress, timeout_ms);
+}
+
+bool SSLSocket::listen(int backlog){
+	return Socket::listen(backlog);
+}
+
+bool SSLSocket::close(){
+	return SSLClose() && Socket::close();
+}
+
+bool SSLSocket::SSLClose(){
+   	int ret = 1;
+	if(m_ssl.get()){
+		do{
+			ret = SSL_shutdown(m_ssl.get());
+			FWL_LOG_DEBUG(g_logger) << "SSLSocket close, ret = " << ret;
+			if(0 > ret){
+				FWL_LOG_ERROR(g_logger) << "errno=" << errno << ",strerror=" << strerror(errno);
+			}
+		}while(!ret);
+	}	
+	return 1 == ret;	
+}
+
+int SSLSocket::send(const void * buffer, size_t length, int flags){
+	if(!m_ssl){
+		return -1;
+	}	
+	//FWL_LOG_DEBUG(g_logger) << "ssl write";
+	return SSL_write(m_ssl.get(), buffer, length);
+}
+
+int SSLSocket::send(const iovec * buffers, size_t length, int flags){
+	ASSERT(false);
+	return -1;
+}
+
+int SSLSocket::sendTo(const void * buffer, size_t length, const Address::ptr to, int flags){
+	ASSERT(false);
+	return -1;
+}
+
+int SSLSocket::sendTo(const iovec * buffers, size_t length, const Address::ptr to, int flags) {
+	ASSERT(false);
+	return -1;
+}
+
+int SSLSocket::recv(void * buffer, size_t length, int flags){
+	if(!m_ssl){
+		return -1;
+	}
+	return SSL_read(m_ssl.get(), buffer, length);
+}
+
+int SSLSocket::recv(iovec* buffers, size_t length, int flags){
+	ASSERT(false);
+	return -1;
+}
+
+int SSLSocket::recvFrom(void * buffers, size_t length, Address::ptr from, int flags){
+	ASSERT(false);
+	return -1;
+}
+
+int SSLSocket::recvFrom(iovec* buffers, size_t length, Address::ptr from, int flags){
+	ASSERT(false);
+	return -1;
+}
+
+bool SSLSocket::init(int sock){
+	bool ret = Socket::init(sock);
+	if(ret && m_ctx){
+		m_ssl.reset(SSL_new(m_ctx.get()), SSL_free);
+		SSL_set_fd(m_ssl.get(), sock);
+	}
+	return ret && nullptr != m_ssl;	
+}
+
+bool SSLSocket::loadServerCertificate(const std::string & cert_file, const std::string & key_file){
+	auto ctx = SSL_CTX_new(TLS_server_method());
+	if(!ctx){
+		return false;
+	}
+	m_ctx.reset(ctx, SSL_CTX_free);
+	if(1 != SSL_CTX_use_certificate_chain_file(m_ctx.get(), cert_file.c_str())){
+		FWL_LOG_ERROR(g_logger) << "Failed to load server certificate chain file";
+		return false;
+	}
+	if(1 != SSL_CTX_use_PrivateKey_file(m_ctx.get(), key_file.c_str(), SSL_FILETYPE_PEM)){
+		FWL_LOG_ERROR(g_logger) << "Failed to load the server certificate chain file";
+		return false;
+	}
+	return true;
 }
 
 }

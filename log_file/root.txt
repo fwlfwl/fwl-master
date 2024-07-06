@@ -20,3 +20,1643 @@
 2024-07-01 01:02:03[INFO][31669 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
 2024-07-01 01:04:07[DEBUG][32162 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/system/application.cc 47]Config path:/home/fwl/program/fwl-master/bin/config/
 2024-07-01 01:04:07[INFO][32162 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/log.cc 703]log config on change!
+2024-07-05 22:53:33[WARN][8623 UNKNOWN 0][/home/fwl/program/fwl-master/tests/test_http_connection.cc 77]Usage: ../bin/test_http_connection [uri] [method] [is close]
+2024-07-05 22:55:01[WARN][8989 UNKNOWN 0][/home/fwl/program/fwl-master/tests/test_http_connection.cc 77]Usage: ../bin/test_http_connection [uri] [method] [is close]
+2024-07-05 22:55:02[WARN][8991 UNKNOWN 0][/home/fwl/program/fwl-master/tests/test_http_connection.cc 77]Usage: ../bin/test_http_connection [uri] [method] [is close]
+2024-07-05 22:55:24[WARN][9021 UNKNOWN 0][/home/fwl/program/fwl-master/tests/test_http_connection.cc 77]Usage: ../bin/test_http_connection [uri] [method] [is close]
+2024-07-05 22:55:35[WARN][9023 UNKNOWN 0][/home/fwl/program/fwl-master/tests/test_http_connection.cc 77]Usage: ../bin/test_http_connection [uri] [method] [is close]
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 22:55:41[DEBUG][9025 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 22:55:41[DEBUG][9025 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:55:41[DEBUG][9025 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 22:55:41[DEBUG][9025 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/address.cc 98]Address::Lookup getaddress(, 2, 0) err=-2 errstr=Name or service not known
+2024-07-05 22:55:41[DEBUG][9025 _1 6][/home/fwl/program/fwl-master/fwl/address.cc 98]Address::Lookup getaddress(, 2, 0) err=-2 errstr=Name or service not known
+2024-07-05 22:55:41[ERROR][9024 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/http/http_connection.cc 335]Can not parse host
+2024-07-05 22:55:41[ERROR][9025 _1 6][/home/fwl/program/fwl-master/fwl/http/http_connection.cc 335]Can not parse host
+2024-07-05 22:55:41[ERROR][9024 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, pool get connection failed
+2024-07-05 22:55:41[ERROR][9025 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, pool get connection failed
+2024-07-05 22:55:41[DEBUG][9025 _1 6][/home/fwl/program/fwl-master/fwl/address.cc 98]Address::Lookup getaddress(, 2, 0) err=-2 errstr=Name or service not known
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/address.cc 98]Address::Lookup getaddress(, 2, 0) err=-2 errstr=Name or service not known
+2024-07-05 22:55:41[ERROR][9025 _1 6][/home/fwl/program/fwl-master/fwl/http/http_connection.cc 335]Can not parse host
+2024-07-05 22:55:41[ERROR][9024 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/http/http_connection.cc 335]Can not parse host
+2024-07-05 22:55:41[ERROR][9025 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, pool get connection failed
+2024-07-05 22:55:41[ERROR][9024 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, pool get connection failed
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/address.cc 98]Address::Lookup getaddress(, 2, 0) err=-2 errstr=Name or service not known
+2024-07-05 22:55:41[DEBUG][9025 _1 6][/home/fwl/program/fwl-master/fwl/address.cc 98]Address::Lookup getaddress(, 2, 0) err=-2 errstr=Name or service not known
+2024-07-05 22:55:41[ERROR][9024 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/http/http_connection.cc 335]Can not parse host
+2024-07-05 22:55:41[ERROR][9025 _1 6][/home/fwl/program/fwl-master/fwl/http/http_connection.cc 335]Can not parse host
+2024-07-05 22:55:41[ERROR][9024 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, pool get connection failed
+2024-07-05 22:55:41[ERROR][9025 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, pool get connection failed
+2024-07-05 22:55:41[INFO][9024 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:55:41[INFO][9025 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:55:41[DEBUG][9025 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 22:55:41[DEBUG][9025 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 22:55:41[DEBUG][9025 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 22:55:41[DEBUG][9025 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 22:55:41[DEBUG][9024 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 22:56:27[DEBUG][9067 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 22:56:27[DEBUG][9067 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 22:56:27[DEBUG][9067 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 22:56:27[DEBUG][9068 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 22:56:27[DEBUG][9068 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:56:27[DEBUG][9068 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 22:56:27[INFO][9068 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:56:27[DEBUG][9067 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 22:56:27[DEBUG][9067 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:56:27[DEBUG][9068 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 22:56:27[DEBUG][9067 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 22:56:27[DEBUG][9067 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 22:56:27[INFO][9067 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:56:28[INFO][9067 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:56:28[INFO][9067 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:56:29[INFO][9068 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:56:29[INFO][9068 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:56:29[INFO][9068 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:56:29[DEBUG][9068 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 22:56:30[INFO][9067 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:56:30[DEBUG][9067 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 22:56:30[DEBUG][9067 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:56:30[DEBUG][9067 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 22:56:33[DEBUG][9068 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:56:33[DEBUG][9068 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 22:56:33[DEBUG][9068 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 22:56:33[DEBUG][9067 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 22:56:33[DEBUG][9067 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 22:56:33[DEBUG][9067 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 22:56:58[DEBUG][9072 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 22:56:58[DEBUG][9072 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 22:56:58[DEBUG][9072 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 22:56:58[DEBUG][9073 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 22:56:58[DEBUG][9073 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:56:58[DEBUG][9073 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 22:56:58[DEBUG][9072 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 22:56:58[DEBUG][9073 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 22:56:58[DEBUG][9072 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:56:58[DEBUG][9072 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 22:56:58[DEBUG][9072 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 22:56:58[INFO][9072 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:56:58[INFO][9073 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:56:59[INFO][9072 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:56:59[INFO][9072 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:00[INFO][9072 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:00[INFO][9072 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:00[INFO][9072 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:00[DEBUG][9072 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 22:57:00[INFO][9072 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:00[DEBUG][9072 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 22:57:00[DEBUG][9072 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:57:00[DEBUG][9072 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 22:57:03[DEBUG][9073 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:57:03[DEBUG][9073 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 22:57:03[DEBUG][9073 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 22:57:03[DEBUG][9072 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 22:57:03[DEBUG][9072 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 22:57:03[DEBUG][9072 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 22:57:59[DEBUG][9131 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 22:57:59[DEBUG][9131 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 22:57:59[DEBUG][9131 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 22:57:59[DEBUG][9132 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 22:57:59[DEBUG][9132 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:57:59[DEBUG][9131 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 22:57:59[DEBUG][9132 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 22:57:59[DEBUG][9131 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:57:59[DEBUG][9131 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 22:57:59[DEBUG][9132 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 22:57:59[DEBUG][9131 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 22:57:59[INFO][9132 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:57:59[INFO][9131 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:57:59[INFO][9131 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:59[INFO][9132 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:59[INFO][9131 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:59[INFO][9132 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:59[INFO][9132 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:59[DEBUG][9132 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 22:57:59[INFO][9131 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:57:59[DEBUG][9131 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 22:57:59[DEBUG][9131 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:57:59[DEBUG][9131 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 22:58:02[DEBUG][9132 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:58:02[DEBUG][9132 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 22:58:02[DEBUG][9132 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 22:58:02[DEBUG][9131 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 22:58:02[DEBUG][9131 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 22:58:02[DEBUG][9131 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 22:58:36[DEBUG][9175 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 22:58:36[DEBUG][9175 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 22:58:36[DEBUG][9175 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 22:58:36[DEBUG][9176 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 22:58:36[DEBUG][9175 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 22:58:36[DEBUG][9176 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:58:36[DEBUG][9175 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:58:36[DEBUG][9176 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 22:58:36[DEBUG][9175 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 22:58:36[DEBUG][9176 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 22:58:36[DEBUG][9175 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 22:58:36[INFO][9176 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:58:36[INFO][9175 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:58:36[INFO][9176 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:36[INFO][9175 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:36[INFO][9176 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:36[INFO][9175 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:36[INFO][9176 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:36[DEBUG][9176 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 22:58:36[INFO][9175 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:36[DEBUG][9175 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 22:58:36[DEBUG][9175 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:58:36[DEBUG][9175 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 22:58:39[DEBUG][9176 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:58:39[DEBUG][9176 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 22:58:39[DEBUG][9176 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 22:58:39[DEBUG][9175 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 22:58:39[DEBUG][9175 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 22:58:39[DEBUG][9175 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 22:58:43[DEBUG][9177 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 22:58:43[DEBUG][9177 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 22:58:43[DEBUG][9177 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 22:58:43[DEBUG][9178 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 22:58:43[DEBUG][9178 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:58:43[DEBUG][9178 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 22:58:43[DEBUG][9178 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 22:58:43[DEBUG][9177 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 22:58:43[DEBUG][9177 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:58:43[DEBUG][9177 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 22:58:43[DEBUG][9177 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 22:58:43[INFO][9177 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:58:43[INFO][9178 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:58:43[INFO][9177 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:43[INFO][9178 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:43[INFO][9177 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:43[INFO][9178 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:43[INFO][9177 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:43[DEBUG][9177 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 22:58:43[INFO][9178 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:58:43[DEBUG][9178 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 22:58:43[DEBUG][9178 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:58:43[DEBUG][9178 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 22:58:43[DEBUG][9178 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 22:58:46[DEBUG][9177 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:58:46[DEBUG][9177 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 22:58:46[DEBUG][9177 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 22:58:46[DEBUG][9177 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 22:58:46[DEBUG][9177 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 22:59:43[DEBUG][9470 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 22:59:43[DEBUG][9470 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 22:59:43[DEBUG][9470 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 22:59:43[DEBUG][9471 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 22:59:43[DEBUG][9471 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:59:43[DEBUG][9471 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 22:59:43[DEBUG][9470 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 22:59:43[DEBUG][9471 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 22:59:43[DEBUG][9470 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 22:59:43[DEBUG][9470 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 22:59:43[DEBUG][9470 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 22:59:43[INFO][9471 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:59:43[INFO][9470 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 22:59:43[INFO][9471 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:59:43[INFO][9470 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:59:43[INFO][9471 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:59:43[INFO][9470 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:59:43[INFO][9470 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:59:43[DEBUG][9470 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 22:59:43[INFO][9471 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 22:59:43[DEBUG][9471 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 22:59:43[DEBUG][9471 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:59:43[DEBUG][9471 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 22:59:43[DEBUG][9471 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 22:59:46[DEBUG][9470 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 22:59:46[DEBUG][9470 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 22:59:46[DEBUG][9470 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 22:59:46[DEBUG][9470 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 22:59:46[DEBUG][9470 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:01:05[DEBUG][9590 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:01:05[DEBUG][9590 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:01:05[DEBUG][9590 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:01:05[DEBUG][9591 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:01:05[DEBUG][9591 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:01:05[DEBUG][9591 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:01:05[DEBUG][9590 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:01:05[DEBUG][9591 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:01:05[DEBUG][9590 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:01:05[DEBUG][9590 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:01:05[DEBUG][9590 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 23:01:05[INFO][9590 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:01:05[INFO][9591 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:01:05[INFO][9591 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 23:01:05[INFO][9590 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 23:01:05[INFO][9591 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 23:01:05[INFO][9590 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 23:01:05[INFO][9590 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 23:01:05[INFO][9591 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-05 23:01:05[DEBUG][9590 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:01:05[DEBUG][9591 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 23:01:05[DEBUG][9591 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:01:05[DEBUG][9591 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:01:05[DEBUG][9591 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:01:08[DEBUG][9590 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:01:08[DEBUG][9590 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:01:08[DEBUG][9590 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:01:08[DEBUG][9590 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:01:08[DEBUG][9590 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:02:44[DEBUG][9832 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:02:44[DEBUG][9832 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:02:44[DEBUG][9832 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:02:44[DEBUG][9832 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 23:02:44[INFO][9831 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:02:44[INFO][9832 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:02:44[ERROR][9831 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:02:44[ERROR][9832 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:02:44[ERROR][9831 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:02:44[ERROR][9832 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:02:44[ERROR][9831 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 23:02:44[ERROR][9831 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:02:44[DEBUG][9831 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:02:47[DEBUG][9832 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:02:47[DEBUG][9832 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:02:47[DEBUG][9832 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:02:47[DEBUG][9831 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:02:47[DEBUG][9831 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:02:47[DEBUG][9831 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:03:06[DEBUG][9847 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:03:06[DEBUG][9847 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:03:06[DEBUG][9847 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:03:06[DEBUG][9847 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 23:03:06[INFO][9847 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:03:06[INFO][9846 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:03:06[ERROR][9847 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:03:06[ERROR][9846 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:03:06[ERROR][9847 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:03:06[ERROR][9846 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:03:06[ERROR][9846 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 23:03:06[ERROR][9846 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:03:06[DEBUG][9846 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:03:09[DEBUG][9847 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:03:09[DEBUG][9847 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:03:09[DEBUG][9847 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:03:09[DEBUG][9846 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:03:09[DEBUG][9846 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:03:09[DEBUG][9846 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:11:14[DEBUG][10084 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:11:14[DEBUG][10084 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:11:14[DEBUG][10084 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:11:14[DEBUG][10084 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-05 23:11:14[INFO][10084 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:11:14[INFO][10083 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:11:14[ERROR][10083 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:11:14[ERROR][10083 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Operation now in progress
+2024-07-05 23:11:14[ERROR][10084 _1 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:11:14[ERROR][10084 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Operation now in progress
+2024-07-05 23:11:14[ERROR][10083 UNKNOWN 6][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-05 23:11:14[ERROR][10083 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:11:14[DEBUG][10083 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:11:17[DEBUG][10084 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:11:17[DEBUG][10084 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:11:17[DEBUG][10084 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:11:17[DEBUG][10083 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:11:17[DEBUG][10083 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:11:17[DEBUG][10083 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:12:32[DEBUG][10301 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:12:32[DEBUG][10301 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:12:32[DEBUG][10301 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:12:32[DEBUG][10302 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:12:32[DEBUG][10302 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:12:32[DEBUG][10301 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:12:32[DEBUG][10302 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:12:32[DEBUG][10301 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:12:32[DEBUG][10301 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:12:32[DEBUG][10302 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:12:32[INFO][10301 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:12:32[INFO][10302 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:12:32[ERROR][10301 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:12:32[ERROR][10301 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:12:32[ERROR][10301 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:12:32[DEBUG][10301 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:12:32[DEBUG][10301 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:12:32[DEBUG][10301 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:12:35[DEBUG][10302 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:12:35[DEBUG][10302 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:12:35[DEBUG][10302 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:12:35[DEBUG][10301 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:12:35[DEBUG][10301 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:12:35[DEBUG][10301 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:13:10[DEBUG][10389 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:13:10[DEBUG][10389 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:13:10[DEBUG][10389 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:13:10[DEBUG][10390 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:13:10[DEBUG][10390 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:13:10[DEBUG][10389 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:13:10[DEBUG][10390 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:13:10[DEBUG][10389 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:13:10[DEBUG][10389 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:13:10[DEBUG][10390 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:13:10[INFO][10389 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:13:10[INFO][10390 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:13:10[ERROR][10389 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:13:10[ERROR][10389 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:13:10[ERROR][10389 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:13:10[DEBUG][10389 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:13:10[DEBUG][10389 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:13:10[DEBUG][10389 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:13:13[DEBUG][10390 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:13:13[DEBUG][10390 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:13:13[DEBUG][10390 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:13:13[DEBUG][10389 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:13:13[DEBUG][10389 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:13:13[DEBUG][10389 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:13:16[DEBUG][10467 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:13:16[DEBUG][10467 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:13:16[DEBUG][10467 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:13:16[DEBUG][10468 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:13:16[DEBUG][10467 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:13:16[DEBUG][10468 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:13:16[DEBUG][10467 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:13:16[DEBUG][10468 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:13:16[DEBUG][10467 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:13:16[DEBUG][10467 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:13:16[INFO][10468 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:13:16[INFO][10467 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:13:16[ERROR][10468 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:13:16[ERROR][10468 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:13:16[ERROR][10468 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Resource temporarily unavailable
+2024-07-05 23:13:16[DEBUG][10468 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:13:16[DEBUG][10468 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:13:16[DEBUG][10468 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:13:16[DEBUG][10468 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:13:19[DEBUG][10467 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:13:19[DEBUG][10467 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:13:19[DEBUG][10467 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:13:19[DEBUG][10467 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:13:19[DEBUG][10467 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:22:56[DEBUG][11459 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:22:56[DEBUG][11459 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:22:56[DEBUG][11459 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:22:56[DEBUG][11460 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:22:56[DEBUG][11459 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:22:56[DEBUG][11460 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:22:56[DEBUG][11459 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:22:56[DEBUG][11460 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:22:56[DEBUG][11459 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:22:56[DEBUG][11459 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:22:56[INFO][11460 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:22:56[INFO][11459 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:22:56[ERROR][11459 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:22:56[ERROR][11459 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:22:56[ERROR][11459 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:22:56[DEBUG][11459 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:22:56[DEBUG][11459 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:22:56[DEBUG][11459 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:22:59[DEBUG][11460 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:22:59[DEBUG][11460 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:22:59[DEBUG][11460 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:22:59[DEBUG][11459 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:22:59[DEBUG][11459 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:22:59[DEBUG][11459 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:23:23[DEBUG][11476 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:23:23[DEBUG][11476 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:23:23[DEBUG][11476 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:23:23[DEBUG][11477 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:23:23[DEBUG][11476 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:23:23[DEBUG][11477 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:23:23[DEBUG][11476 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:23:23[DEBUG][11477 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:23:23[DEBUG][11476 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:23:23[DEBUG][11477 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:23:23[INFO][11476 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:23:23[INFO][11477 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:23:23[ERROR][11477 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:23:23[ERROR][11476 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:23:23[ERROR][11477 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:23:23[DEBUG][11477 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:23:23[DEBUG][11477 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:23:23[DEBUG][11477 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:23:23[DEBUG][11477 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:23:26[DEBUG][11476 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:23:26[DEBUG][11476 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:23:26[DEBUG][11476 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:23:26[DEBUG][11476 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:23:26[DEBUG][11476 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:27:15[DEBUG][11852 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:27:15[DEBUG][11852 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:27:15[DEBUG][11852 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:27:15[DEBUG][11856 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:27:15[DEBUG][11852 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:27:15[DEBUG][11856 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:27:15[DEBUG][11852 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:27:15[DEBUG][11856 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:27:15[DEBUG][11852 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:27:15[DEBUG][11852 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:27:15[INFO][11856 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:27:15[INFO][11852 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:27:15[ERROR][11852 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:27:15[ERROR][11852 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:27:15[ERROR][11856 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:27:15[DEBUG][11856 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:27:15[DEBUG][11856 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:27:15[DEBUG][11856 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:27:15[DEBUG][11856 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:27:18[DEBUG][11852 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:27:18[DEBUG][11852 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:27:18[DEBUG][11852 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:27:18[DEBUG][11852 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:27:18[DEBUG][11852 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:27:49[DEBUG][11870 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:27:49[DEBUG][11870 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:27:49[DEBUG][11870 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:27:49[DEBUG][11871 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:27:49[DEBUG][11871 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:27:49[DEBUG][11871 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:27:49[DEBUG][11871 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:27:49[DEBUG][11870 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:27:49[DEBUG][11870 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:27:49[DEBUG][11870 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:27:49[INFO][11870 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:28:58[INFO][11871 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:31:09[DEBUG][11942 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:31:09[DEBUG][11942 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:31:09[DEBUG][11942 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:31:09[DEBUG][11944 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:31:09[DEBUG][11942 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:31:09[DEBUG][11944 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:31:09[DEBUG][11942 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:31:09[DEBUG][11944 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:31:09[DEBUG][11942 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:31:09[DEBUG][11942 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:31:09[INFO][11944 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:31:09[INFO][11942 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:32:46[DEBUG][11972 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:32:46[DEBUG][11972 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:32:46[DEBUG][11972 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:32:46[DEBUG][11973 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:32:46[DEBUG][11972 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:32:46[DEBUG][11973 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:32:46[DEBUG][11972 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:32:46[DEBUG][11973 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:32:46[DEBUG][11972 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:32:46[DEBUG][11973 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:32:46[INFO][11972 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:32:46[INFO][11973 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:33:37[DEBUG][12671 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:33:37[DEBUG][12671 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:33:37[DEBUG][12671 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:33:37[DEBUG][12672 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:33:37[DEBUG][12671 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:33:37[DEBUG][12672 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:33:37[DEBUG][12672 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:33:37[DEBUG][12672 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:33:37[DEBUG][12671 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:33:37[DEBUG][12671 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:33:37[INFO][12671 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:33:37[INFO][12672 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:33:39[ERROR][12672 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:33:41[ERROR][12671 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:33:42[ERROR][12671 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:33:42[DEBUG][12671 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:33:42[DEBUG][12671 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:33:42[DEBUG][12671 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:33:45[DEBUG][12672 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:33:45[DEBUG][12672 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:33:45[DEBUG][12672 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:33:45[DEBUG][12671 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:33:45[DEBUG][12671 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:33:45[DEBUG][12671 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:38:57[WARN][12973 UNKNOWN 0][/home/fwl/program/fwl-master/tests/test_http_connection.cc 77]Usage: /home/fwl/program/fwl-master/bin/test_http_connection [uri] [method] [is close]
+2024-07-05 23:39:02[DEBUG][12976 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:39:02[DEBUG][12976 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:39:02[DEBUG][12976 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:39:02[DEBUG][12977 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:39:02[DEBUG][12976 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:39:02[DEBUG][12977 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:39:02[DEBUG][12976 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:39:02[DEBUG][12977 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:39:02[DEBUG][12976 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:39:02[DEBUG][12976 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:39:02[INFO][12977 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:39:02[INFO][12976 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:39:40[DEBUG][12991 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:39:40[DEBUG][12991 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:39:40[DEBUG][12991 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:39:40[DEBUG][12992 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:39:40[DEBUG][12992 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:39:40[DEBUG][12992 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:39:40[DEBUG][12991 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:39:40[DEBUG][12991 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:39:40[DEBUG][12992 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:39:40[DEBUG][12991 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:39:40[INFO][12991 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:39:40[INFO][12992 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:40:46[DEBUG][13008 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:40:46[DEBUG][13008 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:40:46[DEBUG][13008 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:40:46[DEBUG][13009 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:40:46[DEBUG][13008 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:40:46[DEBUG][13009 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:40:46[DEBUG][13008 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:40:46[DEBUG][13009 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:40:46[DEBUG][13008 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:40:46[DEBUG][13008 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:40:46[INFO][13009 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:40:49[INFO][13008 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:42:31[DEBUG][13036 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:42:31[DEBUG][13036 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:42:31[DEBUG][13036 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:42:31[DEBUG][13037 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:42:31[DEBUG][13037 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:42:31[DEBUG][13037 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:42:31[DEBUG][13036 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:42:31[DEBUG][13036 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:42:31[DEBUG][13037 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:42:31[DEBUG][13036 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:42:31[INFO][13036 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:42:32[INFO][13037 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:43:28[DEBUG][13051 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:43:28[DEBUG][13051 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:43:28[DEBUG][13051 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:43:28[DEBUG][13053 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:43:28[DEBUG][13053 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:43:28[DEBUG][13051 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:43:28[DEBUG][13053 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:43:28[DEBUG][13051 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:43:28[DEBUG][13053 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:43:28[DEBUG][13051 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:43:28[INFO][13051 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:43:29[INFO][13053 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:45:31[DEBUG][13110 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:45:31[DEBUG][13110 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:45:31[DEBUG][13110 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:45:31[DEBUG][13111 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:45:31[DEBUG][13110 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:45:31[DEBUG][13111 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:45:31[DEBUG][13110 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:45:31[DEBUG][13111 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:45:31[DEBUG][13110 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:45:31[DEBUG][13111 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:45:31[INFO][13110 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:45:33[INFO][13111 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:46:06[ERROR][13110 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:47:36[DEBUG][13630 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:47:36[DEBUG][13630 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:47:36[DEBUG][13630 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:47:36[DEBUG][13631 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:47:36[DEBUG][13631 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:47:36[DEBUG][13630 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:47:36[DEBUG][13631 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:47:36[DEBUG][13630 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:47:36[DEBUG][13630 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:47:36[DEBUG][13631 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:47:36[INFO][13630 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:47:40[DEBUG][13634 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:47:40[DEBUG][13634 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:47:40[DEBUG][13634 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:47:40[INFO][13634 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:47:40[INFO][13633 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 551]ssl write
+2024-07-05 23:47:40[ERROR][13633 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:47:40[DEBUG][13634 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 551]ssl write
+2024-07-05 23:47:40[ERROR][13634 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 551]ssl write
+2024-07-05 23:47:40[ERROR][13633 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:47:40[DEBUG][13633 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:47:43[DEBUG][13634 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:47:43[DEBUG][13634 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:47:43[DEBUG][13634 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:47:43[DEBUG][13633 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:47:43[DEBUG][13633 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:47:43[DEBUG][13633 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:49:05[DEBUG][14055 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:49:05[DEBUG][14055 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:49:05[DEBUG][14055 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:49:05[DEBUG][14057 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:49:05[DEBUG][14057 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:49:05[DEBUG][14055 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:49:05[DEBUG][14057 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:49:05[DEBUG][14055 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:49:05[DEBUG][14055 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:49:05[DEBUG][14057 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:49:05[INFO][14055 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:49:05[INFO][14057 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:49:05[DEBUG][14057 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:05[DEBUG][14057 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:05[ERROR][14057 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:05[DEBUG][14055 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:05[DEBUG][14055 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:05[ERROR][14055 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:05[DEBUG][14057 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:05[DEBUG][14057 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:05[ERROR][14057 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:05[DEBUG][14057 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:49:05[DEBUG][14057 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:49:05[DEBUG][14057 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:49:05[DEBUG][14057 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:49:08[DEBUG][14055 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:49:08[DEBUG][14055 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:49:08[DEBUG][14055 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:49:08[DEBUG][14055 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:49:08[DEBUG][14055 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:49:21[DEBUG][14065 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:49:21[DEBUG][14065 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:49:21[DEBUG][14065 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:49:21[INFO][14065 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:49:21[INFO][14064 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:21[ERROR][14064 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:21[DEBUG][14065 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:21[DEBUG][14065 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:21[ERROR][14065 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:21[ERROR][14064 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:49:21[DEBUG][14064 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:49:24[DEBUG][14065 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:49:24[DEBUG][14065 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:49:24[DEBUG][14065 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:49:24[DEBUG][14064 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:49:24[DEBUG][14064 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:49:24[DEBUG][14064 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:49:32[DEBUG][14071 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:49:32[DEBUG][14071 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:49:32[DEBUG][14071 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:49:32[INFO][14071 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:49:32[INFO][14070 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:32[ERROR][14070 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:32[DEBUG][14071 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:32[DEBUG][14071 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:32[ERROR][14071 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:32[ERROR][14070 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:49:32[DEBUG][14070 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:49:35[DEBUG][14071 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:49:35[DEBUG][14071 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:49:35[DEBUG][14071 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:49:35[DEBUG][14070 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:49:35[DEBUG][14070 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:49:35[DEBUG][14070 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:49:57[DEBUG][14078 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:49:57[DEBUG][14078 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:49:57[DEBUG][14078 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:49:57[DEBUG][14079 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:49:57[DEBUG][14079 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:49:57[DEBUG][14078 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:49:57[DEBUG][14079 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:49:57[DEBUG][14078 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:49:57[DEBUG][14078 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:49:57[DEBUG][14079 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:49:57[INFO][14078 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:49:57[INFO][14079 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:49:57[DEBUG][14079 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:57[DEBUG][14079 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:57[ERROR][14079 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:58[DEBUG][14079 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:58[DEBUG][14079 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:58[ERROR][14079 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:58[DEBUG][14078 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:49:58[DEBUG][14078 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:49:58[ERROR][14078 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:49:58[DEBUG][14078 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:49:58[DEBUG][14078 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:49:58[DEBUG][14078 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:50:01[DEBUG][14079 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:50:01[DEBUG][14079 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:50:01[DEBUG][14079 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:50:01[DEBUG][14078 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:50:01[DEBUG][14078 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:50:01[DEBUG][14078 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:51:15[DEBUG][14147 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:51:15[DEBUG][14147 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:51:15[DEBUG][14147 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:51:15[DEBUG][14147 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:51:15[INFO][14146 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:51:15[INFO][14147 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:51:15[ERROR][14146 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:51:15[DEBUG][14147 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:51:15[DEBUG][14147 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:51:15[ERROR][14147 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:51:15[ERROR][14146 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:51:15[DEBUG][14146 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:51:18[DEBUG][14147 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:51:18[DEBUG][14147 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:51:18[DEBUG][14147 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:51:18[DEBUG][14146 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:51:18[DEBUG][14146 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:51:18[DEBUG][14146 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:51:26[DEBUG][14156 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:51:26[DEBUG][14156 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:51:26[DEBUG][14156 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:51:26[INFO][14156 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:51:26[INFO][14155 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:51:26[ERROR][14155 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:51:26[DEBUG][14156 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:51:26[DEBUG][14156 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:51:26[ERROR][14156 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:51:26[ERROR][14155 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:51:26[DEBUG][14155 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:51:29[DEBUG][14156 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:51:29[DEBUG][14156 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:51:29[DEBUG][14156 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:51:29[DEBUG][14155 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:51:29[DEBUG][14155 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:51:29[DEBUG][14155 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:51:57[DEBUG][14164 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:51:57[DEBUG][14164 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:51:57[DEBUG][14164 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:51:57[DEBUG][14165 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:51:57[DEBUG][14164 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:51:57[DEBUG][14165 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:51:57[DEBUG][14164 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:51:57[DEBUG][14165 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:51:57[DEBUG][14164 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:51:57[DEBUG][14164 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:51:57[INFO][14165 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:51:57[INFO][14164 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:51:57[DEBUG][14165 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:51:57[DEBUG][14165 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:51:57[ERROR][14165 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:51:57[DEBUG][14164 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:51:57[DEBUG][14164 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:51:57[ERROR][14164 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:51:57[DEBUG][14165 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect
+2024-07-05 23:51:57[DEBUG][14165 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:51:57[ERROR][14165 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:51:57[DEBUG][14165 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:51:57[DEBUG][14165 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:51:57[DEBUG][14165 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:51:57[DEBUG][14165 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:52:00[DEBUG][14164 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:52:00[DEBUG][14164 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:52:00[DEBUG][14164 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:52:00[DEBUG][14164 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:52:00[DEBUG][14164 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:54:26[DEBUG][14573 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:54:26[DEBUG][14573 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:54:26[DEBUG][14573 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:54:26[DEBUG][14574 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:54:26[DEBUG][14573 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:54:26[DEBUG][14574 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:54:26[DEBUG][14573 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:54:26[DEBUG][14574 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:54:26[DEBUG][14573 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:54:26[DEBUG][14573 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:54:26[INFO][14574 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:54:26[INFO][14573 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:54:26[DEBUG][14574 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect ret = 1
+2024-07-05 23:54:26[DEBUG][14574 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:54:26[ERROR][14574 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:54:26[DEBUG][14573 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect ret = 1
+2024-07-05 23:54:26[DEBUG][14573 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:54:26[ERROR][14573 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:54:26[DEBUG][14574 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect ret = 1
+2024-07-05 23:54:26[DEBUG][14574 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:54:26[ERROR][14574 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:54:26[DEBUG][14574 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:54:26[DEBUG][14574 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:54:26[DEBUG][14574 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:54:26[DEBUG][14574 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:54:29[DEBUG][14573 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:54:29[DEBUG][14573 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:54:29[DEBUG][14573 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:54:29[DEBUG][14573 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:54:29[DEBUG][14573 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:55:40[DEBUG][14652 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:55:40[DEBUG][14652 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:55:40[DEBUG][14652 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:55:40[INFO][14652 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:55:40[INFO][14651 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect ret = 1
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:55:40[ERROR][14651 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:55:40[DEBUG][14652 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect ret = 1
+2024-07-05 23:55:40[DEBUG][14652 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:55:40[ERROR][14652 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect ret = 1
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:55:40[ERROR][14651 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:55:40[DEBUG][14651 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:55:43[DEBUG][14652 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:55:43[DEBUG][14652 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:55:43[DEBUG][14652 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:55:43[DEBUG][14651 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:55:43[DEBUG][14651 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:55:43[DEBUG][14651 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-05 23:56:20[DEBUG][14693 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-05 23:56:20[DEBUG][14693 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-05 23:56:20[DEBUG][14693 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-05 23:56:20[INFO][14693 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:56:20[INFO][14692 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect ret = 1
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:56:20[ERROR][14692 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:56:20[DEBUG][14693 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect ret = 1
+2024-07-05 23:56:20[DEBUG][14693 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:56:20[ERROR][14693 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 527]ssl connect ret = 1
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 552]ssl write
+2024-07-05 23:56:20[ERROR][14692 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, Send msg failed,strerror(errno):Success
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:56:20[DEBUG][14692 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-05 23:56:23[DEBUG][14693 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-05 23:56:23[DEBUG][14693 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-05 23:56:23[DEBUG][14693 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-05 23:56:23[DEBUG][14692 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-05 23:56:23[DEBUG][14692 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-05 23:56:23[DEBUG][14692 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 00:01:56[DEBUG][15254 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 00:01:56[DEBUG][15254 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:01:56[DEBUG][15254 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 00:01:56[DEBUG][15254 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 00:01:56[INFO][15253 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:01:56[INFO][15254 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 528]ssl connect ret = 1
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 553]ssl write
+2024-07-06 00:01:56[INFO][15253 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 553]ssl write
+2024-07-06 00:01:56[INFO][15253 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 553]ssl write
+2024-07-06 00:01:56[INFO][15253 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:01:56[DEBUG][15253 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 00:01:59[DEBUG][15254 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:01:59[DEBUG][15254 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 00:01:59[DEBUG][15254 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 00:01:59[DEBUG][15253 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 00:01:59[DEBUG][15253 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 00:01:59[DEBUG][15253 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 00:02:42[DEBUG][15440 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 00:02:42[DEBUG][15440 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:02:42[DEBUG][15440 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 00:02:42[INFO][15440 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 00:02:42[INFO][15439 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 528]ssl connect ret = 1
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 553]ssl write
+2024-07-06 00:02:42[INFO][15439 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 553]ssl write
+2024-07-06 00:02:42[INFO][15439 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 553]ssl write
+2024-07-06 00:02:42[INFO][15439 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:02:42[DEBUG][15439 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 00:02:45[DEBUG][15440 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:02:45[DEBUG][15440 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 00:02:45[DEBUG][15440 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 00:02:45[DEBUG][15439 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 00:02:45[DEBUG][15439 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 00:02:45[DEBUG][15439 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 00:21:43[DEBUG][17268 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 00:21:43[DEBUG][17268 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:21:43[DEBUG][17268 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 00:21:43[INFO][17268 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:21:43[INFO][17267 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 543]ssl connect ret = 1
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 568]ssl write
+2024-07-06 00:21:43[INFO][17268 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:21:43[DEBUG][17268 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 568]ssl write
+2024-07-06 00:21:43[INFO][17268 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:21:43[DEBUG][17268 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 568]ssl write
+2024-07-06 00:21:43[INFO][17267 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:21:43[DEBUG][17267 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 00:21:46[DEBUG][17268 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:21:46[DEBUG][17268 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 00:21:46[DEBUG][17268 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 00:21:46[DEBUG][17267 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 00:21:46[DEBUG][17267 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 00:21:46[DEBUG][17267 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 00:22:02[DEBUG][17287 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 00:22:02[DEBUG][17287 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 00:22:02[DEBUG][17287 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 00:22:02[DEBUG][17288 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 00:22:02[DEBUG][17287 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 00:22:02[DEBUG][17288 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:22:02[DEBUG][17287 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:22:02[DEBUG][17288 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 00:22:02[DEBUG][17287 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 00:22:02[DEBUG][17287 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 00:22:02[INFO][17288 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:22:02[INFO][17287 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:22:02[DEBUG][17288 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 543]ssl connect ret = 1
+2024-07-06 00:22:02[DEBUG][17288 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 568]ssl write
+2024-07-06 00:22:02[INFO][17288 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:22:02[DEBUG][17288 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 568]ssl write
+2024-07-06 00:22:02[INFO][17288 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:22:02[DEBUG][17288 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 568]ssl write
+2024-07-06 00:22:02[INFO][17288 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:22:02[DEBUG][17288 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 00:22:02[DEBUG][17288 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:22:02[DEBUG][17288 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 00:22:02[DEBUG][17288 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 00:22:05[DEBUG][17287 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:22:05[DEBUG][17287 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 00:22:05[DEBUG][17287 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 00:22:05[DEBUG][17287 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 00:22:05[DEBUG][17287 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 00:30:26[DEBUG][17933 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 00:30:26[DEBUG][17933 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:30:26[DEBUG][17933 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 00:30:26[INFO][17933 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:30:26[INFO][17932 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 544]ssl connect ret = 1
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 569]ssl write
+2024-07-06 00:30:26[INFO][17933 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:30:26[DEBUG][17933 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 569]ssl write
+2024-07-06 00:30:26[INFO][17932 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 569]ssl write
+2024-07-06 00:30:26[INFO][17932 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:30:26[DEBUG][17932 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 00:30:29[DEBUG][17933 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:30:29[DEBUG][17933 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 00:30:29[DEBUG][17933 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 00:30:29[DEBUG][17932 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 00:30:29[DEBUG][17932 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 00:30:29[DEBUG][17932 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 00:31:51[DEBUG][18417 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 00:31:51[DEBUG][18417 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:31:51[DEBUG][18417 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 00:31:51[INFO][18417 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 00:31:51[INFO][18416 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 546]ssl connect ret = 1
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 571]ssl write
+2024-07-06 00:31:51[INFO][18416 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 571]ssl write
+2024-07-06 00:31:51[INFO][18417 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:31:51[DEBUG][18417 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 571]ssl write
+2024-07-06 00:31:51[INFO][18416 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 495]ssl shutdown1
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 497]ssl shutdown2
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:31:51[DEBUG][18416 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 00:31:54[DEBUG][18417 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:31:54[DEBUG][18417 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 00:31:54[DEBUG][18417 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 00:31:54[DEBUG][18416 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 00:31:54[DEBUG][18416 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 00:31:54[DEBUG][18416 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 00:33:37[DEBUG][18784 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 00:33:37[DEBUG][18784 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 00:33:37[DEBUG][18784 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 00:33:37[DEBUG][18785 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 00:33:37[DEBUG][18784 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 00:33:37[DEBUG][18785 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:33:37[DEBUG][18784 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:33:37[DEBUG][18785 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 00:33:37[DEBUG][18784 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 00:33:37[DEBUG][18784 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 00:33:37[INFO][18785 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:33:37[INFO][18784 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:33:37[DEBUG][18784 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 544]ssl connect ret = 1
+2024-07-06 00:33:37[DEBUG][18784 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 569]ssl write
+2024-07-06 00:33:37[INFO][18785 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:33:37[DEBUG][18785 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 569]ssl write
+2024-07-06 00:33:37[INFO][18785 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:33:37[DEBUG][18785 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 569]ssl write
+2024-07-06 00:33:37[INFO][18785 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:33:37[DEBUG][18785 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 00:33:37[DEBUG][18785 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:33:37[DEBUG][18785 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 00:33:37[DEBUG][18785 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 00:33:40[DEBUG][18784 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:33:40[DEBUG][18784 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 00:33:40[DEBUG][18784 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 00:33:40[DEBUG][18784 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 00:33:40[DEBUG][18784 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 00:37:11[DEBUG][19342 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 00:37:11[DEBUG][19342 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 00:37:11[DEBUG][19342 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 00:37:11[DEBUG][19343 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 00:37:11[DEBUG][19343 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:37:11[DEBUG][19343 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 00:37:11[DEBUG][19343 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 00:37:11[DEBUG][19342 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 00:37:11[DEBUG][19342 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:37:11[DEBUG][19342 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 00:37:11[INFO][19342 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:37:11[INFO][19343 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:37:11[INFO][19343 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:37:11[DEBUG][19343 _1 4][/home/fwl/program/fwl-master/fwl/socket.cc 505]ssl shutdown
+2024-07-06 00:37:11[ERROR][19343 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Success
+2024-07-06 00:37:11[INFO][19343 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:37:11[DEBUG][19343 _1 4][/home/fwl/program/fwl-master/fwl/socket.cc 499]1
+2024-07-06 00:37:11[DEBUG][19343 _1 4][/home/fwl/program/fwl-master/fwl/socket.cc 501]2
+2024-07-06 00:37:11[DEBUG][19343 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 00:37:11[DEBUG][19343 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:37:11[DEBUG][19343 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 00:37:11[DEBUG][19343 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 00:37:14[DEBUG][19342 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:37:14[DEBUG][19342 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 00:37:14[DEBUG][19342 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 00:37:14[DEBUG][19342 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 00:37:14[DEBUG][19342 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 00:49:15[DEBUG][20113 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 00:49:15[DEBUG][20113 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 00:49:15[DEBUG][20113 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 00:49:15[DEBUG][20114 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 00:49:15[DEBUG][20113 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 00:49:15[DEBUG][20114 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:49:15[DEBUG][20113 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:49:15[DEBUG][20114 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 00:49:15[DEBUG][20113 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 00:49:15[DEBUG][20114 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 00:49:15[INFO][20113 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:49:15[INFO][20114 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:49:16[INFO][20113 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:49:16[INFO][20114 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:49:16[INFO][20114 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:49:16[DEBUG][20114 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 00:49:16[DEBUG][20114 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:49:16[DEBUG][20114 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 00:49:16[DEBUG][20114 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 00:49:19[DEBUG][20113 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:49:19[DEBUG][20113 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 00:49:19[DEBUG][20113 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 00:49:19[DEBUG][20113 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 00:49:19[DEBUG][20113 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 00:50:04[DEBUG][20220 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 00:50:04[DEBUG][20220 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 00:50:04[DEBUG][20220 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 00:50:04[DEBUG][20221 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 00:50:04[DEBUG][20220 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 00:50:04[DEBUG][20221 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:50:04[DEBUG][20220 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 00:50:04[DEBUG][20221 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 00:50:04[DEBUG][20220 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 00:50:04[DEBUG][20221 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 00:50:04[INFO][20220 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:50:04[INFO][20221 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 00:50:04[INFO][20221 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:50:04[INFO][20221 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:50:04[INFO][20221 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 00:50:04[DEBUG][20221 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 00:50:04[DEBUG][20221 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:50:04[DEBUG][20221 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 00:50:04[DEBUG][20221 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 00:50:07[DEBUG][20220 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 00:50:07[DEBUG][20220 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 00:50:07[DEBUG][20220 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 00:50:07[DEBUG][20220 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 00:50:07[DEBUG][20220 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 13:44:33[DEBUG][3898 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 13:44:33[DEBUG][3898 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 13:44:33[DEBUG][3898 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 13:44:33[DEBUG][3899 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 13:44:33[DEBUG][3899 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 13:44:33[DEBUG][3898 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 13:44:33[DEBUG][3899 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 13:44:33[DEBUG][3898 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 13:44:33[DEBUG][3898 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 13:44:33[DEBUG][3899 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 13:44:33[INFO][3898 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 13:44:33[INFO][3899 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 13:44:33[INFO][3899 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 13:44:33[DEBUG][3899 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 497]SSLSocket close
+2024-07-06 13:44:33[DEBUG][3899 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 13:44:33[ERROR][3899 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Success
+2024-07-06 13:44:34[INFO][3899 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 13:44:34[DEBUG][3899 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 497]SSLSocket close
+2024-07-06 13:44:34[DEBUG][3899 _1 5][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 13:44:34[DEBUG][3899 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 13:44:34[DEBUG][3899 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 13:44:34[DEBUG][3899 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 13:44:34[DEBUG][3899 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 13:44:36[DEBUG][3898 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 13:44:36[DEBUG][3898 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 13:44:36[DEBUG][3898 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 13:44:36[DEBUG][3898 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 13:44:36[DEBUG][3898 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 13:44:50[DEBUG][3945 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 13:44:50[DEBUG][3945 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 13:44:50[DEBUG][3945 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 13:44:50[DEBUG][3945 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 13:44:50[INFO][3944 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 13:44:50[INFO][3945 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 13:44:50[INFO][3944 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 497]SSLSocket close
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 13:44:50[ERROR][3944 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 70]Response msg recv error, recv msg failed,strerror(errno):Success
+2024-07-06 13:44:50[INFO][3944 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 497]SSLSocket close
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 13:44:50[DEBUG][3944 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 13:44:53[DEBUG][3945 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 13:44:53[DEBUG][3945 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 13:44:53[DEBUG][3945 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 13:44:53[DEBUG][3944 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 13:44:53[DEBUG][3944 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 13:44:53[DEBUG][3944 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 13:46:45[DEBUG][4107 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 13:46:45[DEBUG][4107 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 13:46:45[DEBUG][4107 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 13:46:45[INFO][4107 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 13:46:45[INFO][4106 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 13:46:45[INFO][4106 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 13:46:45[INFO][4106 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 13:46:45[INFO][4106 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 497]SSLSocket close
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 13:46:45[DEBUG][4106 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 13:46:48[DEBUG][4107 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 13:46:48[DEBUG][4107 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 13:46:48[DEBUG][4107 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 13:46:48[DEBUG][4106 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 13:46:48[DEBUG][4106 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 13:46:48[DEBUG][4106 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 13:48:23[DEBUG][4358 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 13:48:23[DEBUG][4358 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 13:48:23[DEBUG][4358 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 13:48:23[INFO][4358 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 13:48:23[INFO][4357 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 13:48:23[INFO][4357 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 13:48:23[INFO][4357 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 13:48:23[INFO][4357 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 497]SSLSocket close
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 13:48:23[DEBUG][4357 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 13:48:26[DEBUG][4358 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 13:48:26[DEBUG][4358 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 13:48:26[DEBUG][4358 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 13:48:26[DEBUG][4357 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 13:48:26[DEBUG][4357 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 13:48:26[DEBUG][4357 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:10:51[DEBUG][5909 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:10:51[DEBUG][5909 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:10:51[DEBUG][5909 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:10:51[INFO][5909 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:10:51[INFO][5908 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:10:51[INFO][5909 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:10:51[INFO][5908 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:10:51[INFO][5908 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 499]SSLSocket close
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:10:51[DEBUG][5908 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 15:10:54[DEBUG][5909 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:10:54[DEBUG][5909 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 15:10:54[DEBUG][5909 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 15:10:54[DEBUG][5908 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 15:10:54[DEBUG][5908 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 15:10:54[DEBUG][5908 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:16:36[DEBUG][6360 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:16:36[DEBUG][6360 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:16:36[DEBUG][6360 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 15:16:36[DEBUG][6360 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:16:36[INFO][6359 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:16:36[INFO][6360 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:16:36[INFO][6359 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:16:36[INFO][6359 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:16:36[INFO][6359 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 500]SSLSocket close, ret = -1
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:16:36[DEBUG][6359 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 15:16:39[DEBUG][6360 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:16:39[DEBUG][6360 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 15:16:39[DEBUG][6360 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 15:16:39[DEBUG][6359 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 15:16:39[DEBUG][6359 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 15:16:39[DEBUG][6359 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:22:41[DEBUG][6874 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 15:22:41[DEBUG][6874 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:22:41[DEBUG][6874 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:22:41[DEBUG][6874 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:22:41[INFO][6873 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:22:41[INFO][6874 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:22:41[INFO][6873 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:22:41[INFO][6873 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:22:41[INFO][6873 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/socket.cc 500]SSLSocket close, ret = -1
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:22:41[DEBUG][6873 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 15:22:44[DEBUG][6874 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:22:44[DEBUG][6874 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 15:22:44[DEBUG][6874 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 15:22:44[DEBUG][6873 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 15:22:44[DEBUG][6873 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 15:22:44[DEBUG][6873 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:27:15[DEBUG][7499 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 15:27:15[DEBUG][7499 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:27:15[DEBUG][7499 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:27:15[DEBUG][7499 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:27:15[INFO][7498 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:27:15[INFO][7499 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:27:15[INFO][7498 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:27:15[INFO][7498 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:27:15[INFO][7498 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/socket.cc 500]SSLSocket close, ret = -1
+2024-07-06 15:27:15[ERROR][7498 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/socket.cc 502]errno=9,strerror=Bad file descriptor
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:27:15[DEBUG][7498 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 15:27:18[DEBUG][7499 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:27:18[DEBUG][7499 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 15:27:18[DEBUG][7499 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 15:27:18[DEBUG][7498 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 15:27:18[DEBUG][7498 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 15:27:18[DEBUG][7498 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 15:32:37[DEBUG][7927 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:32:37[DEBUG][7927 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:32:37[DEBUG][7927 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:32:37[DEBUG][7928 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 15:32:37[DEBUG][7927 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:32:37[DEBUG][7928 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:32:37[DEBUG][7927 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:32:37[DEBUG][7928 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:32:37[DEBUG][7927 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 15:32:37[DEBUG][7927 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:32:37[INFO][7928 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:32:37[INFO][7927 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:32:38[INFO][7927 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:32:38[INFO][7928 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:32:38[INFO][7927 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:32:38[DEBUG][7927 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 500]SSLSocket close, ret = -1
+2024-07-06 15:32:38[ERROR][7927 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 502]errno=9,strerror=Bad file descriptor
+2024-07-06 15:33:06[DEBUG][8027 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:33:06[DEBUG][8027 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:33:06[DEBUG][8027 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:33:06[DEBUG][8028 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 15:33:06[DEBUG][8027 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:33:06[DEBUG][8028 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:33:06[DEBUG][8027 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:33:06[DEBUG][8028 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:33:06[DEBUG][8027 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 15:33:06[DEBUG][8028 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:33:06[INFO][8027 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:33:07[INFO][8028 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:33:07[INFO][8027 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:33:07[INFO][8028 _1 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:33:07[INFO][8027 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:33:07[DEBUG][8027 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 500]SSLSocket close, ret = -1
+2024-07-06 15:33:07[ERROR][8027 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 502]errno=9,strerror=Bad file descriptor
+2024-07-06 15:33:37[DEBUG][8027 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-06 15:33:37[DEBUG][8027 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 69]socket close
+2024-07-06 15:33:37[DEBUG][8027 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 15:33:37[DEBUG][8027 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:33:37[DEBUG][8027 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-06 15:33:37[DEBUG][8027 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 15:33:40[DEBUG][8028 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:33:40[DEBUG][8028 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 15:33:40[DEBUG][8028 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 15:33:40[DEBUG][8027 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 15:33:40[DEBUG][8027 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 15:33:40[DEBUG][8027 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 15:38:06[DEBUG][8491 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:38:06[DEBUG][8491 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:38:06[DEBUG][8491 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:38:06[DEBUG][8492 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 15:38:06[DEBUG][8492 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:38:06[DEBUG][8492 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:38:06[DEBUG][8491 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:38:06[DEBUG][8492 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 15:38:06[DEBUG][8491 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:38:06[DEBUG][8491 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:38:06[INFO][8491 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:38:06[INFO][8492 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:38:06[INFO][8491 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:38:06[INFO][8492 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:38:06[INFO][8492 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:38:06[DEBUG][8492 _1 4][/home/fwl/program/fwl-master/fwl/socket.cc 245]close sock:7
+2024-07-06 15:38:06[DEBUG][8492 _1 4][/home/fwl/program/fwl-master/fwl/socket.cc 499]SSLSocket close, ret = -1
+2024-07-06 15:38:06[ERROR][8492 _1 4][/home/fwl/program/fwl-master/fwl/socket.cc 501]errno=9,strerror=Bad file descriptor
+2024-07-06 15:38:36[DEBUG][8491 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-06 15:38:36[DEBUG][8491 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 15:38:36[DEBUG][8491 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:38:36[DEBUG][8491 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-06 15:38:36[DEBUG][8491 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 15:38:39[DEBUG][8492 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:38:39[DEBUG][8492 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 15:38:39[DEBUG][8492 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 15:38:39[DEBUG][8491 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 15:38:39[DEBUG][8491 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 15:38:39[DEBUG][8491 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 15:39:09[DEBUG][8522 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:39:09[DEBUG][8522 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:39:09[DEBUG][8522 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:39:09[DEBUG][8526 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 15:39:09[DEBUG][8526 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:39:09[DEBUG][8526 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:39:09[DEBUG][8526 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 15:39:09[DEBUG][8522 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:39:09[DEBUG][8522 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:39:09[DEBUG][8522 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:39:09[INFO][8522 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:39:09[INFO][8526 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:39:09[INFO][8522 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:39:09[INFO][8526 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:39:10[INFO][8522 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:39:10[DEBUG][8522 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/socket.cc 245]close sock:7
+2024-07-06 15:39:10[DEBUG][8522 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/socket.cc 499]SSLSocket close, ret = -1
+2024-07-06 15:39:10[ERROR][8522 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/socket.cc 501]errno=9,strerror=Bad file descriptor
+2024-07-06 15:39:40[DEBUG][8526 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 6
+2024-07-06 15:39:40[DEBUG][8526 _1 3][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 15:39:40[DEBUG][8526 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:39:40[DEBUG][8526 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:6 exit
+2024-07-06 15:39:40[DEBUG][8526 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 15:39:40[DEBUG][8526 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 15:39:43[DEBUG][8522 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:39:43[DEBUG][8522 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 15:39:43[DEBUG][8522 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 15:39:43[DEBUG][8522 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 15:39:43[DEBUG][8522 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 15:39:54[DEBUG][8549 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:39:54[DEBUG][8549 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:39:54[DEBUG][8549 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:39:54[DEBUG][8550 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 15:39:54[DEBUG][8550 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:39:54[DEBUG][8550 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:39:54[DEBUG][8550 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 15:39:54[DEBUG][8549 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:39:54[DEBUG][8549 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:39:54[DEBUG][8549 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:39:54[INFO][8549 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:39:54[INFO][8550 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:39:55[INFO][8549 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:39:55[INFO][8549 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:39:55[INFO][8549 UNKNOWN 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:57:00[DEBUG][10002 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:57:00[DEBUG][10002 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:57:00[DEBUG][10002 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:57:00[DEBUG][10003 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 15:57:00[DEBUG][10002 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:57:00[DEBUG][10003 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:57:00[DEBUG][10002 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:57:00[DEBUG][10003 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:57:00[DEBUG][10002 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 15:57:00[DEBUG][10003 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:57:00[INFO][10002 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:57:00[INFO][10003 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:57:03[INFO][10002 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:57:04[INFO][10002 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:57:04[INFO][10002 UNKNOWN 5][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:57:04[DEBUG][10002 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 558]SSLSocket close, ret = 0
+2024-07-06 15:57:05[DEBUG][10002 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 558]SSLSocket close, ret = 1
+2024-07-06 15:57:05[DEBUG][10002 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 245]close sock:7
+2024-07-06 15:57:05[DEBUG][10002 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/socket.cc 558]SSLSocket close, ret = 1
+2024-07-06 15:57:05[DEBUG][10002 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 15:57:05[DEBUG][10002 UNKNOWN 4][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:57:05[DEBUG][10002 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 15:57:08[DEBUG][10003 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:57:08[DEBUG][10003 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 15:57:08[DEBUG][10003 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 15:57:08[DEBUG][10002 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 15:57:08[DEBUG][10002 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 15:57:08[DEBUG][10002 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 15:59:06[DEBUG][10157 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 15:59:06[DEBUG][10157 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 15:59:06[DEBUG][10157 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 15:59:06[DEBUG][10157 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 15:59:06[DEBUG][10157 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:59:06[DEBUG][10157 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 2
+2024-07-06 15:59:06[DEBUG][10157 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 15:59:06[DEBUG][10158 _1 4][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 4
+2024-07-06 15:59:06[DEBUG][10158 _1 4][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 15:59:06[DEBUG][10158 _1 4][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 15:59:06[INFO][10158 _1 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:59:09[INFO][10157 UNKNOWN 2][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 15:59:09[INFO][10158 _1 3][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:59:09[INFO][10158 _1 3][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:59:09[INFO][10158 _1 3][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 15:59:09[DEBUG][10158 _1 3][/home/fwl/program/fwl-master/fwl/socket.cc 558]SSLSocket close, ret = 0
+2024-07-06 15:59:09[DEBUG][10157 UNKNOWN 3][/home/fwl/program/fwl-master/fwl/socket.cc 558]SSLSocket close, ret = 1
+2024-07-06 15:59:09[DEBUG][10157 UNKNOWN 3][/home/fwl/program/fwl-master/fwl/socket.cc 245]close sock:7
+2024-07-06 15:59:09[DEBUG][10157 UNKNOWN 3][/home/fwl/program/fwl-master/fwl/socket.cc 558]SSLSocket close, ret = 1
+2024-07-06 15:59:09[DEBUG][10157 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 15:59:09[DEBUG][10157 UNKNOWN 2][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:59:09[DEBUG][10157 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 15:59:12[DEBUG][10158 _1 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 15:59:12[DEBUG][10158 _1 4][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 15:59:12[DEBUG][10158 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 15:59:12[DEBUG][10157 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 15:59:12[DEBUG][10157 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 15:59:12[DEBUG][10157 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit
+2024-07-06 16:00:01[DEBUG][10446 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 0
+2024-07-06 16:00:01[DEBUG][10446 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 1
+2024-07-06 16:00:01[DEBUG][10446 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 69]scheduler start()
+2024-07-06 16:00:01[DEBUG][10447 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 61]Fiber(),FibferId = 2
+2024-07-06 16:00:01[DEBUG][10447 _1 2][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 16:00:01[DEBUG][10447 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 3
+2024-07-06 16:00:01[DEBUG][10446 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 112]stopping():0,m_rootFiber is NULL:0
+2024-07-06 16:00:01[DEBUG][10447 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 4
+2024-07-06 16:00:01[DEBUG][10446 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/scheduler.cc 170]Scheduler:run()
+2024-07-06 16:00:01[DEBUG][10446 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 72]Fiber(X,X,X),FiberId = 5
+2024-07-06 16:00:01[INFO][10446 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 16:00:01[INFO][10447 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 347]idle..
+2024-07-06 16:00:01[INFO][10447 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 16:00:01[INFO][10447 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 16:00:01[INFO][10447 _1 4][/home/fwl/program/fwl-master/tests/test_http_connection.cc 68]Response msg:doRequest succeed
+2024-07-06 16:00:01[DEBUG][10447 _1 4][/home/fwl/program/fwl-master/fwl/socket.cc 558]SSLSocket close, ret = 0
+2024-07-06 16:00:01[DEBUG][10447 _1 4][/home/fwl/program/fwl-master/fwl/socket.cc 558]SSLSocket close, ret = 1
+2024-07-06 16:00:01[DEBUG][10447 _1 4][/home/fwl/program/fwl-master/fwl/socket.cc 558]SSLSocket close, ret = 1
+2024-07-06 16:00:01[DEBUG][10447 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:4 exit
+2024-07-06 16:00:01[DEBUG][10447 _1 3][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 16:00:01[DEBUG][10447 _1 2][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:3 exit
+2024-07-06 16:00:01[DEBUG][10447 _1 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:2 exit
+2024-07-06 16:00:04[DEBUG][10446 UNKNOWN 5][/home/fwl/program/fwl-master/fwl/iomanager.cc 356]exit
+2024-07-06 16:00:04[DEBUG][10446 UNKNOWN 1][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:5 exit
+2024-07-06 16:00:04[DEBUG][10446 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/scheduler.cc 128]Scheduler::stop()
+2024-07-06 16:00:04[DEBUG][10446 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:1 exit
+2024-07-06 16:00:04[DEBUG][10446 UNKNOWN 0][/home/fwl/program/fwl-master/fwl/fiber.cc 97]~Fiber(),FiberId:0 exit

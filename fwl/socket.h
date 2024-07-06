@@ -12,6 +12,7 @@
 #include <netinet/tcp.h>
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <openssl/ssl.h>
 #include "address.h"
 #include "noncopy.h"
 
@@ -386,6 +387,69 @@ protected:
     Address::ptr m_localAddress;
     /// 远端地址
     Address::ptr m_remoteAddress;
+};
+
+/**
+ * @brief SSLSocket封装类
+ * */
+class SSLSocket : public Socket{
+public:
+    typedef std::shared_ptr<SSLSocket> ptr;
+    /**
+     * @brief 创建TCP Socket(满足地址类型)
+     * @param[in] address 地址
+     */
+    static SSLSocket::ptr CreateTCP(fwl::Address::ptr address);
+    /**
+     * @brief 创建IPv4的TCP Socket
+     */
+    static SSLSocket::ptr CreateTCPSocket();
+
+    /**
+     * @brief 创建IPv6的TCP Socket
+     */
+    static SSLSocket::ptr CreateTCPSocket6();
+	
+	/**
+     * @brief Socket构造函数
+     * @param[in] family 协议簇
+     * @param[in] type 类型
+     * @param[in] protocol 协议
+     */
+    SSLSocket(int family, int type, int protocol = 0);
+	~SSLSocket();
+
+	bool SSLClose();
+
+	virtual Socket::ptr accept() override;
+	virtual bool bind(const Address::ptr addr) override;
+	virtual bool connect(const Address::ptr addr, uint64_t timeout_ms = -1) override;
+	virtual bool reconnect(uint64_t timeout_ms = -1) override;
+	virtual bool listen(int backlog = SOMAXCONN) override;
+	virtual bool close() override;
+	virtual int send(const void * buffer, size_t length, int flags = 0) override;
+	virtual int send(const iovec * buffers, size_t length, int flags = 0) override;
+	virtual int sendTo(const void * buffer, size_t length, const Address::ptr to, int flags = 0) override;
+	virtual int sendTo(const iovec * buffers, size_t length, const Address::ptr to, int flags = 0) override;
+	virtual int recv(void * buffer, size_t length, int flags = 0) override;
+	virtual int recv(iovec* buffers, size_t length, int flags = 0) override;
+	virtual int recvFrom(void * buffers, size_t length, Address::ptr from, int flags = 0) override;
+	virtual int recvFrom(iovec* buffers, size_t length, Address::ptr from, int flags = 0) override;
+
+    /**
+     * @brief 输出信息到流中
+     */
+    //virtual std::ostream& dump(std::ostream& os) const override;
+
+    //virtual std::string toString() const override;
+
+	bool loadServerCertificate(const std::string & cert_file, const std::string & key_file);
+
+private:
+	virtual bool init(int sock) override;
+private:
+	std::shared_ptr<SSL_CTX> m_ctx;	//SSL_CTX对象
+	std::shared_ptr<SSL> m_ssl;	 //SSL对象
 };
 
 /**

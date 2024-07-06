@@ -7,8 +7,8 @@ logs:
            level: DEBUG
            formatter: "%d{%Y-%m-%d %H:%M:%S}[%p]%m%n:"
            file: "../log_file/root.txt"
-             #         - type: StdoutLogAppender
-             #level: DEBUG
+         - type: StdoutLogAppender
+           level: DEBUG
     - name: system
       level: DEBUG
       formatter: "[%d{%Y-%m-%d %H:%M:%S}[%p][%t %N %F][%c %l]%m%n"

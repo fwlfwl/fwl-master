@@ -17,6 +17,7 @@
 namespace fwl{
 namespace http{
 
+//返回结果
 enum RESULT{
 	INVALID_INPUT = 1,	//invalid input 
 	INVALID_HOST,
@@ -153,12 +154,12 @@ public:
 	/**
 	 * @brief create http connection pool
 	 * */
-	static HttpConnectionPool::ptr Create(const std::string & host, uint32_t port, uint32_t maxSize, uint64_t maxAliveTime);
+	static HttpConnectionPool::ptr Create(const std::string & uri, uint32_t maxSize, uint64_t maxAliveTime);
 
 	/**
 	 * @brief constructor 
 	 * */
-	HttpConnectionPool(const std::string & host, uint32_t port, uint32_t maxSize, uint64_t maxAliveTime);
+	HttpConnectionPool(const std::string & host, uint32_t port, bool is_https, uint32_t maxSize, uint64_t maxAliveTime);
 	
 	/**
 	 * @brief get connection 
@@ -228,6 +229,8 @@ private:
 	void reuse(HttpConnection::ptr conn);
 
 private:
+	//is https 
+	bool m_isHttps = false;
 	//remote host 
 	std::string m_host;
 	//remote port 

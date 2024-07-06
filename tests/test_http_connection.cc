@@ -39,15 +39,14 @@ void test_http_connection(const char * host, const char * path){
 	}
 }
 
-void test_httpConnectionPool(const char * host, const char * uri, const char * method, const char * isClose){
-	fwl::http::HttpConnectionPool::ptr pool = fwl::http::HttpConnectionPool::Create(host, 80, 5, 30000);
+void test_httpConnectionPool(const char * uri, const char * method, const char * isClose){
+	fwl::http::HttpConnectionPool::ptr pool = fwl::http::HttpConnectionPool::Create(uri, 5, 30000);
 	if(!pool){
 		FWL_LOG_ERROR(g_logger) << "Http Connection pool create failed";
 		return;
 	}
 	fwl::http::HttpResult::ptr res;
 	std::map<std::string, std::string> headers;
-	headers["Host"] = host;
 	if(0 == strcasecmp("false", isClose)){
 		headers["Connection"] = "keep-alive";
 	}	
@@ -74,13 +73,13 @@ void test_httpConnectionPool(const char * host, const char * uri, const char * m
 }
 
 int main(int argc, char * argv[]){
-	if(5 > argc){
-		FWL_LOG_WARN(g_logger) << "Usage: " << argv[0] << " [method] [host] [uri] [is close]";
+	if(4 > argc){
+		FWL_LOG_WARN(g_logger) << "Usage: " << argv[0] << " [uri] [method] [is close]";
 		return 1;
 	}
 	fwl::IOManager iom(2);
-	iom.scheduler(std::bind(test_httpConnectionPool, argv[2], argv[3], argv[1],argv[4]));
-	iom.scheduler(std::bind(test_httpConnectionPool, argv[2], argv[3], argv[1],argv[4]));
+	iom.scheduler(std::bind(test_httpConnectionPool, argv[1], argv[2], argv[3]));
+	//iom.scheduler(std::bind(test_httpConnectionPool, argv[1], argv[2], argv[3]));
 	//test_httpConnectionPool(argv[2], argv[3], argv[1],argv[4]);
 	return 0;
 }

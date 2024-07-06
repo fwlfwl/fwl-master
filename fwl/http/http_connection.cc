@@ -294,16 +294,22 @@ HttpResponse::ptr HttpConnection::recvResponse(){
 /**
  * @brief create http connection pool
  * */
-HttpConnectionPool::ptr HttpConnectionPool::Create(const std::string & host, uint32_t port, uint32_t maxSize, uint64_t maxAliveTime){
-	return std::make_shared<HttpConnectionPool>(host, port, maxSize, maxAliveTime);
+HttpConnectionPool::ptr HttpConnectionPool::Create(const std::string & uri, uint32_t maxSize, uint64_t maxAliveTime){
+	Uri::ptr uriObj = Uri::Create(uri);
+	if(!uriObj){
+		FWL_LOG_DEBUG(g_logger) << "Uri format error";
+		return nullptr;
+	}
+	return std::make_shared<HttpConnectionPool>(uriObj -> getHost(), uriObj -> getPort(), 0 == strcasecmp((uriObj -> getScheme()).c_str(), "https"), maxSize, maxAliveTime);
 }
 
 /**
  * @brief constructor 
  * */
-HttpConnectionPool::HttpConnectionPool(const std::string & host, uint32_t port, uint32_t maxSize, uint64_t maxAliveTime):
+HttpConnectionPool::HttpConnectionPool(const std::string & host, uint32_t port, bool is_https, uint32_t maxSize, uint64_t maxAliveTime):
+	m_isHttps(is_https),
 	m_host(host),
-	m_port(port),
+	m_port(port ? port : (is_https ? 443 : 80)),
 	m_maxSize(maxSize),
 	m_maxAliveTime(maxAliveTime){}
 
@@ -330,7 +336,7 @@ HttpConnection::ptr HttpConnectionPool::getConnection(){
 			return nullptr;
 		}
 		addr -> setPort(m_port);
-		Socket::ptr sock = Socket::CreateTCP(addr);
+		Socket::ptr sock = m_isHttps ? SSLSocket::CreateTCP(addr) : Socket::CreateTCP(addr);
 		if(!sock){
 			FWL_LOG_ERROR(g_logger) << "Can not create sock";
 			return nullptr;
